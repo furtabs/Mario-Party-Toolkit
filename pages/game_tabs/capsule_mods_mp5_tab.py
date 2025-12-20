@@ -9,7 +9,7 @@
 # Capsule Mods Tab Component for Mario Party 5
 # ============================================
 
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QScrollArea, QFrame
+from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QScrollArea, QFrame, QRadioButton, QButtonGroup
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPixmap
 from qfluentwidgets import SubtitleLabel, BodyLabel, LineEdit, PushButton, CardWidget, ScrollArea
@@ -74,6 +74,40 @@ class CapsuleModsMp5Tab(QWidget):
         card_title = SubtitleLabel("Capsule Modifications")
         card_title.setStyleSheet("font-size: 16px; font-weight: 600; margin-bottom: 8px;")
         capsule_card_layout.addWidget(card_title)
+
+        # Mode selection with radio buttons (like Item Shop Odds)
+        mode_layout = QHBoxLayout()
+        mode_layout.setSpacing(12)
+        
+        mode_label = BodyLabel("Mode:")
+        mode_label.setStyleSheet("font-size: 14px; font-weight: 600;")
+        mode_layout.addWidget(mode_label)
+        
+        # Create radio button group
+        self.mode_button_group = QButtonGroup()
+        
+        self.stock_radio = QRadioButton("Stock MP5")
+        self.shop_mod_radio = QRadioButton("Shop Mod")
+        
+        self.mode_button_group.addButton(self.stock_radio)
+        self.mode_button_group.addButton(self.shop_mod_radio)
+        
+        self.stock_radio.setChecked(True)  # Default to Stock MP5
+        
+        self.stock_radio.clicked.connect(lambda: self.on_mode_changed("Stock MP5"))
+        self.shop_mod_radio.clicked.connect(lambda: self.on_mode_changed("Shop Mod"))
+        
+        mode_layout.addWidget(self.stock_radio)
+        mode_layout.addWidget(self.shop_mod_radio)
+        mode_layout.addStretch()
+        capsule_card_layout.addLayout(mode_layout)
+        
+        # Warning label for Shop Mod
+        self.warning_label = BodyLabel("Shop Mod requires the Mushroom to cost 5 coins and at least be enabled.")
+        self.warning_label.setStyleSheet("font-size: 12px; color: #FF6B6B; font-weight: 600;")
+        self.warning_label.setAlignment(Qt.AlignCenter)
+        self.warning_label.setVisible(False)
+        capsule_card_layout.addWidget(self.warning_label)
 
         # Capsule rows: label, icon, priceKey, weightKey (UI always shows price then weight side-by-side)
         # Order matches the old frame UI exactly
@@ -255,10 +289,18 @@ class CapsuleModsMp5Tab(QWidget):
         ]
 
         args = [EntryProxy(self.inputs[name]) for name in arg_order]
+        
+        # Get selected mode
+        is_shop_mod = self.shop_mod_radio.isChecked()
+        
         try:
-            itemsEvent_mp5(*args)
+            itemsEvent_mp5(*args, shop_mod=is_shop_mod)
         except Exception as e:
             from qfluentwidgets import InfoBar, InfoBarPosition
             InfoBar.error(title="Error", content=str(e), orient=Qt.Horizontal, isClosable=True, position=InfoBarPosition.TOP, duration=3000, parent=self)
+    
+    def on_mode_changed(self, mode_text):
+        """Show/hide warning when mode changes"""
+        self.warning_label.setVisible(mode_text == "Shop Mod")
 
 
