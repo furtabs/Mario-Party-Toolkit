@@ -270,24 +270,23 @@ class SpaceReplacementTab(QWidget):
 
                 # spaceReplaceEvent_mp4 expects: spaceRep411, spaceRep412, spaceRep421, spaceRep422, spaces4
                 # spaceRep411 = Slot A, Replace from
-                # spaceRep412 = Slot B, Replace from
+                # spaceRep412 = Slot B, Replace from  
                 # spaceRep421 = Slot A, Replace with
                 # spaceRep422 = Slot B, Replace with
                 if slot == "Slot A":
-                    # Set Slot A values, Slot B to "None"
+                    # Only configure Slot A, leave Slot B as "None" (disabled)
                     mock_slot_a_from = MockEntry(from_space)
                     mock_slot_a_to = MockEntry(to_space)
                     mock_slot_b_from = MockEntry("None")
                     mock_slot_b_to = MockEntry("None")
                 else:  # Slot B
-                    # Set Slot B values, Slot A to "None"
+                    # Only configure Slot B, leave Slot A as "None" (disabled)
                     mock_slot_a_from = MockEntry("None")
                     mock_slot_a_to = MockEntry("None")
                     mock_slot_b_from = MockEntry(from_space)
                     mock_slot_b_to = MockEntry(to_space)
 
-                # Call with correct parameter order: spaceRep411, spaceRep412, spaceRep421, spaceRep422, spaces4
-                spaceReplaceEvent_mp4(mock_slot_a_from, mock_slot_b_from, mock_slot_a_to, mock_slot_b_to, self.spaces)
+                spaceReplaceEvent_mp4(mock_slot_a_from, mock_slot_a_to, mock_slot_b_from, mock_slot_b_to, self.spaces)
             else:
                 self.show_error("Space replacement modification not available")
 
