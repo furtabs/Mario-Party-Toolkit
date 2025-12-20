@@ -232,6 +232,10 @@ MP5 - Battle Minigames Bounties are {s1}, {s2}, {s3}, {s4}, and {s5}
 '''
 
 def getShopModFive(oneP, oneW, twoP, twoW, threeP, threeW, fourP, fourW, fiveP, fiveW, sixP, sixW, sevenP, sevenW, eightP, eightW, nineP, nineW, tenP, tenW, elevenP, elevenW, twelveP, twelveW, thirteenP, thirteenW, fourteenP, fourteenW, fifteenP, fifteenW, sixteenP, sixteenW, seventeenP, seventeenW, eighteenP, eighteenW, ninteenP, ninteenW, twentyP, twentyW, twentyOneP, twentyOneW, twentyTwoP, twentyTwoW, twentyThreeP, twentyThreeW, twentyFourP, twentyFourW, twentyFiveP, twentyFiveW, twentySixP, twentySixW, twentySevenP, twentySevenW, twentyEightP, twentyEightW, twentyNineP, twentyNineW):
+    """
+    Shop Mod includes all existing orbs plus DK (twentyNine) and Bowser (twentySix).
+    This function generates codes that enable capsule modifications in shops.
+    """
     return f'''
 MP5 - Capsule Modifer for Shops
 C20C8FA0 00000024
@@ -697,4 +701,63 @@ B1490000 813F0068
 7C0803A6 83CBFFF8
 83EBFFFC 7D615B78
 4E800020 00000000
+'''
+
+def getCapsuleFrenzyFive(oneW, twoW, threeW, fourW, fiveW, sixW, sevenW, eightW, nineW, tenW, elevenW, twelveW, thirteenW, fourteenW, fifteenW, sixteenW, seventeenW, eighteenW, ninteenW, twentyW, twentyOneW, twentyTwoW, twentyThreeW, twentyFourW, twentyFiveW, twentySixW, twentySevenW, twentyEightW, twentyNineW):
+    return f'''
+MP5 - Capsule Frenzy
+C208C894 00000035
+9421FFE0 93410008
+9361000C 93810010
+93A10014 93C10018
+93E1001C 4800003D
+01020001 02030405
+060A0B0C 0D0E0F10
+11141516 1718191E
+1F202322 25{oneW}{twoW}{threeW}
+{fourW}{fiveW}{sixW}{sevenW} {eightW}{nineW}{tenW}{elevenW}
+{twelveW}{thirteenW}{fourteenW}{fifteenW} {sixteenW}{seventeenW}{eighteenW}{ninteenW}
+{twentyW}{twentyOneW}{twentyTwoW}{twentyThreeW} {twentyFourW}{twentyFiveW}{twentySixW}{twentySevenW}
+7FE802A6 3F608022
+637BA4CA 3F808024
+639CD5F8 ABAD8BA8
+3FC08000 63DE5AC0
+2C1D0000 40810104
+A87C002C 38BF0000
+38C00002 2C060000
+408100E0 88850000
+7C032000 41820010
+38A50001 38C6FFFF
+4BFFFFE4 7C7A1B78
+38600000 38BF001D
+38C0001B 38E00000
+7C073000 40800014
+7C8728AE 7C632214
+38E70001 4BFFFFEC
+7C671B78 7FC803A6
+4E800021 7C833BD6
+7C8439D6 7C641850
+38BF001D 38DF0002
+38800000 38E00000
+3900001B 7C074000
+4080001C 7D2728AE
+7C844A14 7C032000
+4180000C 38E70001
+4BFFFFE4 7C6730AE
+B07B0000 B07C002E
+3880FFFF 2C030022
+40A20010 38600003
+B07C002C B09C002E
+2C030025 40A20024
+2C1A0002 40A20010
+3860000B B07C002E
+48000010 38600008
+B07C002C B09C002E
+3B7B0002 3B9C0070
+3BBDFFFF 4BFFFEFC
+3C600001 83410008
+8361000C 83810010
+83A10014 83C10018
+83E1001C 38210010
+60000000 00000000
 '''

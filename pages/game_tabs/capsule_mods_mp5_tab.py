@@ -27,6 +27,7 @@ class CapsuleModsMp5Tab(QWidget):
         super().__init__()
         self.game_id = game_id
         self.inputs = {}
+        self.price_layouts = []  # Store price layouts to show/hide them
         self.setup_ui()
 
     def setup_ui(self):
@@ -88,26 +89,23 @@ class CapsuleModsMp5Tab(QWidget):
         
         self.stock_radio = QRadioButton("Stock MP5")
         self.shop_mod_radio = QRadioButton("Shop Mod")
+        self.capsule_frenzy_radio = QRadioButton("Capsule Frenzy")
         
         self.mode_button_group.addButton(self.stock_radio)
         self.mode_button_group.addButton(self.shop_mod_radio)
+        self.mode_button_group.addButton(self.capsule_frenzy_radio)
         
         self.stock_radio.setChecked(True)  # Default to Stock MP5
         
         self.stock_radio.clicked.connect(lambda: self.on_mode_changed("Stock MP5"))
         self.shop_mod_radio.clicked.connect(lambda: self.on_mode_changed("Shop Mod"))
+        self.capsule_frenzy_radio.clicked.connect(lambda: self.on_mode_changed("Capsule Frenzy"))
         
         mode_layout.addWidget(self.stock_radio)
         mode_layout.addWidget(self.shop_mod_radio)
+        mode_layout.addWidget(self.capsule_frenzy_radio)
         mode_layout.addStretch()
         capsule_card_layout.addLayout(mode_layout)
-        
-        # Warning label for Shop Mod
-        self.warning_label = BodyLabel("Shop Mod requires the Mushroom to cost 5 coins and at least be enabled.")
-        self.warning_label.setStyleSheet("font-size: 12px; color: #FF6B6B; font-weight: 600;")
-        self.warning_label.setAlignment(Qt.AlignCenter)
-        self.warning_label.setVisible(False)
-        capsule_card_layout.addWidget(self.warning_label)
 
         # Capsule rows: label, icon, priceKey, weightKey (UI always shows price then weight side-by-side)
         # Order matches the old frame UI exactly
@@ -168,9 +166,11 @@ class CapsuleModsMp5Tab(QWidget):
             icon = self.create_image_label(icon_path, 32, 32)
             params_layout.addWidget(icon)
 
-            # Price section
-            price_layout = QVBoxLayout()
+            # Price section - wrap in a widget for easy show/hide
+            price_widget = QWidget()
+            price_layout = QVBoxLayout(price_widget)
             price_layout.setSpacing(4)
+            price_layout.setContentsMargins(0, 0, 0, 0)
 
             price_label = BodyLabel("Price:")
             price_label.setStyleSheet("font-size: 12px; font-weight: 600;")
@@ -183,7 +183,10 @@ class CapsuleModsMp5Tab(QWidget):
             price_layout.addWidget(price_entry)
             self.inputs[price_key] = price_entry
 
-            params_layout.addLayout(price_layout)
+            # Store price widget for show/hide functionality
+            self.price_layouts.append(price_widget)
+
+            params_layout.addWidget(price_widget)
 
             # Weight section
             weight_layout = QVBoxLayout()
@@ -292,15 +295,24 @@ class CapsuleModsMp5Tab(QWidget):
         
         # Get selected mode
         is_shop_mod = self.shop_mod_radio.isChecked()
+        is_capsule_frenzy = self.capsule_frenzy_radio.isChecked()
         
         try:
-            itemsEvent_mp5(*args, shop_mod=is_shop_mod)
+            itemsEvent_mp5(*args, shop_mod=is_shop_mod, capsule_frenzy=is_capsule_frenzy)
         except Exception as e:
             from qfluentwidgets import InfoBar, InfoBarPosition
             InfoBar.error(title="Error", content=str(e), orient=Qt.Horizontal, isClosable=True, position=InfoBarPosition.TOP, duration=3000, parent=self)
     
     def on_mode_changed(self, mode_text):
-        """Show/hide warning when mode changes"""
-        self.warning_label.setVisible(mode_text == "Shop Mod")
+        """Show/hide price inputs based on selected mode"""
+        # Hide prices for Capsule Frenzy, show for Stock MP5 and Shop Mod
+        show_prices = mode_text != "Capsule Frenzy"
+        
+        for price_widget in self.price_layouts:
+            price_widget.setVisible(show_prices)
+        
+        # Update warning label visibility
+        if hasattr(self, 'warning_label'):
+            self.warning_label.setVisible(mode_text == "Shop Mod")
 
 
