@@ -8,8 +8,8 @@
 import os
 import platform
 from PyQt5.QtWidgets import QMainWindow, QSizePolicy, QApplication
-from PyQt5.QtCore import Qt, QTimer, QSettings
-from PyQt5.QtGui import QIcon
+from PyQt5.QtCore import Qt, QTimer, QSettings, QPoint
+from PyQt5.QtGui import QIcon, QKeySequence, QKeyEvent
 
 from qfluentwidgets import FluentWindow, setTheme, Theme
 
@@ -34,6 +34,7 @@ class MainWindow(FluentWindow):
         self.setup_theme()
         self.setup_theme_monitoring()
         self.oldPos = None
+        self.corner_lock_enabled = True  # Enable corner snapping by default
 
     def setup_window(self):
         """Set up the main window properties"""
@@ -48,7 +49,7 @@ class MainWindow(FluentWindow):
         self.setMinimumSize(1200, 800)
         
         # Fit to display - use available screen size with small margins
-        margin = 50  # Leave some margin from screen edges
+        margin = 200  # Leave some margin from screen edges
         window_width = screen_geometry.width() - (margin * 2)
         window_height = screen_geometry.height() - (margin * 2)
         
@@ -72,12 +73,22 @@ class MainWindow(FluentWindow):
         else:  # Windows
             self.setWindowFlags(Qt.Window | Qt.CustomizeWindowHint)
         
-        # Set size policy for proper scaling
+        # Set size policy for proper scaling and resizing
         self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        
+        # Ensure window is resizable (not fixed size)
+        # Window is resizable by default, but we explicitly ensure it
         
         # Enable window dragging
         self.setAttribute(Qt.WA_TranslucentBackground, False)
         self.setAttribute(Qt.WA_NoSystemBackground, False)
+        
+        # Load corner lock preference
+        settings = QSettings("Mario Party Toolkit", "Settings")
+        self.corner_lock_enabled = settings.value("corner_lock_enabled", True, type=bool)
+        
+        print(f"✓ Window resizing enabled")
+        print(f"✓ Corner snapping {'enabled' if self.corner_lock_enabled else 'disabled'} (drag window near corner to snap)")
 
     def load_theme_preference(self):
         """Load theme preference from registry/settings"""
@@ -165,20 +176,113 @@ class MainWindow(FluentWindow):
 
     def mousePressEvent(self, event):
         """Handle mouse press events for window dragging"""
+        # Only handle dragging if clicking in the title bar area (top portion of window)
+        # This allows normal window resizing from edges
         if event.button() == Qt.LeftButton:
-            self.oldPos = event.globalPos()
+            # Check if click is in the top portion (title bar area)
+            # Title bar is typically around 30-40 pixels tall
+            title_bar_height = 40
+            if event.pos().y() < title_bar_height:
+                self.oldPos = event.globalPos()
+            else:
+                # Let the default handler deal with it (for resizing, etc.)
+                super().mousePressEvent(event)
 
     def mouseMoveEvent(self, event):
         """Handle mouse move events for window dragging"""
         if self.oldPos:
             delta = event.globalPos() - self.oldPos
-            self.move(self.pos() + delta)
+            new_pos = self.pos() + delta
+            self.move(new_pos)
             self.oldPos = event.globalPos()
+            
+            # Check for corner snapping if enabled
+            if self.corner_lock_enabled:
+                self.check_corner_snap()
+        else:
+            # Let default handler deal with resizing cursors, etc.
+            super().mouseMoveEvent(event)
 
     def mouseReleaseEvent(self, event):
         """Handle mouse release events for window dragging"""
         if event.button() == Qt.LeftButton:
-            self.oldPos = None
+            if self.oldPos:
+                self.oldPos = None
+                # Snap to corner on release if enabled
+                if self.corner_lock_enabled:
+                    self.check_corner_snap()
+            else:
+                super().mouseReleaseEvent(event)
+        else:
+            super().mouseReleaseEvent(event)
+    
+    def toggle_corner_lock(self):
+        """Toggle corner locking on/off"""
+        self.corner_lock_enabled = not self.corner_lock_enabled
+        settings = QSettings("Mario Party Toolkit", "Settings")
+        settings.setValue("corner_lock_enabled", self.corner_lock_enabled)
+        print(f"✓ Corner snapping {'enabled' if self.corner_lock_enabled else 'disabled'}")
+        return self.corner_lock_enabled
+    
+    def keyPressEvent(self, event):
+        """Handle keyboard shortcuts"""
+        # Ctrl+L to toggle corner locking
+        if event.modifiers() == Qt.ControlModifier and event.key() == Qt.Key_L:
+            self.toggle_corner_lock()
+        else:
+            super().keyPressEvent(event)
+    
+    def check_corner_snap(self):
+        """Check if window should snap to a corner and snap it"""
+        try:
+            screen = QApplication.primaryScreen()
+            if not screen:
+                return
+            
+            screen_geometry = screen.availableGeometry()
+            window_geometry = self.geometry()
+            
+            # Get window position and size
+            window_x = window_geometry.x()
+            window_y = window_geometry.y()
+            window_width = window_geometry.width()
+            window_height = window_geometry.height()
+            
+            # Screen boundaries
+            screen_left = screen_geometry.x()
+            screen_top = screen_geometry.y()
+            screen_right = screen_geometry.x() + screen_geometry.width()
+            screen_bottom = screen_geometry.y() + screen_geometry.height()
+            
+            new_x = window_x
+            new_y = window_y
+            
+            # Check top-left corner
+            if abs(window_x - screen_left) < self.snap_threshold and abs(window_y - screen_top) < self.snap_threshold:
+                new_x = screen_left
+                new_y = screen_top
+            
+            # Check top-right corner
+            elif abs((window_x + window_width) - screen_right) < self.snap_threshold and abs(window_y - screen_top) < self.snap_threshold:
+                new_x = screen_right - window_width
+                new_y = screen_top
+            
+            # Check bottom-left corner
+            elif abs(window_x - screen_left) < self.snap_threshold and abs((window_y + window_height) - screen_bottom) < self.snap_threshold:
+                new_x = screen_left
+                new_y = screen_bottom - window_height
+            
+            # Check bottom-right corner
+            elif abs((window_x + window_width) - screen_right) < self.snap_threshold and abs((window_y + window_height) - screen_bottom) < self.snap_threshold:
+                new_x = screen_right - window_width
+                new_y = screen_bottom - window_height
+            
+            # Apply snap if position changed
+            if new_x != window_x or new_y != window_y:
+                self.move(new_x, new_y)
+        except Exception as e:
+            # Silently handle errors
+            pass
 
     def apply_title_bar_style(self):
         """Apply minimal styling to fix only the title bar text visibility."""

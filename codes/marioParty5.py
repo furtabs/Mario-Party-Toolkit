@@ -154,11 +154,11 @@ C20C8FA0 00000024
 001CA57B 000000{twentyTwoP}
 001CA597 000000{twentyThreeP}
 001CA5B3 000000{twentyFourP}
-001CA5CF 000000{twentyFiveP}
-001CA5EB 000000{twentySixP}
 001CA607 000000{twentySevenP}
-001CA623 000000{twentyEightP}
+001CA5EB 000000{twentySixP}
 001CA63F 000000{twentyNineP}
+001CA5CF 000000{twentyFiveP}
+001CA623 000000{twentyEightP}
 '''
 
 def getCoinStealBaseFive(value, amountDec):
@@ -254,9 +254,9 @@ C20C8FA0 00000024
 00{ninteenW}1700 00{twentyW}1800
 00{twentyOneW}1900 00{twentyTwoW}1E00
 00{twentyThreeW}1F00 00{twentyFourW}2000
-00{twentyFiveW}2100 00{twentySixW}2200
-00{twentySevenW}2300 00{twentyEightW}2400
-00{twentyNineW}2500 00000000
+00{twentySevenW}2300 00{twentySixW}2200
+00{twentyNineW}2500 00{twentyFiveW}2100
+00{twentyEightW}2400 00000000
 7CE802A6 38E70004
 38600000 38800000
 2C030074 41820014
@@ -290,8 +290,8 @@ A13F0010 7D290734
 {fiveP}{sixP}FFFF FF{sevenP}{eightP}{nineP}
 {tenP}{elevenP}{twelveP}{thirteenP} {fourteenP}{fifteenP}FFFF
 {sixteenP}{seventeenP}{eighteenP}{ninteenP} {twentyP}{twentyOneP}FFFF
-FFFF{twentyTwoP}{twentyThreeP} {twentyFourP}{twentyFiveP}{twentySixP}{twentySevenP}
-{twentyEightP}FFFFFF FFFF0000
+FFFF{twentyTwoP}{twentyThreeP} {twentyFourP}{twentySevenP}{twentySixP}{twentyNineP}
+{twentyFiveP}{twentyEightP}FFFF FFFF0000
 7D2802A6 913F0020
 48000039 20202020
 57686963 68106361
@@ -717,7 +717,7 @@ C208C894 00000035
 1F202322 25{oneW}{twoW}{threeW}
 {fourW}{fiveW}{sixW}{sevenW} {eightW}{nineW}{tenW}{elevenW}
 {twelveW}{thirteenW}{fourteenW}{fifteenW} {sixteenW}{seventeenW}{eighteenW}{ninteenW}
-{twentyW}{twentyOneW}{twentyTwoW}{twentyThreeW} {twentyFourW}{twentyFiveW}{twentySixW}{twentySevenW}
+{twentyW}{twentyOneW}{twentyTwoW}{twentyThreeW} {twentyFourW}{twentySevenW}{twentySixW}{twentyNineW}
 7FE802A6 3F608022
 637BA4CA 3F808024
 639CD5F8 ABAD8BA8

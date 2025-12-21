@@ -12,7 +12,7 @@ import csv
 import math
 import pyperclip
 
-def itemsEvent_mp5(bombCapsulePrice5 = "0", bombCapsuleWeight5 = "0", koopaBankCapsulePrice5 = "0", koopaBankCapsuleWeight5 = "0", bulletBillCapsulePrice5 = "0", bulletBillCapsuleWeight5 = "0", hammerBroCapsulePrice5 = "0", hammerBroCapsuleWeight5 = "0", coinBlockCapsulePrice5 = "0", coinBlockCapsuleWeight5 = "0", duelCapsulePrice5 = "0", duelCapsuleWeight5 = "0", mushroomCapsulePrice5 = "0", mushroomCapsuleWeight5 = "0", goldenMushroomCapsulePrice5 = "0", goldenMushroomCapsuleWeight5 = "0", cursedMushroomCapsulePrice5 = "0", cursedMushroomCapsuleWeight5 = "0", flutterCapsulePrice5 = "0", flutterCapsuleWeight5 = "0", spinyCapsulePrice5 = "0", spinyCapsuleWeight5 = "0", goombaCapsuleWeight5 = "0", goombaCapsulePrice5 = "0", plantCapsulePrice5 = "0", plantCapsuleWeight5 = "0", kleptoCapsuleWeight5 = "0", kleptoCapsulePrice5 = "0", kamekCapsuleWeight5 = "0", kamekCapsulePrice5 = "0", magiKoopaCapsuleWeight5 = "0", magiKoopaCapsulePrice5 = "0", blizzardCapsuleWeight5 = "0", blizzardCapsulePrice5 = "0", podobooCapsulePrice5 = "0", podobooCapsuleWeight5 = "0", paraTroopaCapsuleWeight5 = "0", paraTroopaCapsulePrice5 = "0", ukikiCapsulePrice5 = "0", ukikiCapsuleWeight5 = "0", tweesterCapsulePrice5 = "0", tweesterCapsuleWeight5 = "0", lakituCapsulePrice5 = "0", lakituCapsuleWeight5 = "0", warpPipeCapsulePrice5 = "0", warpPipeCapsuleWeight5 = "0", miracleCapsulePrice5 = "0", miracleCapsuleWeight5 = "0", boneCapsulePrice5 = "0", boneCapsuleWeight5 = "0", chanceCapsulePrice5 = "0", chanceCapsuleWeight5 = "0", chainChompCapsulePrice5 = "0", chainChompCapsuleWeight5 = "0", bowserCapsulePrice5 = "0", bowserCapsuleWeight5 = "0", dkCapsulePrice5 = "0", dkCapsuleWeight5 = "0", shop_mod = False, capsule_frenzy = False):
+def itemsEvent_mp5(bombCapsulePrice5 = "0", bombCapsuleWeight5 = "0", koopaBankCapsulePrice5 = "0", koopaBankCapsuleWeight5 = "0", bulletBillCapsulePrice5 = "0", bulletBillCapsuleWeight5 = "0", hammerBroCapsulePrice5 = "0", hammerBroCapsuleWeight5 = "0", coinBlockCapsulePrice5 = "0", coinBlockCapsuleWeight5 = "0", duelCapsulePrice5 = "0", duelCapsuleWeight5 = "0", mushroomCapsulePrice5 = "0", mushroomCapsuleWeight5 = "0", goldenMushroomCapsulePrice5 = "0", goldenMushroomCapsuleWeight5 = "0", cursedMushroomCapsulePrice5 = "0", cursedMushroomCapsuleWeight5 = "0", flutterCapsulePrice5 = "0", flutterCapsuleWeight5 = "0", spinyCapsulePrice5 = "0", spinyCapsuleWeight5 = "0", goombaCapsuleWeight5 = "0", goombaCapsulePrice5 = "0", plantCapsulePrice5 = "0", plantCapsuleWeight5 = "0", kleptoCapsuleWeight5 = "0", kleptoCapsulePrice5 = "0", kamekCapsuleWeight5 = "0", kamekCapsulePrice5 = "0", magiKoopaCapsuleWeight5 = "0", magiKoopaCapsulePrice5 = "0", blizzardCapsuleWeight5 = "0", blizzardCapsulePrice5 = "0", podobooCapsulePrice5 = "0", podobooCapsuleWeight5 = "0", paraTroopaCapsuleWeight5 = "0", paraTroopaCapsulePrice5 = "0", ukikiCapsulePrice5 = "0", ukikiCapsuleWeight5 = "0", tweesterCapsulePrice5 = "0", tweesterCapsuleWeight5 = "0", lakituCapsulePrice5 = "0", lakituCapsuleWeight5 = "0", warpPipeCapsulePrice5 = "0", warpPipeCapsuleWeight5 = "0", chainChompCapsulePrice5 = "0", chainChompCapsuleWeight5 = "0", chanceCapsulePrice5 = "0", chanceCapsuleWeight5 = "0", bowserCapsulePrice5 = "0", bowserCapsuleWeight5 = "0", dkCapsulePrice5 = "0", dkCapsuleWeight5 = "0", boneCapsulePrice5 = "0", boneCapsuleWeight5 = "0", miracleCapsulePrice5 = "0", miracleCapsuleWeight5 = "0", shop_mod = False, capsule_frenzy = False):
 
     mushroomCapsulePrice5 = mushroomCapsulePrice5.get()
     mushroomCapsuleWeight5 = mushroomCapsuleWeight5.get()
@@ -100,6 +100,39 @@ def itemsEvent_mp5(bombCapsulePrice5 = "0", bombCapsuleWeight5 = "0", koopaBankC
 
     bombCapsulePrice5 = bombCapsulePrice5.get()
     bombCapsuleWeight5 = bombCapsuleWeight5.get()
+
+    # Store raw weights for capsule frenzy (before normalization)
+    rawWeights = {
+        'mushroomCapsuleWeight5': mushroomCapsuleWeight5,
+        'goldenMushroomCapsuleWeight5': goldenMushroomCapsuleWeight5,
+        'cursedMushroomCapsuleWeight5': cursedMushroomCapsuleWeight5,
+        'warpPipeCapsuleWeight5': warpPipeCapsuleWeight5,
+        'kleptoCapsuleWeight5': kleptoCapsuleWeight5,
+        'podobooCapsuleWeight5': podobooCapsuleWeight5,
+        'flutterCapsuleWeight5': flutterCapsuleWeight5,
+        'hammerBroCapsuleWeight5': hammerBroCapsuleWeight5,
+        'coinBlockCapsuleWeight5': coinBlockCapsuleWeight5,
+        'spinyCapsuleWeight5': spinyCapsuleWeight5,
+        'paraTroopaCapsuleWeight5': paraTroopaCapsuleWeight5,
+        'bulletBillCapsuleWeight5': bulletBillCapsuleWeight5,
+        'goombaCapsuleWeight5': goombaCapsuleWeight5,
+        'bombCapsuleWeight5': bombCapsuleWeight5,
+        'koopaBankCapsuleWeight5': koopaBankCapsuleWeight5,
+        'kamekCapsuleWeight5': kamekCapsuleWeight5,
+        'blizzardCapsuleWeight5': blizzardCapsuleWeight5,
+        'plantCapsuleWeight5': plantCapsuleWeight5,
+        'magiKoopaCapsuleWeight5': magiKoopaCapsuleWeight5,
+        'ukikiCapsuleWeight5': ukikiCapsuleWeight5,
+        'lakituCapsuleWeight5': lakituCapsuleWeight5,
+        'tweesterCapsuleWeight5': tweesterCapsuleWeight5,
+        'duelCapsuleWeight5': duelCapsuleWeight5,
+        'chainChompCapsuleWeight5': chainChompCapsuleWeight5,
+        'chanceCapsuleWeight5': chanceCapsuleWeight5,
+        'bowserCapsuleWeight5': bowserCapsuleWeight5,
+        'dkCapsuleWeight5': dkCapsuleWeight5,
+        'boneCapsuleWeight5': boneCapsuleWeight5,
+        'miracleCapsuleWeight5': miracleCapsuleWeight5,
+    }
 
     orbWeightTotal = int(hammerBroCapsuleWeight5) + int(bulletBillCapsuleWeight5) + int(koopaBankCapsuleWeight5) + int(coinBlockCapsuleWeight5) + int(mushroomCapsuleWeight5) + int(goldenMushroomCapsuleWeight5) + int(cursedMushroomCapsuleWeight5) + int(warpPipeCapsuleWeight5) + int(flutterCapsuleWeight5) + int(spinyCapsuleWeight5) + int(goombaCapsuleWeight5) + int(plantCapsuleWeight5) + int(kleptoCapsuleWeight5) + int(kamekCapsuleWeight5) + int(blizzardCapsuleWeight5) + int(podobooCapsuleWeight5) + int(paraTroopaCapsuleWeight5) + int(magiKoopaCapsuleWeight5) + int(ukikiCapsuleWeight5) + int(tweesterCapsuleWeight5) + int(lakituCapsuleWeight5) + int(miracleCapsuleWeight5) + int(boneCapsuleWeight5) + int(chainChompCapsuleWeight5) + int(chanceCapsuleWeight5) + int(bowserCapsuleWeight5) + int(dkCapsuleWeight5) + int(duelCapsuleWeight5) + int(bombCapsuleWeight5)
 
@@ -855,18 +888,65 @@ def itemsEvent_mp5(bombCapsulePrice5 = "0", bombCapsuleWeight5 = "0", koopaBankC
     
     # Only generate standard capsule mods if neither shop_mod nor capsule_frenzy is selected
     if not shop_mod and not capsule_frenzy:
-        generatedCode = getCapsuleModsFive(mushroomCapsulePrice5, mushroomCapsuleWeight5, goldenMushroomCapsulePrice5, goldenMushroomCapsuleWeight5, cursedMushroomCapsulePrice5, cursedMushroomCapsuleWeight5, warpPipeCapsulePrice5, warpPipeCapsuleWeight5, kleptoCapsulePrice5, kleptoCapsuleWeight5, podobooCapsulePrice5, podobooCapsuleWeight5, flutterCapsulePrice5, flutterCapsuleWeight5, hammerBroCapsulePrice5, hammerBroCapsuleWeight5, coinBlockCapsulePrice5, coinBlockCapsuleWeight5, spinyCapsulePrice5, spinyCapsuleWeight5, paraTroopaCapsulePrice5, paraTroopaCapsuleWeight5, bulletBillCapsulePrice5, bulletBillCapsuleWeight5, goombaCapsulePrice5, goombaCapsuleWeight5, bombCapsulePrice5, bombCapsuleWeight5, koopaBankCapsulePrice5, koopaBankCapsuleWeight5, kamekCapsulePrice5, kamekCapsuleWeight5, blizzardCapsulePrice5, blizzardCapsuleWeight5, plantCapsulePrice5, plantCapsuleWeight5, magiKoopaCapsulePrice5, magiKoopaCapsuleWeight5, ukikiCapsulePrice5, ukikiCapsuleWeight5, lakituCapsulePrice5, lakituCapsuleWeight5, tweesterCapsulePrice5, tweesterCapsuleWeight5, duelCapsulePrice5, duelCapsuleWeight5, chainChompCapsulePrice5, chainChompCapsuleWeight5, boneCapsulePrice5, boneCapsuleWeight5, bowserCapsulePrice5, bowserCapsuleWeight5, chanceCapsulePrice5, chanceCapsuleWeight5, miracleCapsulePrice5, miracleCapsuleWeight5, dkCapsulePrice5, dkCapsuleWeight5)
+        generatedCode = getCapsuleModsFive(mushroomCapsulePrice5, mushroomCapsuleWeight5, goldenMushroomCapsulePrice5, goldenMushroomCapsuleWeight5, cursedMushroomCapsulePrice5, cursedMushroomCapsuleWeight5, warpPipeCapsulePrice5, warpPipeCapsuleWeight5, kleptoCapsulePrice5, kleptoCapsuleWeight5, podobooCapsulePrice5, podobooCapsuleWeight5, flutterCapsulePrice5, flutterCapsuleWeight5, hammerBroCapsulePrice5, hammerBroCapsuleWeight5, coinBlockCapsulePrice5, coinBlockCapsuleWeight5, spinyCapsulePrice5, spinyCapsuleWeight5, paraTroopaCapsulePrice5, paraTroopaCapsuleWeight5, bulletBillCapsulePrice5, bulletBillCapsuleWeight5, goombaCapsulePrice5, goombaCapsuleWeight5, bombCapsulePrice5, bombCapsuleWeight5, koopaBankCapsulePrice5, koopaBankCapsuleWeight5, kamekCapsulePrice5, kamekCapsuleWeight5, blizzardCapsulePrice5, blizzardCapsuleWeight5, plantCapsulePrice5, plantCapsuleWeight5, magiKoopaCapsulePrice5, magiKoopaCapsuleWeight5, ukikiCapsulePrice5, ukikiCapsuleWeight5, lakituCapsulePrice5, lakituCapsuleWeight5, tweesterCapsulePrice5, tweesterCapsuleWeight5, duelCapsulePrice5, duelCapsuleWeight5, chainChompCapsulePrice5, chainChompCapsuleWeight5, chanceCapsulePrice5, chanceCapsuleWeight5, bowserCapsulePrice5, bowserCapsuleWeight5, dkCapsulePrice5, dkCapsuleWeight5, boneCapsulePrice5, boneCapsuleWeight5, miracleCapsulePrice5, miracleCapsuleWeight5)
         generatedCode = generatedCode.strip()
     
     # Add Shop Mod codes if selected
     if shop_mod:
-        shopModCode = getShopModFive(mushroomCapsulePrice5, mushroomCapsuleWeight5, goldenMushroomCapsulePrice5, goldenMushroomCapsuleWeight5, cursedMushroomCapsulePrice5, cursedMushroomCapsuleWeight5, warpPipeCapsulePrice5, warpPipeCapsuleWeight5, kleptoCapsulePrice5, kleptoCapsuleWeight5, podobooCapsulePrice5, podobooCapsuleWeight5, flutterCapsulePrice5, flutterCapsuleWeight5, hammerBroCapsulePrice5, hammerBroCapsuleWeight5, coinBlockCapsulePrice5, coinBlockCapsuleWeight5, spinyCapsulePrice5, spinyCapsuleWeight5, paraTroopaCapsulePrice5, paraTroopaCapsuleWeight5, bulletBillCapsulePrice5, bulletBillCapsuleWeight5, goombaCapsulePrice5, goombaCapsuleWeight5, bombCapsulePrice5, bombCapsuleWeight5, koopaBankCapsulePrice5, koopaBankCapsuleWeight5, kamekCapsulePrice5, kamekCapsuleWeight5, blizzardCapsulePrice5, blizzardCapsuleWeight5, plantCapsulePrice5, plantCapsuleWeight5, magiKoopaCapsulePrice5, magiKoopaCapsuleWeight5, ukikiCapsulePrice5, ukikiCapsuleWeight5, lakituCapsulePrice5, lakituCapsuleWeight5, tweesterCapsulePrice5, tweesterCapsuleWeight5, duelCapsulePrice5, duelCapsuleWeight5, chainChompCapsulePrice5, chainChompCapsuleWeight5, boneCapsulePrice5, boneCapsuleWeight5, bowserCapsulePrice5, bowserCapsuleWeight5, chanceCapsulePrice5, chanceCapsuleWeight5, miracleCapsulePrice5, miracleCapsuleWeight5, dkCapsulePrice5, dkCapsuleWeight5)
+        shopModCode = getShopModFive(mushroomCapsulePrice5, mushroomCapsuleWeight5, goldenMushroomCapsulePrice5, goldenMushroomCapsuleWeight5, cursedMushroomCapsulePrice5, cursedMushroomCapsuleWeight5, warpPipeCapsulePrice5, warpPipeCapsuleWeight5, kleptoCapsulePrice5, kleptoCapsuleWeight5, podobooCapsulePrice5, podobooCapsuleWeight5, flutterCapsulePrice5, flutterCapsuleWeight5, hammerBroCapsulePrice5, hammerBroCapsuleWeight5, coinBlockCapsulePrice5, coinBlockCapsuleWeight5, spinyCapsulePrice5, spinyCapsuleWeight5, paraTroopaCapsulePrice5, paraTroopaCapsuleWeight5, bulletBillCapsulePrice5, bulletBillCapsuleWeight5, goombaCapsulePrice5, goombaCapsuleWeight5, bombCapsulePrice5, bombCapsuleWeight5, koopaBankCapsulePrice5, koopaBankCapsuleWeight5, kamekCapsulePrice5, kamekCapsuleWeight5, blizzardCapsulePrice5, blizzardCapsuleWeight5, plantCapsulePrice5, plantCapsuleWeight5, magiKoopaCapsulePrice5, magiKoopaCapsuleWeight5, ukikiCapsulePrice5, ukikiCapsuleWeight5, lakituCapsulePrice5, lakituCapsuleWeight5, tweesterCapsulePrice5, tweesterCapsuleWeight5, duelCapsulePrice5, duelCapsuleWeight5, chainChompCapsulePrice5, chainChompCapsuleWeight5, chanceCapsulePrice5, chanceCapsuleWeight5, bowserCapsulePrice5, bowserCapsuleWeight5, dkCapsulePrice5, dkCapsuleWeight5, boneCapsulePrice5, boneCapsuleWeight5, miracleCapsulePrice5, miracleCapsuleWeight5)
         generatedCode = generatedCode + "\n" + shopModCode.strip()
     
-    # Add Capsule Frenzy codes if selected (includes all orbs + DK + Bowser)
+    # Add Capsule Frenzy codes if selected (includes all orbs that can appear on spaces + DK + Bowser)
+    # Note: Bone and Miracle are excluded as they cannot appear on spaces
     if capsule_frenzy:
-        # Order matches getCapsuleModsFive: oneW=mushroom, twoW=golden, threeW=cursed, fourW=warpPipe, fiveW=klepto, sixW=podoboo, sevenW=flutter, eightW=hammerBro, nineW=coinBlock, tenW=spiny, elevenW=paraTroopa, twelveW=bulletBill, thirteenW=goomba, fourteenW=bomb, fifteenW=koopaBank, sixteenW=kamek, seventeenW=blizzard, eighteenW=plant, nineteenW=magiKoopa, twentyW=ukiki, twentyOneW=lakitu, twentyTwoW=tweester, twentyThreeW=duel, twentyFourW=chainChomp, twentyFiveW=bone, twentySixW=bowser, twentySevenW=chance, twentyEightW=miracle, twentyNineW=dk
-        frenzyCode = getCapsuleFrenzyFive(mushroomCapsuleWeight5, goldenMushroomCapsuleWeight5, cursedMushroomCapsuleWeight5, warpPipeCapsuleWeight5, kleptoCapsuleWeight5, podobooCapsuleWeight5, flutterCapsuleWeight5, hammerBroCapsuleWeight5, coinBlockCapsuleWeight5, spinyCapsuleWeight5, paraTroopaCapsuleWeight5, bulletBillCapsuleWeight5, goombaCapsuleWeight5, bombCapsuleWeight5, koopaBankCapsuleWeight5, kamekCapsuleWeight5, blizzardCapsuleWeight5, plantCapsuleWeight5, magiKoopaCapsuleWeight5, ukikiCapsuleWeight5, lakituCapsuleWeight5, tweesterCapsuleWeight5, duelCapsuleWeight5, chainChompCapsuleWeight5, boneCapsuleWeight5, bowserCapsuleWeight5, chanceCapsuleWeight5, miracleCapsuleWeight5, dkCapsuleWeight5)
+        # Order matches getCapsuleFrenzyFive grid: oneW=mushroom, twoW=golden, threeW=cursed, fourW=warpPipe, fiveW=klepto, sixW=podoboo, sevenW=flutter, eightW=hammerBro, nineW=coinBlock, tenW=spiny, elevenW=paraTroopa, twelveW=bulletBill, thirteenW=goomba, fourteenW=bomb, fifteenW=koopaBank, sixteenW=kamek, seventeenW=blizzard, eighteenW=plant, nineteenW=magiKoopa, twentyW=ukiki, twentyOneW=lakitu, twentyTwoW=tweester, twentyThreeW=duel, twentyFourW=chainChomp, twentyFiveW=chance, twentySixW=bowser, twentySevenW=dk, twentyEightW=bone (not used in grid), twentyNineW=miracle (not used in grid)
+        # Grid order: oneW-twoW-threeW | fourW-fiveW-sixW-sevenW | eightW-nineW-tenW-elevenW | twelveW-thirteenW-fourteenW-fifteenW | sixteenW-seventeenW-eighteenW-ninteenW | twentyW-twentyOneW-twentyTwoW-twentyThreeW | twentyFourW-twentySevenW-twentySixW-twentyNineW
+        # Use raw weights for capsule frenzy (no normalization) - convert to hex format
+        def raw_to_hex(weight):
+            try:
+                val = int(weight) if weight else 0
+                val = max(0, min(255, val))  # Clamp to 0-255
+                hex_val = hex(val)
+                if len(hex_val) == 4:
+                    return hex_val[2:]
+                elif len(hex_val) == 3:
+                    return "0" + hex_val[2:]
+                else:
+                    return "00"
+            except:
+                return "00"
+        
+        frenzyCode = getCapsuleFrenzyFive(
+            raw_to_hex(rawWeights['mushroomCapsuleWeight5']),
+            raw_to_hex(rawWeights['goldenMushroomCapsuleWeight5']),
+            raw_to_hex(rawWeights['cursedMushroomCapsuleWeight5']),
+            raw_to_hex(rawWeights['warpPipeCapsuleWeight5']),
+            raw_to_hex(rawWeights['kleptoCapsuleWeight5']),
+            raw_to_hex(rawWeights['podobooCapsuleWeight5']),
+            raw_to_hex(rawWeights['flutterCapsuleWeight5']),
+            raw_to_hex(rawWeights['hammerBroCapsuleWeight5']),
+            raw_to_hex(rawWeights['coinBlockCapsuleWeight5']),
+            raw_to_hex(rawWeights['spinyCapsuleWeight5']),
+            raw_to_hex(rawWeights['paraTroopaCapsuleWeight5']),
+            raw_to_hex(rawWeights['bulletBillCapsuleWeight5']),
+            raw_to_hex(rawWeights['goombaCapsuleWeight5']),
+            raw_to_hex(rawWeights['bombCapsuleWeight5']),
+            raw_to_hex(rawWeights['koopaBankCapsuleWeight5']),
+            raw_to_hex(rawWeights['kamekCapsuleWeight5']),
+            raw_to_hex(rawWeights['blizzardCapsuleWeight5']),
+            raw_to_hex(rawWeights['plantCapsuleWeight5']),
+            raw_to_hex(rawWeights['magiKoopaCapsuleWeight5']),
+            raw_to_hex(rawWeights['ukikiCapsuleWeight5']),
+            raw_to_hex(rawWeights['lakituCapsuleWeight5']),
+            raw_to_hex(rawWeights['tweesterCapsuleWeight5']),
+            raw_to_hex(rawWeights['duelCapsuleWeight5']),
+            raw_to_hex(rawWeights['chainChompCapsuleWeight5']),
+            raw_to_hex(rawWeights['chanceCapsuleWeight5']),
+            raw_to_hex(rawWeights['bowserCapsuleWeight5']),
+            raw_to_hex(rawWeights['dkCapsuleWeight5']),
+            raw_to_hex(rawWeights['boneCapsuleWeight5']),
+            raw_to_hex(rawWeights['miracleCapsuleWeight5'])
+        )
         generatedCode = generatedCode + "\n" + frenzyCode.strip()
     
     pyperclip.copy(generatedCode)
