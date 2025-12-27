@@ -33,6 +33,7 @@ C21685B8 00000001
 def getMinigameCodeSeven(amount, amountDec):
     return f'''
 MP7 - Minigames Award {amountDec} Coins
+202F2F3C 00000073
 C20098A4 00000012
 3DC08029 61CE1559
 89EE0000 2C0F0004
@@ -52,6 +53,7 @@ C20098A4 00000012
 3800FFFF 39C00000
 39E00000 3A000000
 60000000 00000000
+E2000001 80008000
 '''
 
 def getStarSpaceCodeSeven(amount, amountDec, x2, x3, x4):
