@@ -8,7 +8,7 @@
 def getBlueSpaceCodeSeven(amount, amountDec):
     return f'''
 MP7 - Blue Spaces Give {amountDec} Coins
-C2168577 00000001
+C2168578 00000001
 60000000 00000000
 C216857C 00000001
 3880{amount} 00000000
