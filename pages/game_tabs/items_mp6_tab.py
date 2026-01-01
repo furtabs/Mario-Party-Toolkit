@@ -305,18 +305,29 @@ class ItemsMP6Tab(QWidget):
                 # Get all the parameters in the correct order
                 params = []
                 
-                # All other items have price + shop + space
+                # All items have price + shop + space, except mushroom which only has shop + space
                 for item_name, _, item_key in self.items:
-                    params.extend([
-                        MockEntry(getattr(self, f'{item_key}_price1', MockEntry("0")).text()),
-                        MockEntry(getattr(self, f'{item_key}_price2', MockEntry("0")).text()),
-                        MockEntry(getattr(self, f'{item_key}_price34', MockEntry("0")).text()),
-                        MockEntry(getattr(self, f'{item_key}_shop12', MockEntry("0")).text()),
-                        MockEntry(getattr(self, f'{item_key}_shop34', MockEntry("0")).text()),
-                        MockEntry(getattr(self, f'{item_key}_space1', MockEntry("0")).text()),
-                        MockEntry(getattr(self, f'{item_key}_space2', MockEntry("0")).text()),
-                        MockEntry(getattr(self, f'{item_key}_space34', MockEntry("0")).text()),
-                    ])
+                    if item_key == "mushroom":
+                        # Mushroom only has shop and space parameters
+                        params.extend([
+                            MockEntry(getattr(self, f'{item_key}_shop12', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_shop34', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_space1', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_space2', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_space34', MockEntry("0")).text()),
+                        ])
+                    else:
+                        # Other items have price + shop + space
+                        params.extend([
+                            MockEntry(getattr(self, f'{item_key}_price1', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_price2', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_price34', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_shop12', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_shop34', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_space1', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_space2', MockEntry("0")).text()),
+                            MockEntry(getattr(self, f'{item_key}_space34', MockEntry("0")).text()),
+                        ])
 
                 # Call the event function with all parameters
                 itemsEvent_mp6(*params)
