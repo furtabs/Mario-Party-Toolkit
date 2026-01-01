@@ -13,7 +13,7 @@
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QMessageBox, QScrollArea, QFrame
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPixmap
-from qfluentwidgets import SubtitleLabel, BodyLabel, LineEdit, PushButton, ScrollArea, CardWidget
+from qfluentwidgets import SubtitleLabel, BodyLabel, LineEdit, PushButton, ScrollArea, CardWidget, InfoBar, InfoBarPosition
 
 # Import resource manager for images
 from utils.resource_manager import ResourceManager
@@ -152,42 +152,41 @@ class ItemsMP6Tab(QWidget):
         icon = self.create_image_label(icon_path, 32, 32)
         params_layout.addWidget(icon)
 
-        # Price parameters (skip for mushroom)
-        if item_key != "mushroom":
-            price_layout = QVBoxLayout()
-            price_layout.setSpacing(4)
+        # Price parameters
+        price_layout = QVBoxLayout()
+        price_layout.setSpacing(4)
 
-            price_label = BodyLabel("Prices:")
-            price_label.setStyleSheet("font-size: 12px; font-weight: 600;")
-            price_layout.addWidget(price_label)
+        price_label = BodyLabel("Prices:")
+        price_label.setStyleSheet("font-size: 12px; font-weight: 600;")
+        price_layout.addWidget(price_label)
 
-            price_row = QHBoxLayout()
-            price_row.setSpacing(4)
+        price_row = QHBoxLayout()
+        price_row.setSpacing(4)
 
-            # Price entries
-            price1_entry = LineEdit()
-            price1_entry.setPlaceholderText("1st")
-            price1_entry.setFixedWidth(70)
-            price1_entry.setFixedHeight(30)
-            price_row.addWidget(price1_entry)
-            setattr(self, f"{item_key}_price1", price1_entry)
+        # Price entries
+        price1_entry = LineEdit()
+        price1_entry.setPlaceholderText("1st")
+        price1_entry.setFixedWidth(70)
+        price1_entry.setFixedHeight(30)
+        price_row.addWidget(price1_entry)
+        setattr(self, f"{item_key}_price1", price1_entry)
 
-            price2_entry = LineEdit()
-            price2_entry.setPlaceholderText("2nd")
-            price2_entry.setFixedWidth(70)
-            price2_entry.setFixedHeight(30)
-            price_row.addWidget(price2_entry)
-            setattr(self, f"{item_key}_price2", price2_entry)
+        price2_entry = LineEdit()
+        price2_entry.setPlaceholderText("2nd")
+        price2_entry.setFixedWidth(70)
+        price2_entry.setFixedHeight(30)
+        price_row.addWidget(price2_entry)
+        setattr(self, f"{item_key}_price2", price2_entry)
 
-            price34_entry = LineEdit()
-            price34_entry.setPlaceholderText("3rd/4th")
-            price34_entry.setFixedWidth(70)
-            price34_entry.setFixedHeight(30)
-            price_row.addWidget(price34_entry)
-            setattr(self, f"{item_key}_price34", price34_entry)
+        price34_entry = LineEdit()
+        price34_entry.setPlaceholderText("3rd/4th")
+        price34_entry.setFixedWidth(70)
+        price34_entry.setFixedHeight(30)
+        price_row.addWidget(price34_entry)
+        setattr(self, f"{item_key}_price34", price34_entry)
 
-            price_layout.addLayout(price_row)
-            params_layout.addLayout(price_layout)
+        price_layout.addLayout(price_row)
+        params_layout.addLayout(price_layout)
 
         # Shop odds parameters
         shop_layout = QVBoxLayout()
@@ -306,17 +305,8 @@ class ItemsMP6Tab(QWidget):
                 # Get all the parameters in the correct order
                 params = []
                 
-                # Mushroom parameters (no price)
-                params.extend([
-                    MockEntry(getattr(self, 'mushroom_shop12', MockEntry("0")).text()),
-                    MockEntry(getattr(self, 'mushroom_shop34', MockEntry("0")).text()),
-                    MockEntry(getattr(self, 'mushroom_space1', MockEntry("0")).text()),
-                    MockEntry(getattr(self, 'mushroom_space2', MockEntry("0")).text()),
-                    MockEntry(getattr(self, 'mushroom_space34', MockEntry("0")).text()),
-                ])
-                
                 # All other items have price + shop + space
-                for item_name, _, item_key in self.items[1:]:  # Skip mushroom
+                for item_name, _, item_key in self.items:
                     params.extend([
                         MockEntry(getattr(self, f'{item_key}_price1', MockEntry("0")).text()),
                         MockEntry(getattr(self, f'{item_key}_price2', MockEntry("0")).text()),
@@ -330,9 +320,6 @@ class ItemsMP6Tab(QWidget):
 
                 # Call the event function with all parameters
                 itemsEvent_mp6(*params)
-                
-                # Show success message
-                QMessageBox.information(self, "Success", "Orb modification codes generated and copied to clipboard!")
             else:
                 self.show_error("Mario Party 6 items modification not available")
 
@@ -341,4 +328,12 @@ class ItemsMP6Tab(QWidget):
 
     def show_error(self, message):
         """Show error message to user"""
-        QMessageBox.critical(self, "Error", message)
+        InfoBar.error(
+            title="Error",
+            content=message,
+            orient=Qt.Horizontal,
+            isClosable=True,
+            position=InfoBarPosition.TOP,
+            duration=5000,
+            parent=self
+        )
