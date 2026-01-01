@@ -152,41 +152,42 @@ class ItemsMP6Tab(QWidget):
         icon = self.create_image_label(icon_path, 32, 32)
         params_layout.addWidget(icon)
 
-        # Price parameters
-        price_layout = QVBoxLayout()
-        price_layout.setSpacing(4)
+        # Price parameters (skip for mushroom)
+        if item_key != "mushroom":
+            price_layout = QVBoxLayout()
+            price_layout.setSpacing(4)
 
-        price_label = BodyLabel("Prices:")
-        price_label.setStyleSheet("font-size: 12px; font-weight: 600;")
-        price_layout.addWidget(price_label)
+            price_label = BodyLabel("Prices:")
+            price_label.setStyleSheet("font-size: 12px; font-weight: 600;")
+            price_layout.addWidget(price_label)
 
-        price_row = QHBoxLayout()
-        price_row.setSpacing(4)
+            price_row = QHBoxLayout()
+            price_row.setSpacing(4)
 
-        # Price entries
-        price1_entry = LineEdit()
-        price1_entry.setPlaceholderText("1st")
-        price1_entry.setFixedWidth(70)
-        price1_entry.setFixedHeight(30)
-        price_row.addWidget(price1_entry)
-        setattr(self, f"{item_key}_price1", price1_entry)
+            # Price entries
+            price1_entry = LineEdit()
+            price1_entry.setPlaceholderText("1st")
+            price1_entry.setFixedWidth(70)
+            price1_entry.setFixedHeight(30)
+            price_row.addWidget(price1_entry)
+            setattr(self, f"{item_key}_price1", price1_entry)
 
-        price2_entry = LineEdit()
-        price2_entry.setPlaceholderText("2nd")
-        price2_entry.setFixedWidth(70)
-        price2_entry.setFixedHeight(30)
-        price_row.addWidget(price2_entry)
-        setattr(self, f"{item_key}_price2", price2_entry)
+            price2_entry = LineEdit()
+            price2_entry.setPlaceholderText("2nd")
+            price2_entry.setFixedWidth(70)
+            price2_entry.setFixedHeight(30)
+            price_row.addWidget(price2_entry)
+            setattr(self, f"{item_key}_price2", price2_entry)
 
-        price34_entry = LineEdit()
-        price34_entry.setPlaceholderText("3rd/4th")
-        price34_entry.setFixedWidth(70)
-        price34_entry.setFixedHeight(30)
-        price_row.addWidget(price34_entry)
-        setattr(self, f"{item_key}_price34", price34_entry)
+            price34_entry = LineEdit()
+            price34_entry.setPlaceholderText("3rd/4th")
+            price34_entry.setFixedWidth(70)
+            price34_entry.setFixedHeight(30)
+            price_row.addWidget(price34_entry)
+            setattr(self, f"{item_key}_price34", price34_entry)
 
-        price_layout.addLayout(price_row)
-        params_layout.addLayout(price_layout)
+            price_layout.addLayout(price_row)
+            params_layout.addLayout(price_layout)
 
         # Shop odds parameters
         shop_layout = QVBoxLayout()
@@ -199,19 +200,19 @@ class ItemsMP6Tab(QWidget):
         shop_row = QHBoxLayout()
         shop_row.setSpacing(4)
 
-        shop123_entry = LineEdit()
-        shop123_entry.setPlaceholderText("1st-3rd")
-        shop123_entry.setFixedWidth(70)
-        shop123_entry.setFixedHeight(30)
-        shop_row.addWidget(shop123_entry)
-        setattr(self, f"{item_key}_shop123", shop123_entry)
+        shop12_entry = LineEdit()
+        shop12_entry.setPlaceholderText("Early")
+        shop12_entry.setFixedWidth(70)
+        shop12_entry.setFixedHeight(30)
+        shop_row.addWidget(shop12_entry)
+        setattr(self, f"{item_key}_shop12", shop12_entry)
 
-        shop4_entry = LineEdit()
-        shop4_entry.setPlaceholderText("4th")
-        shop4_entry.setFixedWidth(70)
-        shop4_entry.setFixedHeight(30)
-        shop_row.addWidget(shop4_entry)
-        setattr(self, f"{item_key}_shop4", shop4_entry)
+        shop34_entry = LineEdit()
+        shop34_entry.setPlaceholderText("Late")
+        shop34_entry.setFixedWidth(70)
+        shop34_entry.setFixedHeight(30)
+        shop_row.addWidget(shop34_entry)
+        setattr(self, f"{item_key}_shop34", shop34_entry)
 
         shop_layout.addLayout(shop_row)
         params_layout.addLayout(shop_layout)
@@ -241,19 +242,12 @@ class ItemsMP6Tab(QWidget):
         space_row.addWidget(space2_entry)
         setattr(self, f"{item_key}_space2", space2_entry)
 
-        space3_entry = LineEdit()
-        space3_entry.setPlaceholderText("3rd")
-        space3_entry.setFixedWidth(70)
-        space3_entry.setFixedHeight(30)
-        space_row.addWidget(space3_entry)
-        setattr(self, f"{item_key}_space3", space3_entry)
-
-        space4_entry = LineEdit()
-        space4_entry.setPlaceholderText("4th")
-        space4_entry.setFixedWidth(70)
-        space4_entry.setFixedHeight(30)
-        space_row.addWidget(space4_entry)
-        setattr(self, f"{item_key}_space4", space4_entry)
+        space34_entry = LineEdit()
+        space34_entry.setPlaceholderText("3rd/4th")
+        space34_entry.setFixedWidth(70)
+        space34_entry.setFixedHeight(30)
+        space_row.addWidget(space34_entry)
+        setattr(self, f"{item_key}_space34", space34_entry)
 
         space_layout.addLayout(space_row)
         params_layout.addLayout(space_layout)
@@ -309,11 +303,36 @@ class ItemsMP6Tab(QWidget):
                     def get(self):
                         return self._value
 
-                # For now, use the existing itemsEvent_mp6 function
-                # Note: This function currently expects Price/Weight format
-                # If the function signature needs to be updated to match the new structure,
-                # that would need to be done separately
-                self.show_error("MP6 orb mods with the new structure is not yet implemented. The events function needs to be updated to match the new format.")
+                # Get all the parameters in the correct order
+                params = []
+                
+                # Mushroom parameters (no price)
+                params.extend([
+                    MockEntry(getattr(self, 'mushroom_shop12', MockEntry("0")).text()),
+                    MockEntry(getattr(self, 'mushroom_shop34', MockEntry("0")).text()),
+                    MockEntry(getattr(self, 'mushroom_space1', MockEntry("0")).text()),
+                    MockEntry(getattr(self, 'mushroom_space2', MockEntry("0")).text()),
+                    MockEntry(getattr(self, 'mushroom_space34', MockEntry("0")).text()),
+                ])
+                
+                # All other items have price + shop + space
+                for item_name, _, item_key in self.items[1:]:  # Skip mushroom
+                    params.extend([
+                        MockEntry(getattr(self, f'{item_key}_price1', MockEntry("0")).text()),
+                        MockEntry(getattr(self, f'{item_key}_price2', MockEntry("0")).text()),
+                        MockEntry(getattr(self, f'{item_key}_price34', MockEntry("0")).text()),
+                        MockEntry(getattr(self, f'{item_key}_shop12', MockEntry("0")).text()),
+                        MockEntry(getattr(self, f'{item_key}_shop34', MockEntry("0")).text()),
+                        MockEntry(getattr(self, f'{item_key}_space1', MockEntry("0")).text()),
+                        MockEntry(getattr(self, f'{item_key}_space2', MockEntry("0")).text()),
+                        MockEntry(getattr(self, f'{item_key}_space34', MockEntry("0")).text()),
+                    ])
+
+                # Call the event function with all parameters
+                itemsEvent_mp6(*params)
+                
+                # Show success message
+                QMessageBox.information(self, "Success", "Orb modification codes generated and copied to clipboard!")
             else:
                 self.show_error("Mario Party 6 items modification not available")
 

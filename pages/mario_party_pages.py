@@ -33,7 +33,7 @@ from pages.game_tabs.board_specific_mp7_tab import BoardSpecificMp7Tab
 from pages.game_tabs.board_specific_mp8_tab import BoardSpecificMp8Tab
 from pages.game_tabs.items_mp7_tab import ItemsMP7Tab
 from pages.game_tabs.battle_minigame_global_tab import BattleMinigameTab
-
+from pages.game_tabs.items_mp6_tab import ItemsMP6Tab
 
 class MarioPartyPages:
     def __init__(self):
@@ -344,6 +344,11 @@ class MarioPartyPages:
         mg_tab = MinigameTab("marioParty6")
         tab_widget.addTab(mg_tab, "Minigame Replacement")
         
+        # Item Mods tab (Orb Mods)
+        item_tab = ItemsMP6Tab("marioParty6")
+        tab_widget.addTab(item_tab, "Orb Mods")
+        self.all_tabs.append(item_tab)
+
         # Space Replacement tab
         space_tab = SpaceReplacementTab("marioParty6")
         tab_widget.addTab(space_tab, "Space Replacement")

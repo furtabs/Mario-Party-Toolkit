@@ -1699,7 +1699,238 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     duelCapsuleSpaceOdds2 = convert_to_hex_weight(duelCapsuleSpaceOdds2)
     duelCapsuleSpaceOdds34 = convert_to_hex_weight(duelCapsuleSpaceOdds34)
 
-    generatedCode = getOrbModsSeven(mushroomCapsulePrice1, mushroomCapsulePrice2, mushroomCapsulePrice34, mushroomCapsuleShopOdds12, mushroomCapsuleShopOdds34, mushroomCapsuleSpaceOdds1,mushroomCapsuleSpaceOdds2, mushroomCapsuleSpaceOdds34, goldenMushroomCapsulePrice1, goldenMushroomCapsulePrice2, goldenMushroomCapsulePrice34, goldenMushroomCapsuleShopOdds12, goldenMushroomCapsuleShopOdds34, goldenMushroomCapsuleSpaceOdds1, goldenMushroomCapsuleSpaceOdds2, goldenMushroomCapsuleSpaceOdds34, slowMushroomCapsulePrice1, slowMushroomCapsulePrice2, slowMushroomCapsulePrice34, slowMushroomCapsuleShopOdds12, slowMushroomCapsuleShopOdds34, slowMushroomCapsuleSpaceOdds1, slowMushroomCapsuleSpaceOdds2, slowMushroomCapsuleSpaceOdds34, metalMushroomCapsulePrice1, metalMushroomCapsulePrice2, metalMushroomCapsulePrice34, metalMushroomCapsuleShopOdds12, metalMushroomCapsuleShopOdds34, metalMushroomCapsuleSpaceOdds1, metalMushroomCapsuleSpaceOdds2, metalMushroomCapsuleSpaceOdds34, flutterCapsulePrice1, flutterCapsulePrice2, flutterCapsulePrice34, flutterCapsuleShopOdds12, flutterCapsuleShopOdds34, flutterCapsuleSpaceOdds1, flutterCapsuleSpaceOdds2, flutterCapsuleSpaceOdds34, cannonCapsulePrice1, cannonCapsulePrice2, cannonCapsulePrice34, cannonCapsuleShopOdds12, cannonCapsuleShopOdds34, cannonCapsuleSpaceOdds1, cannonCapsuleSpaceOdds2, cannonCapsuleSpaceOdds34, snackCapsulePrice1, snackCapsulePrice2, snackCapsulePrice34, snackCapsuleShopOdds12, snackCapsuleShopOdds34, snackCapsuleSpaceOdds1, snackCapsuleSpaceOdds2, snackCapsuleSpaceOdds34, lakituCapsulePrice1, lakituCapsulePrice2, lakituCapsulePrice34, lakituCapsuleShopOdds12, lakituCapsuleShopOdds34, lakituCapsuleSpaceOdds1, lakituCapsuleSpaceOdds2, lakituCapsuleSpaceOdds34, hammerBroCapsulePrice1, hammerBroCapsulePrice2, hammerBroCapsulePrice34, hammerBroCapsuleShopOdds12, hammerBroCapsuleShopOdds34, hammerBroCapsuleSpaceOdds1, hammerBroCapsuleSpaceOdds2, hammerBroCapsuleSpaceOdds34, piranhaPlantCapsulePrice1, piranhaPlantCapsulePrice2, piranhaPlantCapsulePrice34, piranhaPlantCapsuleShopOdds12, piranhaPlantCapsuleShopOdds34, piranhaPlantCapsuleSpaceOdds1, piranhaPlantCapsuleSpaceOdds2, piranhaPlantCapsuleSpaceOdds34, spearGuyCapsulePrice1, spearGuyCapsulePrice2, spearGuyCapsulePrice34, spearGuyCapsuleShopOdds12, spearGuyCapsuleShopOdds34, spearGuyCapsuleSpaceOdds1, spearGuyCapsuleSpaceOdds2, spearGuyCapsuleSpaceOdds34, kamekCapsulePrice1, kamekCapsulePrice2, kamekCapsulePrice34, kamekCapsuleShopOdds12, kamekCapsuleShopOdds34, kamekCapsuleSpaceOdds1, kamekCapsuleSpaceOdds2, kamekCapsuleSpaceOdds34, toadyCapsulePrice1, toadyCapsulePrice2, toadyCapsulePrice34, toadyCapsuleShopOdds12, toadyCapsuleShopOdds34, toadyCapsuleSpaceOdds1, toadyCapsuleSpaceOdds2, toadyCapsuleSpaceOdds34, mrBlizzardCapsulePrice1, mrBlizzardCapsulePrice2, mrBlizzardCapsulePrice34, mrBlizzardCapsuleShopOdds12, mrBlizzardCapsuleShopOdds34, mrBlizzardCapsuleSpaceOdds1, mrBlizzardCapsuleSpaceOdds2, mrBlizzardCapsuleSpaceOdds34, banditCapsulePrice1, banditCapsulePrice2, banditCapsulePrice34, banditCapsuleShopOdds12, banditCapsuleShopOdds34, banditCapsuleSpaceOdds1, banditCapsuleSpaceOdds2, banditCapsuleSpaceOdds34, pinkBooCapsulePrice1, pinkBooCapsulePrice2, pinkBooCapsulePrice34, pinkBooCapsuleShopOdds12, pinkBooCapsuleShopOdds34, pinkBooCapsuleSpaceOdds1, pinkBooCapsuleSpaceOdds2, pinkBooCapsuleSpaceOdds34, spinyCapsulePrice1, spinyCapsulePrice2, spinyCapsulePrice34, spinyCapsuleShopOdds12, spinyCapsuleShopOdds34, spinyCapsuleSpaceOdds1, spinyCapsuleSpaceOdds2, spinyCapsuleSpaceOdds34, zapCapsulePrice1, zapCapsulePrice2, zapCapsulePrice34, zapCapsuleShopOdds12, zapCapsuleShopOdds34, zapCapsuleSpaceOdds1, zapCapsuleSpaceOdds2, zapCapsuleSpaceOdds34, tweesterCapsulePrice1, tweesterCapsulePrice2, tweesterCapsulePrice34, tweesterCapsuleShopOdds12, tweesterCapsuleShopOdds34, tweesterCapsuleSpaceOdds1, tweesterCapsuleSpaceOdds2, tweesterCapsuleSpaceOdds34, thwompCapsulePrice1, thwompCapsulePrice2, thwompCapsulePrice34, thwompCapsuleShopOdds12, thwompCapsuleShopOdds34, thwompCapsuleSpaceOdds1, thwompCapsuleSpaceOdds2, thwompCapsuleSpaceOdds34, warpCapsulePrice1, warpCapsulePrice2, warpCapsulePrice34, warpCapsuleShopOdds12, warpCapsuleShopOdds34, warpCapsuleSpaceOdds1, warpCapsuleSpaceOdds2, warpCapsuleSpaceOdds34, bombCapsulePrice1, bombCapsulePrice2, bombCapsulePrice34, bombCapsuleShopOdds12, bombCapsuleShopOdds34, bombCapsuleSpaceOdds1, bombCapsuleSpaceOdds2, bombCapsuleSpaceOdds34, fireballCapsulePrice1, fireballCapsulePrice2, fireballCapsulePrice34, fireballCapsuleShopOdds12, fireballCapsuleShopOdds34, fireballCapsuleSpaceOdds1, fireballCapsuleSpaceOdds2, fireballCapsuleSpaceOdds34, flowerCapsulePrice1, flowerCapsulePrice2, flowerCapsulePrice34, flowerCapsuleShopOdds12, flowerCapsuleShopOdds34, flowerCapsuleSpaceOdds1, flowerCapsuleSpaceOdds2, flowerCapsuleSpaceOdds34, eggCapsulePrice1, eggCapsulePrice2, eggCapsulePrice34, eggCapsuleShopOdds12, eggCapsuleShopOdds34, eggCapsuleSpaceOdds1, eggCapsuleSpaceOdds2, eggCapsuleSpaceOdds34, vacuumCapsulePrice1, vacuumCapsulePrice2, vacuumCapsulePrice34, vacuumCapsuleShopOdds12, vacuumCapsuleShopOdds34, vacuumCapsuleSpaceOdds1, vacuumCapsuleSpaceOdds2, vacuumCapsuleSpaceOdds34, magicCapsulePrice1, magicCapsulePrice2, magicCapsulePrice34, magicCapsuleShopOdds12, magicCapsuleShopOdds34, magicCapsuleSpaceOdds1, magicCapsuleSpaceOdds2, magicCapsuleSpaceOdds34, tripleCapsulePrice1, tripleCapsulePrice2, tripleCapsulePrice34, tripleCapsuleShopOdds12, tripleCapsuleShopOdds34, tripleCapsuleSpaceOdds1, tripleCapsuleSpaceOdds2, tripleCapsuleSpaceOdds34, koopaCapsulePrice1, koopaCapsulePrice2, koopaCapsulePrice34, koopaCapsuleShopOdds12, koopaCapsuleShopOdds34, koopaCapsuleSpaceOdds1, koopaCapsuleSpaceOdds2, koopaCapsuleSpaceOdds34, poisonMushroomPrice1, poisonMushroomPrice2, poisonMushroomPrice34, poisonMushroomShopOdds12, poisonMushroomShopOdds34, poisonMushroomSpaceOdds1, poisonMushroomSpaceOdds2, poisonMushroomSpaceOdds34, orbBagCapsulePrice1, orbBagCapsulePrice2, orbBagCapsulePrice34, orbBagCapsuleShopOdds12, orbBagCapsuleShopOdds34, orbBagCapsuleSpaceOdds1, orbBagCapsuleSpaceOdds2, orbBagCapsuleSpaceOdds34, mysteryCapsulePrice1, mysteryCapsulePrice2, mysteryCapsulePrice34, mysteryCapsuleShopOdds12, mysteryCapsuleShopOdds34, mysteryCapsuleSpaceOdds1, mysteryCapsuleSpaceOdds2, mysteryCapsuleSpaceOdds34, dkCapsulePrice1, dkCapsulePrice2, dkCapsulePrice34, dkCapsuleShopOdds12, dkCapsuleShopOdds34, dkCapsuleSpaceOdds1, dkCapsuleSpaceOdds2, dkCapsuleSpaceOdds34, duelCapsulePrice1, duelCapsulePrice2, duelCapsulePrice34, duelCapsuleShopOdds12, duelCapsuleShopOdds34, duelCapsuleSpaceOdds1, duelCapsuleSpaceOdds2, duelCapsuleSpaceOdds34)
+    # Map MP7 style parameters to MP6 style
+    mushroomPrice1 = mushroomCapsulePrice1
+    mushroomPrice2 = mushroomCapsulePrice2
+    mushroomPrice34 = mushroomCapsulePrice34
+    mushroomSpaceOdds1 = mushroomCapsuleSpaceOdds1
+    mushroomSpaceOdds2 = mushroomCapsuleSpaceOdds2
+    mushroomSpaceOdds3 = mushroomCapsuleSpaceOdds34
+    mushroomSpaceOdds4 = mushroomCapsuleSpaceOdds34
+    mushroomShopOdds123 = mushroomCapsuleShopOdds12
+    mushroomShopOdds4 = mushroomCapsuleShopOdds34
+
+    goldenMushroomPrice1 = goldenMushroomCapsulePrice1
+    goldenMushroomPrice2 = goldenMushroomCapsulePrice2
+    goldenMushroomPrice34 = goldenMushroomCapsulePrice34
+    goldenMushroomSpaceOdds1 = goldenMushroomCapsuleSpaceOdds1
+    goldenMushroomSpaceOdds2 = goldenMushroomCapsuleSpaceOdds2
+    goldenMushroomSpaceOdds3 = goldenMushroomCapsuleSpaceOdds34
+    goldenMushroomSpaceOdds4 = goldenMushroomCapsuleSpaceOdds34
+    goldenMushroomShopOdds123 = goldenMushroomCapsuleShopOdds12
+    goldenMushroomShopOdds4 = goldenMushroomCapsuleShopOdds34
+
+    slowMushroomPrice1 = slowMushroomCapsulePrice1
+    slowMushroomPrice2 = slowMushroomCapsulePrice2
+    slowMushroomPrice34 = slowMushroomCapsulePrice34
+    slowMushroomSpaceOdds1 = slowMushroomCapsuleSpaceOdds1
+    slowMushroomSpaceOdds2 = slowMushroomCapsuleSpaceOdds2
+    slowMushroomSpaceOdds3 = slowMushroomCapsuleSpaceOdds34
+    slowMushroomSpaceOdds4 = slowMushroomCapsuleSpaceOdds34
+    slowMushroomShopOdds123 = slowMushroomCapsuleShopOdds12
+    slowMushroomShopOdds4 = slowMushroomCapsuleShopOdds34
+
+    metalMushroomPrice1 = metalMushroomCapsulePrice1
+    metalMushroomPrice2 = metalMushroomCapsulePrice2
+    metalMushroomPrice34 = metalMushroomCapsulePrice34
+    metalMushroomSpaceOdds1 = metalMushroomCapsuleSpaceOdds1
+    metalMushroomSpaceOdds2 = metalMushroomCapsuleSpaceOdds2
+    metalMushroomSpaceOdds3 = metalMushroomCapsuleSpaceOdds34
+    metalMushroomSpaceOdds4 = metalMushroomCapsuleSpaceOdds34
+    metalMushroomShopOdds123 = metalMushroomCapsuleShopOdds12
+    metalMushroomShopOdds4 = metalMushroomCapsuleShopOdds34
+
+    bulletBillPrice1 = cannonCapsulePrice1
+    bulletBillPrice2 = cannonCapsulePrice2
+    bulletBillPrice34 = cannonCapsulePrice34
+    bulletBillSpaceOdds1 = cannonCapsuleSpaceOdds1
+    bulletBillSpaceOdds2 = cannonCapsuleSpaceOdds2
+    bulletBillSpaceOdds3 = cannonCapsuleSpaceOdds34
+    bulletBillSpaceOdds4 = cannonCapsuleSpaceOdds34
+    bulletBillShopOdds123 = cannonCapsuleShopOdds12
+    bulletBillShopOdds4 = cannonCapsuleShopOdds34
+
+    flutterPrice1 = flutterCapsulePrice1
+    flutterPrice2 = flutterCapsulePrice2
+    flutterPrice34 = flutterCapsulePrice34
+    flutterSpaceOdds1 = flutterCapsuleSpaceOdds1
+    flutterSpaceOdds2 = flutterCapsuleSpaceOdds2
+    flutterSpaceOdds3 = flutterCapsuleSpaceOdds34
+    flutterSpaceOdds4 = flutterCapsuleSpaceOdds34
+    flutterShopOdds123 = flutterCapsuleShopOdds12
+    flutterShopOdds4 = flutterCapsuleShopOdds34
+
+    cursedMushroomPrice1 = poisonMushroomPrice1
+    cursedMushroomPrice2 = poisonMushroomPrice2
+    cursedMushroomPrice34 = poisonMushroomPrice34
+    cursedMushroomSpaceOdds1 = poisonMushroomSpaceOdds1
+    cursedMushroomSpaceOdds2 = poisonMushroomSpaceOdds2
+    cursedMushroomSpaceOdds3 = poisonMushroomSpaceOdds34
+    cursedMushroomSpaceOdds4 = poisonMushroomSpaceOdds34
+    cursedMushroomShopOdds123 = poisonMushroomShopOdds12
+    cursedMushroomShopOdds4 = poisonMushroomShopOdds34
+
+    spinyPrice1 = spinyCapsulePrice1
+    spinyPrice2 = spinyCapsulePrice2
+    spinyPrice34 = spinyCapsulePrice34
+    spinySpaceOdds1 = spinyCapsuleSpaceOdds1
+    spinySpaceOdds2 = spinyCapsuleSpaceOdds2
+    spinySpaceOdds3 = spinyCapsuleSpaceOdds34
+    spinySpaceOdds4 = spinyCapsuleSpaceOdds34
+    spinyShopOdds123 = spinyCapsuleShopOdds12
+    spinyShopOdds4 = spinyCapsuleShopOdds34
+
+    goombaPrice1 = lakituCapsulePrice1
+    goombaPrice2 = lakituCapsulePrice2
+    goombaPrice34 = lakituCapsulePrice34
+    goombaSpaceOdds1 = lakituCapsuleSpaceOdds1
+    goombaSpaceOdds2 = lakituCapsuleSpaceOdds2
+    goombaSpaceOdds3 = lakituCapsuleSpaceOdds34
+    goombaSpaceOdds4 = lakituCapsuleSpaceOdds34
+    goombaShopOdds123 = lakituCapsuleShopOdds12
+    goombaShopOdds4 = lakituCapsuleShopOdds34
+
+    plantPrice1 = piranhaPlantCapsulePrice1
+    plantPrice2 = piranhaPlantCapsulePrice2
+    plantPrice34 = piranhaPlantCapsulePrice34
+    plantSpaceOdds1 = piranhaPlantCapsuleSpaceOdds1
+    plantSpaceOdds2 = piranhaPlantCapsuleSpaceOdds2
+    plantSpaceOdds3 = piranhaPlantCapsuleSpaceOdds34
+    plantSpaceOdds4 = piranhaPlantCapsuleSpaceOdds34
+    plantShopOdds123 = piranhaPlantCapsuleShopOdds12
+    plantShopOdds4 = piranhaPlantCapsuleShopOdds34
+
+    kleptoPrice1 = spearGuyCapsulePrice1
+    kleptoPrice2 = spearGuyCapsulePrice2
+    kleptoPrice34 = spearGuyCapsulePrice34
+    kleptoSpaceOdds1 = spearGuyCapsuleSpaceOdds1
+    kleptoSpaceOdds2 = spearGuyCapsuleSpaceOdds2
+    kleptoSpaceOdds3 = spearGuyCapsuleSpaceOdds34
+    kleptoSpaceOdds4 = spearGuyCapsuleSpaceOdds34
+    kleptoShopOdds123 = spearGuyCapsuleShopOdds12
+    kleptoShopOdds4 = spearGuyCapsuleShopOdds34
+
+    toadyPrice1 = toadyCapsulePrice1
+    toadyPrice2 = toadyCapsulePrice2
+    toadyPrice34 = toadyCapsulePrice34
+    toadySpaceOdds1 = toadyCapsuleSpaceOdds1
+    toadySpaceOdds2 = toadyCapsuleSpaceOdds2
+    toadySpaceOdds3 = toadyCapsuleSpaceOdds34
+    toadySpaceOdds4 = toadyCapsuleSpaceOdds34
+    toadyShopOdds123 = toadyCapsuleShopOdds12
+    toadyShopOdds4 = toadyCapsuleShopOdds34
+
+    kamekPrice1 = kamekCapsulePrice1
+    kamekPrice2 = kamekCapsulePrice2
+    kamekPrice34 = kamekCapsulePrice34
+    kamekSpaceOdds1 = kamekCapsuleSpaceOdds1
+    kamekSpaceOdds2 = kamekCapsuleSpaceOdds2
+    kamekSpaceOdds3 = kamekCapsuleSpaceOdds34
+    kamekSpaceOdds4 = kamekCapsuleSpaceOdds34
+    kamekShopOdds123 = kamekCapsuleShopOdds12
+    kamekShopOdds4 = kamekCapsuleShopOdds34
+
+    blizzardPrice1 = mrBlizzardCapsulePrice1
+    blizzardPrice2 = mrBlizzardCapsulePrice2
+    blizzardPrice34 = mrBlizzardCapsulePrice34
+    blizzardSpaceOdds1 = mrBlizzardCapsuleSpaceOdds1
+    blizzardSpaceOdds2 = mrBlizzardCapsuleSpaceOdds2
+    blizzardSpaceOdds3 = mrBlizzardCapsuleSpaceOdds34
+    blizzardSpaceOdds4 = mrBlizzardCapsuleSpaceOdds34
+    blizzardShopOdds123 = mrBlizzardCapsuleShopOdds12
+    blizzardShopOdds4 = mrBlizzardCapsuleShopOdds34
+
+    podobooPrice1 = zapCapsulePrice1
+    podobooPrice2 = zapCapsulePrice2
+    podobooPrice34 = zapCapsulePrice34
+    podobooSpaceOdds1 = zapCapsuleSpaceOdds1
+    podobooSpaceOdds2 = zapCapsuleSpaceOdds2
+    podobooSpaceOdds3 = zapCapsuleSpaceOdds34
+    podobooSpaceOdds4 = zapCapsuleSpaceOdds34
+    podobooShopOdds123 = zapCapsuleShopOdds12
+    podobooShopOdds4 = zapCapsuleShopOdds34
+
+    zapPrice1 = tweesterCapsulePrice1
+    zapPrice2 = tweesterCapsulePrice2
+    zapPrice34 = tweesterCapsulePrice34
+    zapSpaceOdds1 = tweesterCapsuleSpaceOdds1
+    zapSpaceOdds2 = tweesterCapsuleSpaceOdds2
+    zapSpaceOdds3 = tweesterCapsuleSpaceOdds34
+    zapSpaceOdds4 = tweesterCapsuleSpaceOdds34
+    zapShopOdds123 = tweesterCapsuleShopOdds12
+    zapShopOdds4 = tweesterCapsuleShopOdds34
+
+    tweesterPrice1 = thwompCapsulePrice1
+    tweesterPrice2 = thwompCapsulePrice2
+    tweesterPrice34 = thwompCapsulePrice34
+    tweesterSpaceOdds1 = thwompCapsuleSpaceOdds1
+    tweesterSpaceOdds2 = thwompCapsuleSpaceOdds2
+    tweesterSpaceOdds3 = thwompCapsuleSpaceOdds34
+    tweesterSpaceOdds4 = thwompCapsuleSpaceOdds34
+    tweesterShopOdds123 = thwompCapsuleShopOdds12
+    tweesterShopOdds4 = thwompCapsuleShopOdds34
+
+    thwompPrice1 = warpCapsulePrice1
+    thwompPrice2 = warpCapsulePrice2
+    thwompPrice34 = warpCapsulePrice34
+    thwompSpaceOdds1 = warpCapsuleSpaceOdds1
+    thwompSpaceOdds2 = warpCapsuleSpaceOdds2
+    thwompSpaceOdds3 = warpCapsuleSpaceOdds34
+    thwompSpaceOdds4 = warpCapsuleSpaceOdds34
+    thwompShopOdds123 = warpCapsuleShopOdds12
+    thwompShopOdds4 = warpCapsuleShopOdds34
+
+    warpPipePrice1 = bombCapsulePrice1
+    warpPipePrice2 = bombCapsulePrice2
+    warpPipePrice34 = bombCapsulePrice34
+    warpPipeSpaceOdds1 = bombCapsuleSpaceOdds1
+    warpPipeSpaceOdds2 = bombCapsuleSpaceOdds2
+    warpPipeSpaceOdds3 = bombCapsuleSpaceOdds34
+    warpPipeSpaceOdds4 = bombCapsuleSpaceOdds34
+    warpPipeShopOdds123 = bombCapsuleShopOdds12
+    warpPipeShopOdds4 = bombCapsuleShopOdds34
+
+    bombPrice1 = fireballCapsulePrice1
+    bombPrice2 = fireballCapsulePrice2
+    bombPrice34 = fireballCapsulePrice34
+    bombSpaceOdds1 = fireballCapsuleSpaceOdds1
+    bombSpaceOdds2 = fireballCapsuleSpaceOdds2
+    bombSpaceOdds3 = fireballCapsuleSpaceOdds34
+    bombSpaceOdds4 = fireballCapsuleSpaceOdds34
+    bombShopOdds123 = fireballCapsuleShopOdds12
+    bombShopOdds4 = fireballCapsuleShopOdds34
+
+    paraTroopaPrice1 = flowerCapsulePrice1
+    paraTroopaPrice2 = flowerCapsulePrice2
+    paraTroopaPrice34 = flowerCapsulePrice34
+    paraTroopaSpaceOdds1 = flowerCapsuleSpaceOdds1
+    paraTroopaSpaceOdds2 = flowerCapsuleSpaceOdds2
+    paraTroopaSpaceOdds3 = flowerCapsuleSpaceOdds34
+    paraTroopaSpaceOdds4 = flowerCapsuleSpaceOdds34
+    paraTroopaShopOdds123 = flowerCapsuleShopOdds12
+    paraTroopaShopOdds4 = flowerCapsuleShopOdds34
+
+    snackPrice1 = eggCapsulePrice1
+    snackPrice2 = eggCapsulePrice2
+    snackPrice34 = eggCapsulePrice34
+    snackSpaceOdds1 = eggCapsuleSpaceOdds1
+    snackSpaceOdds2 = eggCapsuleSpaceOdds2
+    snackSpaceOdds3 = eggCapsuleSpaceOdds34
+    snackSpaceOdds4 = eggCapsuleSpaceOdds34
+    snackShopOdds123 = eggCapsuleShopOdds12
+    snackShopOdds4 = eggCapsuleShopOdds34
+
+    gaddLightPrice1 = vacuumCapsulePrice1
+    gaddLightPrice2 = vacuumCapsulePrice2
+    gaddLightPrice34 = vacuumCapsulePrice34
+    gaddLightSpaceOdds1 = vacuumCapsuleSpaceOdds1
+    gaddLightSpaceOdds2 = vacuumCapsuleSpaceOdds2
+    gaddLightSpaceOdds3 = vacuumCapsuleSpaceOdds34
+    gaddLightSpaceOdds4 = vacuumCapsuleSpaceOdds34
+    gaddLightShopOdds123 = vacuumCapsuleShopOdds12
+    gaddLightShopOdds4 = vacuumCapsuleShopOdds34
+
+    generatedCode = getOrbModsSix(mushroomPrice1, mushroomPrice2, mushroomPrice34, mushroomSpaceOdds1, mushroomSpaceOdds2, mushroomSpaceOdds3, mushroomSpaceOdds4, mushroomShopOdds123, mushroomShopOdds4, goldenMushroomPrice1, goldenMushroomPrice2, goldenMushroomPrice34, goldenMushroomSpaceOdds1, goldenMushroomSpaceOdds2, goldenMushroomSpaceOdds3, goldenMushroomSpaceOdds4, goldenMushroomShopOdds123, goldenMushroomShopOdds4, slowMushroomPrice1, slowMushroomPrice2, slowMushroomPrice34, slowMushroomSpaceOdds1, slowMushroomSpaceOdds2, slowMushroomSpaceOdds3, slowMushroomSpaceOdds4, slowMushroomShopOdds123, slowMushroomShopOdds4, metalMushroomPrice1, metalMushroomPrice2, metalMushroomPrice34, metalMushroomSpaceOdds1, metalMushroomSpaceOdds2, metalMushroomSpaceOdds3, metalMushroomSpaceOdds4, metalMushroomShopOdds123, metalMushroomShopOdds4, bulletBillPrice1, bulletBillPrice2, bulletBillPrice34, bulletBillSpaceOdds1, bulletBillSpaceOdds2, bulletBillSpaceOdds3, bulletBillSpaceOdds4, bulletBillShopOdds123, bulletBillShopOdds4, flutterPrice1, flutterPrice2, flutterPrice34, flutterSpaceOdds1, flutterSpaceOdds2, flutterSpaceOdds3, flutterSpaceOdds4, flutterShopOdds123, flutterShopOdds4, cursedMushroomPrice1, cursedMushroomPrice2, cursedMushroomPrice34, cursedMushroomSpaceOdds1, cursedMushroomSpaceOdds2, cursedMushroomSpaceOdds3, cursedMushroomSpaceOdds4, cursedMushroomShopOdds123, cursedMushroomShopOdds4, spinyPrice1, spinyPrice2, spinyPrice34, spinySpaceOdds1, spinySpaceOdds2, spinySpaceOdds3, spinySpaceOdds4, spinyShopOdds123, spinyShopOdds4, goombaPrice1, goombaPrice2, goombaPrice34, goombaSpaceOdds1, goombaSpaceOdds2, goombaSpaceOdds3, goombaSpaceOdds4, goombaShopOdds123, goombaShopOdds4, plantPrice1, plantPrice2, plantPrice34, plantSpaceOdds1, plantSpaceOdds2, plantSpaceOdds3, plantSpaceOdds4, plantShopOdds123, plantShopOdds4, kleptoPrice1, kleptoPrice2, kleptoPrice34, kleptoSpaceOdds1, kleptoSpaceOdds2, kleptoSpaceOdds3, kleptoSpaceOdds4, kleptoShopOdds123, kleptoShopOdds4, toadyPrice1, toadyPrice2, toadyPrice34, toadySpaceOdds1, toadySpaceOdds2, toadySpaceOdds3, toadySpaceOdds4, toadyShopOdds123, toadyShopOdds4, kamekPrice1, kamekPrice2, kamekPrice34, kamekSpaceOdds1, kamekSpaceOdds2, kamekSpaceOdds3, kamekSpaceOdds4, kamekShopOdds123, kamekShopOdds4, blizzardPrice1, blizzardPrice2, blizzardPrice34, blizzardSpaceOdds1, blizzardSpaceOdds2, blizzardSpaceOdds3, blizzardSpaceOdds4, blizzardShopOdds123, blizzardShopOdds4, podobooPrice1, podobooPrice2, podobooPrice34, podobooSpaceOdds1, podobooSpaceOdds2, podobooSpaceOdds3, podobooSpaceOdds4, podobooShopOdds123, podobooShopOdds4, zapPrice1, zapPrice2, zapPrice34, zapSpaceOdds1, zapSpaceOdds2, zapSpaceOdds3, zapSpaceOdds4, zapShopOdds123, zapShopOdds4, tweesterPrice1, tweesterPrice2, tweesterPrice34, tweesterSpaceOdds1, tweesterSpaceOdds2, tweesterSpaceOdds3, tweesterSpaceOdds4, tweesterShopOdds123, tweesterShopOdds4, thwompPrice1, thwompPrice2, thwompPrice34, thwompSpaceOdds1, thwompSpaceOdds2, thwompSpaceOdds3, thwompSpaceOdds4, thwompShopOdds123, thwompShopOdds4, warpPipePrice1, warpPipePrice2, warpPipePrice34, warpPipeSpaceOdds1, warpPipeSpaceOdds2, warpPipeSpaceOdds3, warpPipeSpaceOdds4, warpPipeShopOdds123, warpPipeShopOdds4, bombPrice1, bombPrice2, bombPrice34, bombSpaceOdds1, bombSpaceOdds2, bombSpaceOdds3, bombSpaceOdds4, bombShopOdds123, bombShopOdds4, paraTroopaPrice1, paraTroopaPrice2, paraTroopaPrice34, paraTroopaSpaceOdds1, paraTroopaSpaceOdds2, paraTroopaSpaceOdds3, paraTroopaSpaceOdds4, paraTroopaShopOdds123, paraTroopaShopOdds4, snackPrice1, snackPrice2, snackPrice34, snackSpaceOdds1, snackSpaceOdds2, snackSpaceOdds3, snackSpaceOdds4, snackShopOdds123, snackShopOdds4, gaddLightPrice1, gaddLightPrice2, gaddLightPrice34, gaddLightSpaceOdds1, gaddLightSpaceOdds2, gaddLightSpaceOdds3, gaddLightSpaceOdds4, gaddLightShopOdds123, gaddLightShopOdds4)
     generatedCode = generatedCode.strip()
     pyperclip.copy(generatedCode)
 
