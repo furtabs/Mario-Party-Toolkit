@@ -219,7 +219,7 @@ class CoinsTab(QWidget):
             group_layout.addLayout(boo_stars_row)
         
         # Additional coin mods for MP2+
-        if self.game_type != "basic" or self.game_id in ["marioParty2", "marioParty3", "marioParty4", "marioParty5", "marioParty6", "marioParty7", "marioParty8", "marioParty9", "marioPartyDS"]:
+        if self.game_type != "basic" or self.game_id in ["marioParty4", "marioParty5", "marioParty6", "marioParty7"]:
             # Minigame Win Row
             mg_row = QHBoxLayout()
             mg_row.setSpacing(12)

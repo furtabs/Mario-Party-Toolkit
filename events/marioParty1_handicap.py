@@ -15,10 +15,10 @@ def handicapEvent_mp1(p1, p2, p3, p4):
         createDialog("Error", "error", "Please fill out atleast one box.", None)
         return
     
-    p1Handicap = hex(int(p1.text()))[2:].zfill(4).upper() if p1.text() else "DUMMY"
-    p2Handicap = hex(int(p2.text()))[2:].zfill(4).upper() if p2.text() else "DUMMY"
-    p3Handicap = hex(int(p3.text()))[2:].zfill(4).upper() if p3.text() else "DUMMY"
-    p4Handicap = hex(int(p4.text()))[2:].zfill(4).upper() if p4.text() else "DUMMY"
+    p1Handicap = hex(int(p1.text()))[2:].zfill(4).upper() if p1.text() else "0"
+    p2Handicap = hex(int(p2.text()))[2:].zfill(4).upper() if p2.text() else "0"
+    p3Handicap = hex(int(p3.text()))[2:].zfill(4).upper() if p3.text() else "0"
+    p4Handicap = hex(int(p4.text()))[2:].zfill(4).upper() if p4.text() else "0"
 
     # Generate codes for blue and red spaces
     marioPartyThreeHandicap = getStarHandicapP1(p1Handicap, p2Handicap, p3Handicap, p4Handicap)
