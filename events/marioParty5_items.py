@@ -426,15 +426,6 @@ def itemsEvent_mp5(bombCapsulePrice5 = "0", bombCapsuleWeight5 = "0", koopaBankC
         flutterCapsulePrice5 = "00"
 
     try:
-        cursedMushroomCapsulePrice5 = hex(int(cursedMushroomCapsulePrice5))
-        if len(cursedMushroomCapsulePrice5) == 4:
-            cursedMushroomCapsulePrice5 = cursedMushroomCapsulePrice5[2:]
-        elif len(cursedMushroomCapsulePrice5) == 3:
-            cursedMushroomCapsulePrice5 = "0" + cursedMushroomCapsulePrice5[2:]
-    except:
-        cursedMushroomCapsulePrice5 = "00"
-
-    try:
         spinyCapsuleWeight5 = hex(int(spinyCapsuleWeight5))
         if len(spinyCapsuleWeight5) == 4:
             spinyCapsuleWeight5 = spinyCapsuleWeight5[2:]
@@ -487,24 +478,6 @@ def itemsEvent_mp5(bombCapsulePrice5 = "0", bombCapsuleWeight5 = "0", koopaBankC
             plantCapsulePrice5 = "0" + plantCapsulePrice5[2:]
     except:
         plantCapsulePrice5 = "00"
-
-    try:
-        kleptoCapsuleWeight5 = hex(int(kleptoCapsuleWeight5))
-        if len(kleptoCapsuleWeight5) == 4:
-            kleptoCapsuleWeight5 = kleptoCapsuleWeight5[2:]
-        elif len(kleptoCapsuleWeight5) == 3:
-            kleptoCapsuleWeight5 = "0" + kleptoCapsuleWeight5[2:]
-    except:
-        kleptoCapsuleWeight5 = "00"
-
-    try:
-        kleptoCapsulePrice5 = hex(int(kleptoCapsulePrice5))
-        if len(kleptoCapsulePrice5) == 4:
-            kleptoCapsulePrice5 = kleptoCapsulePrice5[2:]
-        elif len(kleptoCapsulePrice5) == 3:
-            kleptoCapsulePrice5 = "0" + kleptoCapsulePrice5[2:]
-    except:
-        kleptoCapsulePrice5 = "00"
 
     try:
         kamekCapsuleWeight5 = hex(int(kamekCapsuleWeight5))
@@ -595,24 +568,6 @@ def itemsEvent_mp5(bombCapsulePrice5 = "0", bombCapsuleWeight5 = "0", koopaBankC
             paraTroopaCapsulePrice5 = "0" + paraTroopaCapsulePrice5[2:]
     except:
         paraTroopaCapsulePrice5 = "00"
-
-    try:
-        magiKoopaCapsuleWeight5 = hex(int(magiKoopaCapsuleWeight5))
-        if len(magiKoopaCapsuleWeight5) == 4:
-            magiKoopaCapsuleWeight5 = magiKoopaCapsuleWeight5[2:]
-        elif len(magiKoopaCapsuleWeight5) == 3:
-            magiKoopaCapsuleWeight5 = "0" + magiKoopaCapsuleWeight5[2:]
-    except:
-        magiKoopaCapsuleWeight5 = "00"
-
-    try:
-        magiKoopaCapsulePrice5 = hex(int(magiKoopaCapsulePrice5))
-        if len(magiKoopaCapsulePrice5) == 4:
-            magiKoopaCapsulePrice5 = magiKoopaCapsulePrice5[2:]
-        elif len(magiKoopaCapsulePrice5) == 3:
-            magiKoopaCapsulePrice5 = "0" + magiKoopaCapsulePrice5[2:]
-    except:
-        magiKoopaCapsulePrice5 = "00"
 
     try:
         ukikiCapsuleWeight5 = hex(int(ukikiCapsuleWeight5))
@@ -775,24 +730,6 @@ def itemsEvent_mp5(bombCapsulePrice5 = "0", bombCapsuleWeight5 = "0", koopaBankC
             dkCapsulePrice5 = "0" + dkCapsulePrice5[2:]
     except:
         dkCapsulePrice5 = "00"
-
-    try:
-        warpPipeCapsuleWeight5 = hex(int(warpPipeCapsuleWeight5))
-        if len(warpPipeCapsuleWeight5) == 4:
-            warpPipeCapsuleWeight5 = warpPipeCapsuleWeight5[2:]
-        elif len(warpPipeCapsuleWeight5) == 3:
-            warpPipeCapsuleWeight5 = "0" + warpPipeCapsuleWeight5[2:]
-    except:
-        warpPipeCapsuleWeight5 = "00"
-
-    try:
-        warpPipeCapsulePrice5 = hex(int(warpPipeCapsulePrice5))
-        if len(warpPipeCapsulePrice5) == 4:
-            warpPipeCapsulePrice5 = warpPipeCapsulePrice5[2:]
-        elif len(warpPipeCapsulePrice5) == 3:
-            warpPipeCapsulePrice5 = "0" + warpPipeCapsulePrice5[2:]
-    except:
-        warpPipeCapsulePrice5 = "00"
 
     try:
         duelCapsuleWeight5 = hex(int(duelCapsuleWeight5))
