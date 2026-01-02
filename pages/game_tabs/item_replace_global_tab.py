@@ -87,11 +87,24 @@ class ItemReplaceTab(QWidget):
         replace_label.setStyleSheet("font-size: 18px; font-weight: 600; min-width: 80px;")
         selection_row.addWidget(replace_label)
         
-        # First item selection
+        # First item selection - populate based on game
         self.item1_combo = ComboBox()
-        self.item1_combo.addItems(["Item Space", "Battle Space", "Bowser Space", "Chance Time Space", "Bank Space"])
-        self.item1_combo.setCurrentText("Item Space")
-        self.item1_combo.setFixedWidth(150)
+        self.item2_combo = ComboBox()
+        
+        if self.game_id == "marioParty2":
+            mp2_items = ["None", "Mushroom", "Skeleton Key", "Plunder Chest", "Bowser BOMB", "Dueling Glove", "Warp Block", "Golden Mushroom", "Boo Bell", "Bowser Suit", "Magic Lamp"]
+            self.item1_combo.addItems(mp2_items)
+            self.item2_combo.addItems(mp2_items)
+            self.item1_combo.setCurrentText("Mushroom")
+            self.item2_combo.setCurrentText("Golden Mushroom")
+        elif self.game_id == "marioParty3":
+            mp3_items = ["None", "Mushroom", "Skeleton Key", "Poison Mushroom", "Reverse Mushroom", "Cellular Shopper", "Warp Block", "Plunder Chest", "Bowser Phone", "Dueling Glove", "Lucky Lamp", "Golden Mushroom", "Boo Bell", "Boo Repellant", "Bowser Suit", "Magic Lamp", "Koopa Kard", "Barter Box", "Lucky Charm", "Wacky Watch"]
+            self.item1_combo.addItems(mp3_items)
+            self.item2_combo.addItems(mp3_items)
+            self.item1_combo.setCurrentText("Mushroom")
+            self.item2_combo.setCurrentText("Golden Mushroom")
+        
+        self.item1_combo.setFixedWidth(180)
         selection_row.addWidget(self.item1_combo)
         
         # "with" label
@@ -99,11 +112,7 @@ class ItemReplaceTab(QWidget):
         with_label.setStyleSheet("font-size: 18px; font-weight: 600; min-width: 40px;")
         selection_row.addWidget(with_label)
         
-        # Second item selection
-        self.item2_combo = ComboBox()
-        self.item2_combo.addItems(["Item Space", "Battle Space", "Bowser Space", "Chance Time Space", "Bank Space"])
-        self.item2_combo.setCurrentText("Battle Space")
-        self.item2_combo.setFixedWidth(150)
+        self.item2_combo.setFixedWidth(180)
         selection_row.addWidget(self.item2_combo)
         
         selection_row.addStretch()
@@ -145,7 +154,7 @@ class ItemReplaceTab(QWidget):
                 itemReplace_mp2(item1, item2, items_list)
             elif self.game_id == "marioParty3" and 'itemReplace_mp3' in globals():
                 # For MP3, we need to pass the items list as the third parameter
-                items_list = ["None", "Mushroom", "Skeleton Key", "Poison Mushroom", "Reverse Mushroo", "Cellular Shopper", "Warp Block", "Plunder Chest", "Bowser Phone", "Dueling Glove", "Lucky Lamp", "Golden Mushroom", "Boo Bell", "Boo Repellant", "Bowser Suit", "Magic Lamp", "Koopa Kard", "Barter Box", "Lucky Charm", "Wacky Watch"]
+                items_list = ["None", "Mushroom", "Skeleton Key", "Poison Mushroom", "Reverse Mushroom", "Cellular Shopper", "Warp Block", "Plunder Chest", "Bowser Phone", "Dueling Glove", "Lucky Lamp", "Golden Mushroom", "Boo Bell", "Boo Repellant", "Bowser Suit", "Magic Lamp", "Koopa Kard", "Barter Box", "Lucky Charm", "Wacky Watch"]
                 itemReplace_mp3(item1, item2, items_list)
             else:
                 self.show_error(f"Item replacement not available for {self.game_id}")
