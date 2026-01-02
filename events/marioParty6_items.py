@@ -1944,9 +1944,9 @@ def savePresetItems7(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         except:
             return 0
 
-    mushroomCapsulePrice1 = "5"
-    mushroomCapsulePrice2 = "5"
-    mushroomCapsulePrice34 = "5"
+    mushroomCapsulePrice1 = get_capsule_value(mushroomCapsulePrice1)
+    mushroomCapsulePrice2 = get_capsule_value(mushroomCapsulePrice2)
+    mushroomCapsulePrice34 = get_capsule_value(mushroomCapsulePrice34)
     mushroomCapsuleShopOdds12 = get_capsule_value(mushroomCapsuleShopOdds12)
     mushroomCapsuleShopOdds34 = get_capsule_value(mushroomCapsuleShopOdds34)
     mushroomCapsuleSpaceOdds1 = get_capsule_value(mushroomCapsuleSpaceOdds1)
