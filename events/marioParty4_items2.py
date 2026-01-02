@@ -12,7 +12,7 @@ import csv
 import math
 import pyperclip
 
-def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds2 = "0", miniMushroomEarlyOdds34 = "0", miniMushroomMidOdds1 = "0", miniMushroomMidOdds2 = "0", miniMushroomMidOdds34 = "0", miniMushroomLateOdds1 = "0", miniMushroomLateOdds2 = "0", miniMushroomLateOdds34 = "0", megaMushroomEarlyOdds1 = "0", megaMushroomEarlyOdds2 = "0", megaMushroomEarlyOdds34 = "0", megaMushroomMidOdds1 = "0", megaMushroomMidOdds2 = "0", megaMushroomMidOdds34 = "0", megaMushroomLateOdds1 = "0", megaMushroomLateOdds2 = "0", megaMushroomLateOdds34 = "0", superMiniMushroomEarlyOdds1 = "0", superMiniMushroomEarlyOdds2 = "0", superMiniMushroomEarlyOdds34 = "0", superMiniMushroomMidOdds1 = "0", superMiniMushroomMidOdds2 = "0", superMiniMushroomMidOdds34 = "0", superMiniMushroomLateOdds1 = "0", superMiniMushroomLateOdds2 = "0", superMiniMushroomLateOdds34 = "0", superMegaMushroomEarlyOdds1 = "0", superMegaMushroomEarlyOdds2 = "0", superMegaMushroomEarlyOdds34 = "0", superMegaMushroomMidOdds1 = "0", superMegaMushroomMidOdds2 = "0", superMegaMushroomMidOdds34 = "0", superMegaMushroomLateOdds1 = "0", superMegaMushroomLateOdds2 = "0", superMegaMushroomLateOdds34 = "0", miniMegaHammerEarlyOdds1 = "0", miniMegaHammerEarlyOdds2 = "0", miniMegaHammerEarlyOdds34 = "0", miniMegaHammerMidOdds1 = "0", miniMegaHammerMidOdds2 = "0", miniMegaHammerMidOdds34 = "0", miniMegaHammerLateOdds1 = "0", miniMegaHammerLateOdds2 = "0", miniMegaHammerLateOdds34 = "0", warpPipeEarlyOdds1 = "0", warpPipeEarlyOdds2 = "0", warpPipeEarlyOdds34 = "0", warpPipeMidOdds1 = "0", warpPipeMidOdds2 = "0", warpPipeMidOdds34 = "0", warpPipeLateOdds1 = "0", warpPipeLateOdds2 = "0", warpPipeLateOdds34 = "0", swapCardEarlyOdds1 = "0", swapCardEarlyOdds2 = "0", swapCardEarlyOdds34 = "0", swapCardMidOdds1 = "0", swapCardMidOdds2 = "0", swapCardMidOdds34 = "0", swapCardLateOdds1 = "0", swapCardLateOdds2 = "0", swapCardLateOdds34 = "0", sparkyStickerEarlyOdds1 = "0", sparkyStickerEarlyOdds2 = "0", sparkyStickerEarlyOdds34 = "0", sparkyStickerMidOdds1 = "0", sparkyStickerMidOdds2 = "0", sparkyStickerMidOdds34 = "0", sparkyStickerLateOdds1 = "0", sparkyStickerLateOdds2 = "0", sparkyStickerLateOdds34 = "0", gaddlightEarlyOdds1 = "0", gaddlightEarlyOdds2 = "0", gaddlightEarlyOdds34 = "0", gaddlightMidOdds1 = "0", gaddlightMidOdds2 = "0", gaddlightMidOdds34 = "0", gaddlightLateOdds1 = "0", gaddlightLateOdds2 = "0", gaddlightLateOdds34 = "0", chompCallEarlyOdds1 = "0", chompCallEarlyOdds2 = "0", chompCallEarlyOdds34 = "0", chompCallMidOdds1 = "0", chompCallMidOdds2 = "0", chompCallMidOdds34 = "0", chompCallLateOdds1 = "0", chompCallLateOdds2 = "0", chompCallLateOdds34 = "0", bowserSuitEarlyOdds1 = "0", bowserSuitEarlyOdds2 = "0", bowserSuitEarlyOdds34 = "0", bowserSuitMidOdds1 = "0", bowserSuitMidOdds2 = "0", bowserSuitMidOdds34 = "0", bowserSuitLateOdds1 = "0", bowserSuitLateOdds2 = "0", bowserSuitLateOdds34 = "0", crystalBallEarlyOdds1 = "0", crystalBallEarlyOdds2 = "0", crystalBallEarlyOdds34 = "0", crystalBallMidOdds1 = "0", crystalBallMidOdds2 = "0", crystalBallMidOdds34 = "0", crystalBallLateOdds1 = "0", crystalBallLateOdds2 = "0", crystalBallLateOdds34 = "0", magicLampEarlyOdds1 = "0", magicLampEarlyOdds2 = "0", magicLampEarlyOdds34 = "0", magicLampMidOdds1 = "0", magicLampMidOdds2 = "0", magicLampMidOdds34 = "0", magicLampLateOdds1 = "0", magicLampLateOdds2 = "0", magicLampLateOdds34 = "0", itemBagEarlyOdds1 = "0", itemBagEarlyOdds2 = "0", itemBagEarlyOdds34 = "0", itemBagMidOdds1 = "0", itemBagMidOdds2 = "0", itemBagMidOdds34 = "0", itemBagLateOdds1 = "0", itemBagLateOdds2 = "0", itemBagLateOdds34 = "0", mushroomEarlyOdds1 = "0", mushroomEarlyOdds2 = "0", mushroomEarlyOdds34 = "0", mushroomMidOdds1 = "0", mushroomMidOdds2 = "0", mushroomMidOdds34 = "0", mushroomLateOdds1 = "0", mushroomLateOdds2 = "0", mushroomLateOdds34 = "0", goldenMushroomEarlyOdds1 = "0", goldenMushroomEarlyOdds2 = "0", goldenMushroomEarlyOdds34 = "0", goldenMushroomMidOdds1 = "0", goldenMushroomMidOdds2 = "0", goldenMushroomMidOdds34 = "0", goldenMushroomLateOdds1 = "0", goldenMushroomLateOdds2 = "0", goldenMushroomLateOdds34 = "0", reverseMushroomEarlyOdds1 = "0", reverseMushroomEarlyOdds2 = "0", reverseMushroomEarlyOdds34 = "0", reverseMushroomMidOdds1 = "0", reverseMushroomMidOdds2 = "0", reverseMushroomMidOdds34 = "0", reverseMushroomLateOdds1 = "0", reverseMushroomLateOdds2 = "0", reverseMushroomLateOdds34 = "0", poisonMushroomEarlyOdds1 = "0", poisonMushroomEarlyOdds2 = "0", poisonMushroomEarlyOdds34 = "0", poisonMushroomMidOdds1 = "0", poisonMushroomMidOdds2 = "0", poisonMushroomMidOdds34 = "0", poisonMushroomLateOdds1 = "0", poisonMushroomLateOdds2 = "0", poisonMushroomLateOdds34 = "0", triplePoisonMushroomEarlyOdds1 = "0", triplePoisonMushroomEarlyOdds2 = "0", triplePoisonMushroomEarlyOdds34 = "0", triplePoisonMushroomMidOdds1 = "0", triplePoisonMushroomMidOdds2 = "0", triplePoisonMushroomMidOdds34 = "0", triplePoisonMushroomLateOdds1 = "0", triplePoisonMushroomLateOdds2 = "0", triplePoisonMushroomLateOdds34 = "0", celluarShopperEarlyOdds1 = "0", celluarShopperEarlyOdds2 = "0", celluarShopperEarlyOdds34 = "0", celluarShopperMidOdds1 = "0", celluarShopperMidOdds2 = "0", celluarShopperMidOdds34 = "0", celluarShopperLateOdds1 = "0", celluarShopperLateOdds2 = "0", celluarShopperLateOdds34 = "0", skeletonKeyEarlyOdds1 = "0", skeletonKeyEarlyOdds2 = "0", skeletonKeyEarlyOdds34 = "0", skeletonKeyMidOdds1 = "0", skeletonKeyMidOdds2 = "0", skeletonKeyMidOdds34 = "0", skeletonKeyLateOdds1 = "0", skeletonKeyLateOdds2 = "0", skeletonKeyLateOdds34 = "0", plunderChestEarlyOdds1 = "0", plunderChestEarlyOdds2 = "0", plunderChestEarlyOdds34 = "0", plunderChestMidOdds1 = "0", plunderChestMidOdds2 = "0", plunderChestMidOdds34 = "0", plunderChestLateOdds1 = "0", plunderChestLateOdds2 = "0", plunderChestLateOdds34 = "0", gaddbrushEarlyOdds1 = "0", gaddbrushEarlyOdds2 = "0", gaddbrushEarlyOdds34 = "0", gaddbrushMidOdds1 = "0", gaddbrushMidOdds2 = "0", gaddbrushMidOdds34 = "0", gaddbrushLateOdds1 = "0", gaddbrushLateOdds2 = "0", gaddbrushLateOdds34 = "0", warpBlockEarlyOdds1 = "0", warpBlockEarlyOdds2 = "0", warpBlockEarlyOdds34 = "0", warpBlockMidOdds1 = "0", warpBlockMidOdds2 = "0", warpBlockMidOdds34 = "0", warpBlockLateOdds1 = "0", warpBlockLateOdds2 = "0", warpBlockLateOdds34 = "0", flyGuyEarlyOdds1 = "0", flyGuyEarlyOdds2 = "0", flyGuyEarlyOdds34 = "0", flyGuyMidOdds1 = "0", flyGuyMidOdds2 = "0", flyGuyMidOdds34 = "0", flyGuyLateOdds1 = "0", flyGuyLateOdds2 = "0", flyGuyLateOdds34 = "0", plusBlockEarlyOdds1 = "0", plusBlockEarlyOdds2 = "0", plusBlockEarlyOdds34 = "0", plusBlockMidOdds1 = "0", plusBlockMidOdds2 = "0", plusBlockMidOdds34 = "0", plusBlockLateOdds1 = "0", plusBlockLateOdds2 = "0", plusBlockLateOdds34 = "0", minusBlockEarlyOdds1 = "0", minusBlockEarlyOdds2 = "0", minusBlockEarlyOdds34 = "0", minusBlockMidOdds1 = "0", minusBlockMidOdds2 = "0", minusBlockMidOdds34 = "0", minusBlockLateOdds1 = "0", minusBlockLateOdds2 = "0", minusBlockLateOdds34 = "0", speedBlockEarlyOdds1 = "0", speedBlockEarlyOdds2 = "0", speedBlockEarlyOdds34 = "0", speedBlockMidOdds1 = "0", speedBlockMidOdds2 = "0", speedBlockMidOdds34 = "0", speedBlockLateOdds1 = "0", speedBlockLateOdds2 = "0", speedBlockLateOdds34 = "0", slowBlockEarlyOdds1 = "0", slowBlockEarlyOdds2 = "0", slowBlockEarlyOdds34 = "0", slowBlockMidOdds1 = "0", slowBlockMidOdds2 = "0", slowBlockMidOdds34 = "0", slowBlockLateOdds1 = "0", slowBlockLateOdds2 = "0", slowBlockLateOdds34 = "0", bowserPhoneEarlyOdds1 = "0", bowserPhoneEarlyOdds2 = "0", bowserPhoneEarlyOdds34 = "0", bowserPhoneMidOdds1 = "0", bowserPhoneMidOdds2 = "0", bowserPhoneMidOdds34 = "0", bowserPhoneLateOdds1 = "0", bowserPhoneLateOdds2 = "0", bowserPhoneLateOdds34 = "0", doubleDipEarlyOdds1 = "0", doubleDipEarlyOdds2 = "0", doubleDipEarlyOdds34 = "0", doubleDipMidOdds1 = "0", doubleDipMidOdds2 = "0", doubleDipMidOdds34 = "0", doubleDipLateOdds1 = "0", doubleDipLateOdds2 = "0", doubleDipLateOdds34 = "0", hiddenBlockCardEarlyOdds1 = "0", hiddenBlockCardEarlyOdds2 = "0", hiddenBlockCardEarlyOdds34 = "0", hiddenBlockCardMidOdds1 = "0", hiddenBlockCardMidOdds2 = "0", hiddenBlockCardMidOdds34 = "0", hiddenBlockCardLateOdds1 = "0", hiddenBlockCardLateOdds2 = "0", hiddenBlockCardLateOdds34 = "0", barterBoxEarlyOdds1 = "0", barterBoxEarlyOdds2 = "0", barterBoxEarlyOdds34 = "0", barterBoxMidOdds1 = "0", barterBoxMidOdds2 = "0", barterBoxMidOdds34 = "0", barterBoxLateOdds1 = "0", barterBoxLateOdds2 = "0", barterBoxLateOdds34 = "0", superWarpPipeEarlyOdds1 = "0", superWarpPipeEarlyOdds2 = "0", superWarpPipeEarlyOdds34 = "0", superWarpPipeMidOdds1 = "0", superWarpPipeMidOdds2 = "0", superWarpPipeMidOdds34 = "0", superWarpPipeLateOdds1 = "0", superWarpPipeLateOdds2 = "0", superWarpPipeLateOdds34 = "0", chanceTimeCharmEarlyOdds1 = "0", chanceTimeCharmEarlyOdds2 = "0", chanceTimeCharmEarlyOdds34 = "0", chanceTimeCharmMidOdds1 = "0", chanceTimeCharmMidOdds2 = "0", chanceTimeCharmMidOdds34 = "0", chanceTimeCharmLateOdds1 = "0", chanceTimeCharmLateOdds2 = "0", chanceTimeCharmLateOdds34 = "0", wackyWatchEarlyOdds1 = "0", wackyWatchEarlyOdds2 = "0", wackyWatchEarlyOdds34 = "0", wackyWatchMidOdds1 = "0", wackyWatchMidOdds2 = "0", wackyWatchMidOdds34 = "0", wackyWatchLateOdds1 = "0", wackyWatchLateOdds2 = "0", wackyWatchLateOdds34 = "0"):
+def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds2 = "0", miniMushroomEarlyOdds34 = "0", miniMushroomMidOdds1 = "0", miniMushroomMidOdds2 = "0", miniMushroomMidOdds34 = "0", miniMushroomLateOdds1 = "0", miniMushroomLateOdds2 = "0", miniMushroomLateOdds34 = "0", megaMushroomEarlyOdds1 = "0", megaMushroomEarlyOdds2 = "0", megaMushroomEarlyOdds34 = "0", megaMushroomMidOdds1 = "0", megaMushroomMidOdds2 = "0", megaMushroomMidOdds34 = "0", megaMushroomLateOdds1 = "0", megaMushroomLateOdds2 = "0", megaMushroomLateOdds34 = "0", superMiniMushroomEarlyOdds1 = "0", superMiniMushroomEarlyOdds2 = "0", superMiniMushroomEarlyOdds34 = "0", superMiniMushroomMidOdds1 = "0", superMiniMushroomMidOdds2 = "0", superMiniMushroomMidOdds34 = "0", superMiniMushroomLateOdds1 = "0", superMiniMushroomLateOdds2 = "0", superMiniMushroomLateOdds34 = "0", superMegaMushroomEarlyOdds1 = "0", superMegaMushroomEarlyOdds2 = "0", superMegaMushroomEarlyOdds34 = "0", superMegaMushroomMidOdds1 = "0", superMegaMushroomMidOdds2 = "0", superMegaMushroomMidOdds34 = "0", superMegaMushroomLateOdds1 = "0", superMegaMushroomLateOdds2 = "0", superMegaMushroomLateOdds34 = "0", miniMegaHammerEarlyOdds1 = "0", miniMegaHammerEarlyOdds2 = "0", miniMegaHammerEarlyOdds34 = "0", miniMegaHammerMidOdds1 = "0", miniMegaHammerMidOdds2 = "0", miniMegaHammerMidOdds34 = "0", miniMegaHammerLateOdds1 = "0", miniMegaHammerLateOdds2 = "0", miniMegaHammerLateOdds34 = "0", warpPipeEarlyOdds1 = "0", warpPipeEarlyOdds2 = "0", warpPipeEarlyOdds34 = "0", warpPipeMidOdds1 = "0", warpPipeMidOdds2 = "0", warpPipeMidOdds34 = "0", warpPipeLateOdds1 = "0", warpPipeLateOdds2 = "0", warpPipeLateOdds34 = "0", swapCardEarlyOdds1 = "0", swapCardEarlyOdds2 = "0", swapCardEarlyOdds34 = "0", swapCardMidOdds1 = "0", swapCardMidOdds2 = "0", swapCardMidOdds34 = "0", swapCardLateOdds1 = "0", swapCardLateOdds2 = "0", swapCardLateOdds34 = "0", sparkyStickerEarlyOdds1 = "0", sparkyStickerEarlyOdds2 = "0", sparkyStickerEarlyOdds34 = "0", sparkyStickerMidOdds1 = "0", sparkyStickerMidOdds2 = "0", sparkyStickerMidOdds34 = "0", sparkyStickerLateOdds1 = "0", sparkyStickerLateOdds2 = "0", sparkyStickerLateOdds34 = "0", gaddlightEarlyOdds1 = "0", gaddlightEarlyOdds2 = "0", gaddlightEarlyOdds34 = "0", gaddlightMidOdds1 = "0", gaddlightMidOdds2 = "0", gaddlightMidOdds34 = "0", gaddlightLateOdds1 = "0", gaddlightLateOdds2 = "0", gaddlightLateOdds34 = "0", chompCallEarlyOdds1 = "0", chompCallEarlyOdds2 = "0", chompCallEarlyOdds34 = "0", chompCallMidOdds1 = "0", chompCallMidOdds2 = "0", chompCallMidOdds34 = "0", chompCallLateOdds1 = "0", chompCallLateOdds2 = "0", chompCallLateOdds34 = "0", bowserSuitEarlyOdds1 = "0", bowserSuitEarlyOdds2 = "0", bowserSuitEarlyOdds34 = "0", bowserSuitMidOdds1 = "0", bowserSuitMidOdds2 = "0", bowserSuitMidOdds34 = "0", bowserSuitLateOdds1 = "0", bowserSuitLateOdds2 = "0", bowserSuitLateOdds34 = "0", crystalBallEarlyOdds1 = "0", crystalBallEarlyOdds2 = "0", crystalBallEarlyOdds34 = "0", crystalBallMidOdds1 = "0", crystalBallMidOdds2 = "0", crystalBallMidOdds34 = "0", crystalBallLateOdds1 = "0", crystalBallLateOdds2 = "0", crystalBallLateOdds34 = "0", magicLampEarlyOdds1 = "0", magicLampEarlyOdds2 = "0", magicLampEarlyOdds34 = "0", magicLampMidOdds1 = "0", magicLampMidOdds2 = "0", magicLampMidOdds34 = "0", magicLampLateOdds1 = "0", magicLampLateOdds2 = "0", magicLampLateOdds34 = "0", itemBagEarlyOdds1 = "0", itemBagEarlyOdds2 = "0", itemBagEarlyOdds34 = "0", itemBagMidOdds1 = "0", itemBagMidOdds2 = "0", itemBagMidOdds34 = "0", itemBagLateOdds1 = "0", itemBagLateOdds2 = "0", itemBagLateOdds34 = "0", mushroomEarlyOdds1 = "0", mushroomEarlyOdds2 = "0", mushroomEarlyOdds34 = "0", mushroomMidOdds1 = "0", mushroomMidOdds2 = "0", mushroomMidOdds34 = "0", mushroomLateOdds1 = "0", mushroomLateOdds2 = "0", mushroomLateOdds34 = "0", goldenMushroomEarlyOdds1 = "0", goldenMushroomEarlyOdds2 = "0", goldenMushroomEarlyOdds34 = "0", goldenMushroomMidOdds1 = "0", goldenMushroomMidOdds2 = "0", goldenMushroomMidOdds34 = "0", goldenMushroomLateOdds1 = "0", goldenMushroomLateOdds2 = "0", goldenMushroomLateOdds34 = "0", reverseMushroomEarlyOdds1 = "0", reverseMushroomEarlyOdds2 = "0", reverseMushroomEarlyOdds34 = "0", reverseMushroomMidOdds1 = "0", reverseMushroomMidOdds2 = "0", reverseMushroomMidOdds34 = "0", reverseMushroomLateOdds1 = "0", reverseMushroomLateOdds2 = "0", reverseMushroomLateOdds34 = "0", poisonMushroomEarlyOdds1 = "0", poisonMushroomEarlyOdds2 = "0", poisonMushroomEarlyOdds34 = "0", poisonMushroomMidOdds1 = "0", poisonMushroomMidOdds2 = "0", poisonMushroomMidOdds34 = "0", poisonMushroomLateOdds1 = "0", poisonMushroomLateOdds2 = "0", poisonMushroomLateOdds34 = "0", triplePoisonMushroomEarlyOdds1 = "0", triplePoisonMushroomEarlyOdds2 = "0", triplePoisonMushroomEarlyOdds34 = "0", triplePoisonMushroomMidOdds1 = "0", triplePoisonMushroomMidOdds2 = "0", triplePoisonMushroomMidOdds34 = "0", triplePoisonMushroomLateOdds1 = "0", triplePoisonMushroomLateOdds2 = "0", triplePoisonMushroomLateOdds34 = "0", celluarShopperEarlyOdds1 = "0", celluarShopperEarlyOdds2 = "0", celluarShopperEarlyOdds34 = "0", celluarShopperMidOdds1 = "0", celluarShopperMidOdds2 = "0", celluarShopperMidOdds34 = "0", celluarShopperLateOdds1 = "0", celluarShopperLateOdds2 = "0", celluarShopperLateOdds34 = "0", skeletonKeyEarlyOdds1 = "0", skeletonKeyEarlyOdds2 = "0", skeletonKeyEarlyOdds34 = "0", skeletonKeyMidOdds1 = "0", skeletonKeyMidOdds2 = "0", skeletonKeyMidOdds34 = "0", skeletonKeyLateOdds1 = "0", skeletonKeyLateOdds2 = "0", skeletonKeyLateOdds34 = "0", plunderChestEarlyOdds1 = "0", plunderChestEarlyOdds2 = "0", plunderChestEarlyOdds34 = "0", plunderChestMidOdds1 = "0", plunderChestMidOdds2 = "0", plunderChestMidOdds34 = "0", plunderChestLateOdds1 = "0", plunderChestLateOdds2 = "0", plunderChestLateOdds34 = "0", gaddbrushEarlyOdds1 = "0", gaddbrushEarlyOdds2 = "0", gaddbrushEarlyOdds34 = "0", gaddbrushMidOdds1 = "0", gaddbrushMidOdds2 = "0", gaddbrushMidOdds34 = "0", gaddbrushLateOdds1 = "0", gaddbrushLateOdds2 = "0", gaddbrushLateOdds34 = "0", warpBlockEarlyOdds1 = "0", warpBlockEarlyOdds2 = "0", warpBlockEarlyOdds34 = "0", warpBlockMidOdds1 = "0", warpBlockMidOdds2 = "0", warpBlockMidOdds34 = "0", warpBlockLateOdds1 = "0", warpBlockLateOdds2 = "0", warpBlockLateOdds34 = "0", flyGuyEarlyOdds1 = "0", flyGuyEarlyOdds2 = "0", flyGuyEarlyOdds34 = "0", flyGuyMidOdds1 = "0", flyGuyMidOdds2 = "0", flyGuyMidOdds34 = "0", flyGuyLateOdds1 = "0", flyGuyLateOdds2 = "0", flyGuyLateOdds34 = "0", plusBlockEarlyOdds1 = "0", plusBlockEarlyOdds2 = "0", plusBlockEarlyOdds34 = "0", plusBlockMidOdds1 = "0", plusBlockMidOdds2 = "0", plusBlockMidOdds34 = "0", plusBlockLateOdds1 = "0", plusBlockLateOdds2 = "0", plusBlockLateOdds34 = "0", minusBlockEarlyOdds1 = "0", minusBlockEarlyOdds2 = "0", minusBlockEarlyOdds34 = "0", minusBlockMidOdds1 = "0", minusBlockMidOdds2 = "0", minusBlockMidOdds34 = "0", minusBlockLateOdds1 = "0", minusBlockLateOdds2 = "0", minusBlockLateOdds34 = "0", speedBlockEarlyOdds1 = "0", speedBlockEarlyOdds2 = "0", speedBlockEarlyOdds34 = "0", speedBlockMidOdds1 = "0", speedBlockMidOdds2 = "0", speedBlockMidOdds34 = "0", speedBlockLateOdds1 = "0", speedBlockLateOdds2 = "0", speedBlockLateOdds34 = "0", slowBlockEarlyOdds1 = "0", slowBlockEarlyOdds2 = "0", slowBlockEarlyOdds34 = "0", slowBlockMidOdds1 = "0", slowBlockMidOdds2 = "0", slowBlockMidOdds34 = "0", slowBlockLateOdds1 = "0", slowBlockLateOdds2 = "0", slowBlockLateOdds34 = "0", bowserPhoneEarlyOdds1 = "0", bowserPhoneEarlyOdds2 = "0", bowserPhoneEarlyOdds34 = "0", bowserPhoneMidOdds1 = "0", bowserPhoneMidOdds2 = "0", bowserPhoneMidOdds34 = "0", bowserPhoneLateOdds1 = "0", bowserPhoneLateOdds2 = "0", bowserPhoneLateOdds34 = "0", doubleDipEarlyOdds1 = "0", doubleDipEarlyOdds2 = "0", doubleDipEarlyOdds34 = "0", doubleDipMidOdds1 = "0", doubleDipMidOdds2 = "0", doubleDipMidOdds34 = "0", doubleDipLateOdds1 = "0", doubleDipLateOdds2 = "0", doubleDipLateOdds34 = "0", hiddenBlockCardEarlyOdds1 = "0", hiddenBlockCardEarlyOdds2 = "0", hiddenBlockCardEarlyOdds34 = "0", hiddenBlockCardMidOdds1 = "0", hiddenBlockCardMidOdds2 = "0", hiddenBlockCardMidOdds34 = "0", hiddenBlockCardLateOdds1 = "0", hiddenBlockCardLateOdds2 = "0", hiddenBlockCardLateOdds34 = "0", barterBoxEarlyOdds1 = "0", barterBoxEarlyOdds2 = "0", barterBoxEarlyOdds34 = "0", barterBoxMidOdds1 = "0", barterBoxMidOdds2 = "0", barterBoxMidOdds34 = "0", barterBoxLateOdds1 = "0", barterBoxLateOdds2 = "0", barterBoxLateOdds34 = "0", superWarpPipeEarlyOdds1 = "0", superWarpPipeEarlyOdds2 = "0", superWarpPipeEarlyOdds34 = "0", superWarpPipeMidOdds1 = "0", superWarpPipeMidOdds2 = "0", superWarpPipeMidOdds34 = "0", superWarpPipeLateOdds1 = "0", superWarpPipeLateOdds2 = "0", superWarpPipeLateOdds34 = "0", chanceTimeCharmEarlyOdds1 = "0", chanceTimeCharmEarlyOdds2 = "0", chanceTimeCharmEarlyOdds34 = "0", chanceTimeCharmMidOdds1 = "0", chanceTimeCharmMidOdds2 = "0", chanceTimeCharmMidOdds34 = "0", chanceTimeCharmLateOdds1 = "0", chanceTimeCharmLateOdds2 = "0", chanceTimeCharmLateOdds34 = "0", wackyWatchEarlyOdds1 = "0", wackyWatchEarlyOdds2 = "0", wackyWatchEarlyOdds34 = "0", wackyWatchMidOdds1 = "0", wackyWatchMidOdds2 = "0", wackyWatchMidOdds34 = "0", wackyWatchLateOdds1 = "0", wackyWatchLateOdds2 = "0", wackyWatchLateOdds34 = "0", mysterySphereEarlyOdds1 = "0", mysterySphereEarlyOdds2 = "0", mysterySphereEarlyOdds34 = "0", mysterySphereMidOdds1 = "0", mysterySphereMidOdds2 = "0", mysterySphereMidOdds34 = "0", mysterySphereLateOdds1 = "0", mysterySphereLateOdds2 = "0", mysterySphereLateOdds34 = "0", duelingSwordsEarlyOdds1 = "0", duelingSwordsEarlyOdds2 = "0", duelingSwordsEarlyOdds34 = "0", duelingSwordsMidOdds1 = "0", duelingSwordsMidOdds2 = "0", duelingSwordsMidOdds34 = "0", duelingSwordsLateOdds1 = "0", duelingSwordsLateOdds2 = "0", duelingSwordsLateOdds34 = "0", doubleStarCardEarlyOdds1 = "0", doubleStarCardEarlyOdds2 = "0", doubleStarCardEarlyOdds34 = "0", doubleStarCardMidOdds1 = "0", doubleStarCardMidOdds2 = "0", doubleStarCardMidOdds34 = "0", doubleStarCardLateOdds1 = "0", doubleStarCardLateOdds2 = "0", doubleStarCardLateOdds34 = "0"):
     # Mini Mushroom
     miniMushroomEarlyOdds1 = get_capsule_value(miniMushroomEarlyOdds1)
     miniMushroomEarlyOdds2 = get_capsule_value(miniMushroomEarlyOdds2)
@@ -409,6 +409,39 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
     wackyWatchLateOdds2 = get_capsule_value(wackyWatchLateOdds2)
     wackyWatchLateOdds34 = get_capsule_value(wackyWatchLateOdds34)
 
+    # Mystery Sphere: DX
+    mysterySphereEarlyOdds1 = get_capsule_value(mysterySphereEarlyOdds1)
+    mysterySphereEarlyOdds2 = get_capsule_value(mysterySphereEarlyOdds2)
+    mysterySphereEarlyOdds34 = get_capsule_value(mysterySphereEarlyOdds34)
+    mysterySphereMidOdds1 = get_capsule_value(mysterySphereMidOdds1)
+    mysterySphereMidOdds2 = get_capsule_value(mysterySphereMidOdds2)
+    mysterySphereMidOdds34 = get_capsule_value(mysterySphereMidOdds34)
+    mysterySphereLateOdds1 = get_capsule_value(mysterySphereLateOdds1)
+    mysterySphereLateOdds2 = get_capsule_value(mysterySphereLateOdds2)
+    mysterySphereLateOdds34 = get_capsule_value(mysterySphereLateOdds34)
+
+    # Dueling Swords: DX
+    duelingSwordsEarlyOdds1 = get_capsule_value(duelingSwordsEarlyOdds1)
+    duelingSwordsEarlyOdds2 = get_capsule_value(duelingSwordsEarlyOdds2)
+    duelingSwordsEarlyOdds34 = get_capsule_value(duelingSwordsEarlyOdds34)
+    duelingSwordsMidOdds1 = get_capsule_value(duelingSwordsMidOdds1)
+    duelingSwordsMidOdds2 = get_capsule_value(duelingSwordsMidOdds2)
+    duelingSwordsMidOdds34 = get_capsule_value(duelingSwordsMidOdds34)
+    duelingSwordsLateOdds1 = get_capsule_value(duelingSwordsLateOdds1)
+    duelingSwordsLateOdds2 = get_capsule_value(duelingSwordsLateOdds2)
+    duelingSwordsLateOdds34 = get_capsule_value(duelingSwordsLateOdds34)
+
+    # Double Star Card: DX
+    doubleStarCardEarlyOdds1 = get_capsule_value(doubleStarCardEarlyOdds1)
+    doubleStarCardEarlyOdds2 = get_capsule_value(doubleStarCardEarlyOdds2)
+    doubleStarCardEarlyOdds34 = get_capsule_value(doubleStarCardEarlyOdds34)
+    doubleStarCardMidOdds1 = get_capsule_value(doubleStarCardMidOdds1)
+    doubleStarCardMidOdds2 = get_capsule_value(doubleStarCardMidOdds2)
+    doubleStarCardMidOdds34 = get_capsule_value(doubleStarCardMidOdds34)
+    doubleStarCardLateOdds1 = get_capsule_value(doubleStarCardLateOdds1)
+    doubleStarCardLateOdds2 = get_capsule_value(doubleStarCardLateOdds2)
+    doubleStarCardLateOdds34 = get_capsule_value(doubleStarCardLateOdds34)
+
     earlyOdds1 = [
         miniMushroomEarlyOdds1,
         megaMushroomEarlyOdds1,
@@ -446,6 +479,9 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
         superWarpPipeEarlyOdds1,
         chanceTimeCharmEarlyOdds1,
         wackyWatchEarlyOdds1,
+        mysterySphereEarlyOdds1,
+        duelingSwordsEarlyOdds1,
+        doubleStarCardEarlyOdds1
     ]
     
     earlyOdds2 = [
@@ -485,6 +521,9 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
         superWarpPipeEarlyOdds2,
         chanceTimeCharmEarlyOdds2,
         wackyWatchEarlyOdds2,
+        mysterySphereEarlyOdds2,
+        duelingSwordsEarlyOdds2,
+        doubleStarCardEarlyOdds2
     ]
 
     earlyOdds34 = [
@@ -524,6 +563,9 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
         superWarpPipeEarlyOdds34,
         chanceTimeCharmEarlyOdds34,
         wackyWatchEarlyOdds34,
+        mysterySphereEarlyOdds34,
+        duelingSwordsEarlyOdds34,
+        doubleStarCardEarlyOdds34
     ]
     
     midOdds1 = [
@@ -563,6 +605,9 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
         superWarpPipeMidOdds1,
         chanceTimeCharmMidOdds1,
         wackyWatchMidOdds1,
+        mysterySphereMidOdds1,
+        duelingSwordsMidOdds1,
+        doubleStarCardMidOdds1
     ]
 
     midOdds2 = [
@@ -602,6 +647,9 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
         superWarpPipeMidOdds2,
         chanceTimeCharmMidOdds2,
         wackyWatchMidOdds2,
+        mysterySphereMidOdds2,
+        duelingSwordsMidOdds2,
+        doubleStarCardMidOdds2
     ]
 
     midOdds34 = [
@@ -641,6 +689,9 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
         superWarpPipeMidOdds34,
         chanceTimeCharmMidOdds34,
         wackyWatchMidOdds34,
+        mysterySphereMidOdds34,
+        duelingSwordsMidOdds34,
+        doubleStarCardMidOdds34
     ]
 
     lateOdds1 = [
@@ -680,6 +731,9 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
         superWarpPipeLateOdds1,
         chanceTimeCharmLateOdds1,
         wackyWatchLateOdds1,
+        mysterySphereLateOdds1,
+        duelingSwordsLateOdds1,
+        doubleStarCardLateOdds1
     ]
 
     lateOdds2 = [
@@ -719,6 +773,9 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
         superWarpPipeLateOdds2,
         chanceTimeCharmLateOdds2,
         wackyWatchLateOdds2,
+        mysterySphereLateOdds2,
+        duelingSwordsLateOdds2,
+        doubleStarCardLateOdds2
     ]
 
     lateOdds34 = [
@@ -758,6 +815,9 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
         superWarpPipeLateOdds34,
         chanceTimeCharmLateOdds34,
         wackyWatchLateOdds34,
+        mysterySphereLateOdds34,
+        duelingSwordsLateOdds34,
+        doubleStarCardLateOdds34
     ]
 
     earlyOdds1Weights = sum(int(weight) if weight else 0 for weight in earlyOdds1)
@@ -1113,6 +1173,39 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
     wackyWatchLateOdds1 = calculateWeight(wackyWatchLateOdds1, lateOdds1Weights)
     wackyWatchLateOdds2 = calculateWeight(wackyWatchLateOdds2, lateOdds2Weights)
     wackyWatchLateOdds34 = calculateWeight(wackyWatchLateOdds34, lateOdds34Weights)
+
+    # Mystery Sphere: DX
+    mysterySphereEarlyOdds1 = calculateWeight(mysterySphereEarlyOdds1, earlyOdds1Weights)
+    mysterySphereEarlyOdds2 = calculateWeight(mysterySphereEarlyOdds2, earlyOdds2Weights)
+    mysterySphereEarlyOdds34 = calculateWeight(mysterySphereEarlyOdds34, earlyOdds34Weights)
+    mysterySphereMidOdds1 = calculateWeight(mysterySphereMidOdds1, midOdds1Weights)
+    mysterySphereMidOdds2 = calculateWeight(mysterySphereMidOdds2, midOdds2Weights)
+    mysterySphereMidOdds34 = calculateWeight(mysterySphereMidOdds34, midOdds34Weights)
+    mysterySphereLateOdds1 = calculateWeight(mysterySphereLateOdds1, lateOdds1Weights)
+    mysterySphereLateOdds2 = calculateWeight(mysterySphereLateOdds2, lateOdds2Weights)
+    mysterySphereLateOdds34 = calculateWeight(mysterySphereLateOdds34, lateOdds34Weights)
+
+    # Dueling Swords: DX
+    duelingSwordsEarlyOdds1 = calculateWeight(duelingSwordsEarlyOdds1, earlyOdds1Weights)
+    duelingSwordsEarlyOdds2 = calculateWeight(duelingSwordsEarlyOdds2, earlyOdds2Weights)
+    duelingSwordsEarlyOdds34 = calculateWeight(duelingSwordsEarlyOdds34, earlyOdds34Weights)
+    duelingSwordsMidOdds1 = calculateWeight(duelingSwordsMidOdds1, midOdds1Weights)
+    duelingSwordsMidOdds2 = calculateWeight(duelingSwordsMidOdds2, midOdds2Weights)
+    duelingSwordsMidOdds34 = calculateWeight(duelingSwordsMidOdds34, midOdds34Weights)
+    duelingSwordsLateOdds1 = calculateWeight(duelingSwordsLateOdds1, lateOdds1Weights)
+    duelingSwordsLateOdds2 = calculateWeight(duelingSwordsLateOdds2, lateOdds2Weights)
+    duelingSwordsLateOdds34 = calculateWeight(duelingSwordsLateOdds34, lateOdds34Weights)
+
+    # Double Star Card: DX
+    doubleStarCardEarlyOdds1 = calculateWeight(doubleStarCardEarlyOdds1, earlyOdds1Weights)
+    doubleStarCardEarlyOdds2 = calculateWeight(doubleStarCardEarlyOdds2, earlyOdds2Weights)
+    doubleStarCardEarlyOdds34 = calculateWeight(doubleStarCardEarlyOdds34, earlyOdds34Weights)
+    doubleStarCardMidOdds1 = calculateWeight(doubleStarCardMidOdds1, midOdds1Weights)
+    doubleStarCardMidOdds2 = calculateWeight(doubleStarCardMidOdds2, midOdds2Weights)
+    doubleStarCardMidOdds34 = calculateWeight(doubleStarCardMidOdds34, midOdds34Weights)
+    doubleStarCardLateOdds1 = calculateWeight(doubleStarCardLateOdds1, lateOdds1Weights)
+    doubleStarCardLateOdds2 = calculateWeight(doubleStarCardLateOdds2, lateOdds2Weights)
+    doubleStarCardLateOdds34 = calculateWeight(doubleStarCardLateOdds34, lateOdds34Weights)
 
     # Warp Block
     warpBlockEarlyOdds1 = calculateWeight(warpBlockEarlyOdds1, earlyOdds1Weights)
@@ -2231,6 +2324,65 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
     if lateOdds34Max == 'wackyWatchLateOdds34':
         wackyWatchLateOdds34 += (100 - wackyWatchLateOdds34)
 
+    # Mystery Sphere: DX
+    if earlyOdds1Max == 'mysterySphereEarlyOdds1':
+        mysterySphereEarlyOdds1 += (100 - mysterySphereEarlyOdds1)
+    if earlyOdds2Max == 'mysterySphereEarlyOdds2':
+        mysterySphereEarlyOdds2 += (100 - mysterySphereEarlyOdds2)
+    if earlyOdds34Max == 'mysterySphereEarlyOdds34':
+        mysterySphereEarlyOdds34 += (100 - mysterySphereEarlyOdds34)
+    if midOdds1Max == 'mysterySphereMidOdds1':
+        mysterySphereMidOdds1 += (100 - mysterySphereMidOdds1)
+    if midOdds2Max == 'mysterySphereMidOdds2':
+        mysterySphereMidOdds2 += (100 - mysterySphereMidOdds2)
+    if midOdds34Max == 'mysterySphereMidOdds34':
+        mysterySphereMidOdds34 += (100 - mysterySphereMidOdds34)
+    if lateOdds1Max == 'mysterySphereLateOdds1':
+        mysterySphereLateOdds1 += (100 - mysterySphereLateOdds1)
+    if lateOdds2Max == 'mysterySphereLateOdds2':
+        mysterySphereLateOdds2 += (100 - mysterySphereLateOdds2)
+    if lateOdds34Max == 'mysterySphereLateOdds34':
+        mysterySphereLateOdds34 += (100 - mysterySphereLateOdds34)
+
+    # Dueling Swords: DX
+    if earlyOdds1Max == 'duelingSwordsEarlyOdds1':
+        duelingSwordsEarlyOdds1 += (100 - duelingSwordsEarlyOdds1)
+    if earlyOdds2Max == 'duelingSwordsEarlyOdds2':
+        duelingSwordsEarlyOdds2 += (100 - duelingSwordsEarlyOdds2)
+    if earlyOdds34Max == 'duelingSwordsEarlyOdds34':
+        duelingSwordsEarlyOdds34 += (100 - duelingSwordsEarlyOdds34)
+    if midOdds1Max == 'duelingSwordsMidOdds1':
+        duelingSwordsMidOdds1 += (100 - duelingSwordsMidOdds1)
+    if midOdds2Max == 'duelingSwordsMidOdds2':
+        duelingSwordsMidOdds2 += (100 - duelingSwordsMidOdds2)
+    if midOdds34Max == 'duelingSwordsMidOdds34':
+        duelingSwordsMidOdds34 += (100 - duelingSwordsMidOdds34)
+    if lateOdds1Max == 'duelingSwordsLateOdds1':
+        duelingSwordsLateOdds1 += (100 - duelingSwordsLateOdds1)
+    if lateOdds2Max == 'duelingSwordsLateOdds2':
+        duelingSwordsLateOdds2 += (100 - duelingSwordsLateOdds2)
+    if lateOdds34Max == 'duelingSwordsLateOdds34':
+        duelingSwordsLateOdds34 += (100 - duelingSwordsLateOdds34)
+
+    # Double Star Card: DX
+    if earlyOdds1Max == 'doubleStarCardEarlyOdds1':
+        doubleStarCardEarlyOdds1 += (100 - doubleStarCardEarlyOdds1)
+    if earlyOdds2Max == 'doubleStarCardEarlyOdds2':
+        doubleStarCardEarlyOdds2 += (100 - doubleStarCardEarlyOdds2)
+    if earlyOdds34Max == 'doubleStarCardEarlyOdds34':
+        doubleStarCardEarlyOdds34 += (100 - doubleStarCardEarlyOdds34)
+    if midOdds1Max == 'doubleStarCardMidOdds1':
+        doubleStarCardMidOdds1 += (100 - doubleStarCardMidOdds1)
+    if midOdds2Max == 'doubleStarCardMidOdds2':
+        doubleStarCardMidOdds2 += (100 - doubleStarCardMidOdds2)
+    if midOdds34Max == 'doubleStarCardMidOdds34':
+        doubleStarCardMidOdds34 += (100 - doubleStarCardMidOdds34)
+    if lateOdds1Max == 'doubleStarCardLateOdds1':
+        doubleStarCardLateOdds1 += (100 - doubleStarCardLateOdds1)
+    if lateOdds2Max == 'doubleStarCardLateOdds2':
+        doubleStarCardLateOdds2 += (100 - doubleStarCardLateOdds2)
+    if lateOdds34Max == 'doubleStarCardLateOdds34':
+        doubleStarCardLateOdds34 += (100 - doubleStarCardLateOdds34)
 
     # Double Dip: DX
     if earlyOdds1Max == 'doubleDipEarlyOdds1':
@@ -2626,6 +2778,39 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
     wackyWatchLateOdds1 = str(wackyWatchLateOdds1)
     wackyWatchLateOdds2 = str(wackyWatchLateOdds2)
     wackyWatchLateOdds34 = str(wackyWatchLateOdds34)
+
+    # Mystery Sphere: DX
+    mysterySphereEarlyOdds1 = str(mysterySphereEarlyOdds1)
+    mysterySphereEarlyOdds2 = str(mysterySphereEarlyOdds2)
+    mysterySphereEarlyOdds34 = str(mysterySphereEarlyOdds34)
+    mysterySphereMidOdds1 = str(mysterySphereMidOdds1)
+    mysterySphereMidOdds2 = str(mysterySphereMidOdds2)
+    mysterySphereMidOdds34 = str(mysterySphereMidOdds34)
+    mysterySphereLateOdds1 = str(mysterySphereLateOdds1)
+    mysterySphereLateOdds2 = str(mysterySphereLateOdds2)
+    mysterySphereLateOdds34 = str(mysterySphereLateOdds34)
+
+    # Dueling Swords: DX
+    duelingSwordsEarlyOdds1 = str(duelingSwordsEarlyOdds1)
+    duelingSwordsEarlyOdds2 = str(duelingSwordsEarlyOdds2)
+    duelingSwordsEarlyOdds34 = str(duelingSwordsEarlyOdds34)
+    duelingSwordsMidOdds1 = str(duelingSwordsMidOdds1)
+    duelingSwordsMidOdds2 = str(duelingSwordsMidOdds2)
+    duelingSwordsMidOdds34 = str(duelingSwordsMidOdds34)
+    duelingSwordsLateOdds1 = str(duelingSwordsLateOdds1)
+    duelingSwordsLateOdds2 = str(duelingSwordsLateOdds2)
+    duelingSwordsLateOdds34 = str(duelingSwordsLateOdds34)
+
+    # Double Star Card: DX
+    doubleStarCardEarlyOdds1 = str(doubleStarCardEarlyOdds1)
+    doubleStarCardEarlyOdds2 = str(doubleStarCardEarlyOdds2)
+    doubleStarCardEarlyOdds34 = str(doubleStarCardEarlyOdds34)
+    doubleStarCardMidOdds1 = str(doubleStarCardMidOdds1)
+    doubleStarCardMidOdds2 = str(doubleStarCardMidOdds2)
+    doubleStarCardMidOdds34 = str(doubleStarCardMidOdds34)
+    doubleStarCardLateOdds1 = str(doubleStarCardLateOdds1)
+    doubleStarCardLateOdds2 = str(doubleStarCardLateOdds2)
+    doubleStarCardLateOdds34 = str(doubleStarCardLateOdds34)
 
     # Double Dip: DX
     doubleDipEarlyOdds1 = str(doubleDipEarlyOdds1)
@@ -3025,6 +3210,39 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
     wackyWatchLateOdds2 = convert_to_hex_weight(wackyWatchLateOdds2)
     wackyWatchLateOdds34 = convert_to_hex_weight(wackyWatchLateOdds34)
 
+    # Mystery Sphere: DX
+    mysterySphereEarlyOdds1 = convert_to_hex_weight(mysterySphereEarlyOdds1)
+    mysterySphereEarlyOdds2 = convert_to_hex_weight(mysterySphereEarlyOdds2)
+    mysterySphereEarlyOdds34 = convert_to_hex_weight(mysterySphereEarlyOdds34)
+    mysterySphereMidOdds1 = convert_to_hex_weight(mysterySphereMidOdds1)
+    mysterySphereMidOdds2 = convert_to_hex_weight(mysterySphereMidOdds2)
+    mysterySphereMidOdds34 = convert_to_hex_weight(mysterySphereMidOdds34)
+    mysterySphereLateOdds1 = convert_to_hex_weight(mysterySphereLateOdds1)
+    mysterySphereLateOdds2 = convert_to_hex_weight(mysterySphereLateOdds2)
+    mysterySphereLateOdds34 = convert_to_hex_weight(mysterySphereLateOdds34)
+
+    # Dueling Swords: DX
+    duelingSwordsEarlyOdds1 = convert_to_hex_weight(duelingSwordsEarlyOdds1)
+    duelingSwordsEarlyOdds2 = convert_to_hex_weight(duelingSwordsEarlyOdds2)
+    duelingSwordsEarlyOdds34 = convert_to_hex_weight(duelingSwordsEarlyOdds34)
+    duelingSwordsMidOdds1 = convert_to_hex_weight(duelingSwordsMidOdds1)
+    duelingSwordsMidOdds2 = convert_to_hex_weight(duelingSwordsMidOdds2)
+    duelingSwordsMidOdds34 = convert_to_hex_weight(duelingSwordsMidOdds34)
+    duelingSwordsLateOdds1 = convert_to_hex_weight(duelingSwordsLateOdds1)
+    duelingSwordsLateOdds2 = convert_to_hex_weight(duelingSwordsLateOdds2)
+    duelingSwordsLateOdds34 = convert_to_hex_weight(duelingSwordsLateOdds34)
+
+    # Double Star Card: DX
+    doubleStarCardEarlyOdds1 = convert_to_hex_weight(doubleStarCardEarlyOdds1)
+    doubleStarCardEarlyOdds2 = convert_to_hex_weight(doubleStarCardEarlyOdds2)
+    doubleStarCardEarlyOdds34 = convert_to_hex_weight(doubleStarCardEarlyOdds34)
+    doubleStarCardMidOdds1 = convert_to_hex_weight(doubleStarCardMidOdds1)
+    doubleStarCardMidOdds2 = convert_to_hex_weight(doubleStarCardMidOdds2)
+    doubleStarCardMidOdds34 = convert_to_hex_weight(doubleStarCardMidOdds34)
+    doubleStarCardLateOdds1 = convert_to_hex_weight(doubleStarCardLateOdds1)
+    doubleStarCardLateOdds2 = convert_to_hex_weight(doubleStarCardLateOdds2)
+    doubleStarCardLateOdds34 = convert_to_hex_weight(doubleStarCardLateOdds34)
+
     # Bowser Phone: DX
     bowserPhoneEarlyOdds1 = convert_to_hex_weight(bowserPhoneEarlyOdds1)
     bowserPhoneEarlyOdds2 = convert_to_hex_weight(bowserPhoneEarlyOdds2)
@@ -3047,7 +3265,7 @@ def itemsEvent_mp4ShopOddsDX(miniMushroomEarlyOdds1 = "0", miniMushroomEarlyOdds
     doubleDipLateOdds2 = convert_to_hex_weight(doubleDipLateOdds2)
     doubleDipLateOdds34 = convert_to_hex_weight(doubleDipLateOdds34)
     
-    generatedCode = getItemShopOddsFourDX(miniMushroomEarlyOdds1, miniMushroomEarlyOdds2, miniMushroomEarlyOdds34, miniMushroomMidOdds1, miniMushroomMidOdds2, miniMushroomMidOdds34, miniMushroomLateOdds1, miniMushroomLateOdds2, miniMushroomLateOdds34, megaMushroomEarlyOdds1, megaMushroomEarlyOdds2, megaMushroomEarlyOdds34, megaMushroomMidOdds1, megaMushroomMidOdds2, megaMushroomMidOdds34, megaMushroomLateOdds1, megaMushroomLateOdds2, megaMushroomLateOdds34, superMiniMushroomEarlyOdds1, superMiniMushroomEarlyOdds2, superMiniMushroomEarlyOdds34, superMiniMushroomMidOdds1, superMiniMushroomMidOdds2, superMiniMushroomMidOdds34, superMiniMushroomLateOdds1, superMiniMushroomLateOdds2, superMiniMushroomLateOdds34, superMegaMushroomEarlyOdds1, superMegaMushroomEarlyOdds2, superMegaMushroomEarlyOdds34, superMegaMushroomMidOdds1, superMegaMushroomMidOdds2, superMegaMushroomMidOdds34, superMegaMushroomLateOdds1, superMegaMushroomLateOdds2, superMegaMushroomLateOdds34, miniMegaHammerEarlyOdds1, miniMegaHammerEarlyOdds2, miniMegaHammerEarlyOdds34, miniMegaHammerMidOdds1, miniMegaHammerMidOdds2, miniMegaHammerMidOdds34, miniMegaHammerLateOdds1, miniMegaHammerLateOdds2, miniMegaHammerLateOdds34, warpPipeEarlyOdds1, warpPipeEarlyOdds2, warpPipeEarlyOdds34, warpPipeMidOdds1, warpPipeMidOdds2, warpPipeMidOdds34, warpPipeLateOdds1, warpPipeLateOdds2, warpPipeLateOdds34, swapCardEarlyOdds1, swapCardEarlyOdds2, swapCardEarlyOdds34, swapCardMidOdds1, swapCardMidOdds2, swapCardMidOdds34, swapCardLateOdds1, swapCardLateOdds2, swapCardLateOdds34, sparkyStickerEarlyOdds1, sparkyStickerEarlyOdds2, sparkyStickerEarlyOdds34, sparkyStickerMidOdds1, sparkyStickerMidOdds2, sparkyStickerMidOdds34, sparkyStickerLateOdds1, sparkyStickerLateOdds2, sparkyStickerLateOdds34, gaddlightEarlyOdds1, gaddlightEarlyOdds2, gaddlightEarlyOdds34, gaddlightMidOdds1, gaddlightMidOdds2, gaddlightMidOdds34, gaddlightLateOdds1, gaddlightLateOdds2, gaddlightLateOdds34, chompCallEarlyOdds1, chompCallEarlyOdds2, chompCallEarlyOdds34, chompCallMidOdds1, chompCallMidOdds2, chompCallMidOdds34, chompCallLateOdds1, chompCallLateOdds2, chompCallLateOdds34, bowserSuitEarlyOdds1, bowserSuitEarlyOdds2, bowserSuitEarlyOdds34, bowserSuitMidOdds1, bowserSuitMidOdds2, bowserSuitMidOdds34, bowserSuitLateOdds1, bowserSuitLateOdds2, bowserSuitLateOdds34, crystalBallEarlyOdds1, crystalBallEarlyOdds2, crystalBallEarlyOdds34, crystalBallMidOdds1, crystalBallMidOdds2, crystalBallMidOdds34, crystalBallLateOdds1, crystalBallLateOdds2, crystalBallLateOdds34, magicLampEarlyOdds1, magicLampEarlyOdds2, magicLampEarlyOdds34, magicLampMidOdds1, magicLampMidOdds2, magicLampMidOdds34, magicLampLateOdds1, magicLampLateOdds2, magicLampLateOdds34, itemBagEarlyOdds1, itemBagEarlyOdds2, itemBagEarlyOdds34, itemBagMidOdds1, itemBagMidOdds2, itemBagMidOdds34, itemBagLateOdds1, itemBagLateOdds2, itemBagLateOdds34, mushroomEarlyOdds1, mushroomEarlyOdds2, mushroomEarlyOdds34, mushroomMidOdds1, mushroomMidOdds2, mushroomMidOdds34, mushroomLateOdds1, mushroomLateOdds2, mushroomLateOdds34, goldenMushroomEarlyOdds1, goldenMushroomEarlyOdds2, goldenMushroomEarlyOdds34, goldenMushroomMidOdds1, goldenMushroomMidOdds2, goldenMushroomMidOdds34, goldenMushroomLateOdds1, goldenMushroomLateOdds2, goldenMushroomLateOdds34, reverseMushroomEarlyOdds1, reverseMushroomEarlyOdds2, reverseMushroomEarlyOdds34, reverseMushroomMidOdds1, reverseMushroomMidOdds2, reverseMushroomMidOdds34, reverseMushroomLateOdds1, reverseMushroomLateOdds2, reverseMushroomLateOdds34, poisonMushroomEarlyOdds1, poisonMushroomEarlyOdds2, poisonMushroomEarlyOdds34, poisonMushroomMidOdds1, poisonMushroomMidOdds2, poisonMushroomMidOdds34, poisonMushroomLateOdds1, poisonMushroomLateOdds2, poisonMushroomLateOdds34, triplePoisonMushroomEarlyOdds1, triplePoisonMushroomEarlyOdds2, triplePoisonMushroomEarlyOdds34, triplePoisonMushroomMidOdds1, triplePoisonMushroomMidOdds2, triplePoisonMushroomMidOdds34, triplePoisonMushroomLateOdds1, triplePoisonMushroomLateOdds2, triplePoisonMushroomLateOdds34, celluarShopperEarlyOdds1, celluarShopperEarlyOdds2, celluarShopperEarlyOdds34, celluarShopperMidOdds1, celluarShopperMidOdds2, celluarShopperMidOdds34, celluarShopperLateOdds1, celluarShopperLateOdds2, celluarShopperLateOdds34, skeletonKeyEarlyOdds1, skeletonKeyEarlyOdds2, skeletonKeyEarlyOdds34, skeletonKeyMidOdds1, skeletonKeyMidOdds2, skeletonKeyMidOdds34, skeletonKeyLateOdds1, skeletonKeyLateOdds2, skeletonKeyLateOdds34, plunderChestEarlyOdds1, plunderChestEarlyOdds2, plunderChestEarlyOdds34, plunderChestMidOdds1, plunderChestMidOdds2, plunderChestMidOdds34, plunderChestLateOdds1, plunderChestLateOdds2, plunderChestLateOdds34, gaddbrushEarlyOdds1, gaddbrushEarlyOdds2, gaddbrushEarlyOdds34, gaddbrushMidOdds1, gaddbrushMidOdds2, gaddbrushMidOdds34, gaddbrushLateOdds1, gaddbrushLateOdds2, gaddbrushLateOdds34, warpBlockEarlyOdds1, warpBlockEarlyOdds2, warpBlockEarlyOdds34, warpBlockMidOdds1, warpBlockMidOdds2, warpBlockMidOdds34, warpBlockLateOdds1, warpBlockLateOdds2, warpBlockLateOdds34, flyGuyEarlyOdds1, flyGuyEarlyOdds2, flyGuyEarlyOdds34, flyGuyMidOdds1, flyGuyMidOdds2, flyGuyMidOdds34, flyGuyLateOdds1, flyGuyLateOdds2, flyGuyLateOdds34, plusBlockEarlyOdds1, plusBlockEarlyOdds2, plusBlockEarlyOdds34, plusBlockMidOdds1, plusBlockMidOdds2, plusBlockMidOdds34, plusBlockLateOdds1, plusBlockLateOdds2, plusBlockLateOdds34, minusBlockEarlyOdds1, minusBlockEarlyOdds2, minusBlockEarlyOdds34, minusBlockMidOdds1, minusBlockMidOdds2, minusBlockMidOdds34, minusBlockLateOdds1, minusBlockLateOdds2, minusBlockLateOdds34, speedBlockEarlyOdds1, speedBlockEarlyOdds2, speedBlockEarlyOdds34, speedBlockMidOdds1, speedBlockMidOdds2, speedBlockMidOdds34, speedBlockLateOdds1, speedBlockLateOdds2, speedBlockLateOdds34, slowBlockEarlyOdds1, slowBlockEarlyOdds2, slowBlockEarlyOdds34, slowBlockMidOdds1, slowBlockMidOdds2, slowBlockMidOdds34, slowBlockLateOdds1, slowBlockLateOdds2, slowBlockLateOdds34, bowserPhoneEarlyOdds1, bowserPhoneEarlyOdds2, bowserPhoneEarlyOdds34, bowserPhoneMidOdds1, bowserPhoneMidOdds2, bowserPhoneMidOdds34, bowserPhoneLateOdds1, bowserPhoneLateOdds2, bowserPhoneLateOdds34, doubleDipEarlyOdds1, doubleDipEarlyOdds2, doubleDipEarlyOdds34, doubleDipMidOdds1, doubleDipMidOdds2, doubleDipMidOdds34, doubleDipLateOdds1, doubleDipLateOdds2, doubleDipLateOdds34, hiddenBlockCardEarlyOdds1, hiddenBlockCardEarlyOdds2, hiddenBlockCardEarlyOdds34, hiddenBlockCardMidOdds1, hiddenBlockCardMidOdds2, hiddenBlockCardMidOdds34, hiddenBlockCardLateOdds1, hiddenBlockCardLateOdds2, hiddenBlockCardLateOdds34, barterBoxEarlyOdds1, barterBoxEarlyOdds2, barterBoxEarlyOdds34, barterBoxMidOdds1, barterBoxMidOdds2, barterBoxMidOdds34, barterBoxLateOdds1, barterBoxLateOdds2, barterBoxLateOdds34, superWarpPipeEarlyOdds1, superWarpPipeEarlyOdds2, superWarpPipeEarlyOdds34, superWarpPipeMidOdds1, superWarpPipeMidOdds2, superWarpPipeMidOdds34, superWarpPipeLateOdds1, superWarpPipeLateOdds2, superWarpPipeLateOdds34, chanceTimeCharmEarlyOdds1, chanceTimeCharmEarlyOdds2, chanceTimeCharmEarlyOdds34, chanceTimeCharmMidOdds1, chanceTimeCharmMidOdds2, chanceTimeCharmMidOdds34, chanceTimeCharmLateOdds1, chanceTimeCharmLateOdds2, chanceTimeCharmLateOdds34, wackyWatchEarlyOdds1, wackyWatchEarlyOdds2, wackyWatchEarlyOdds34, wackyWatchMidOdds1, wackyWatchMidOdds2, wackyWatchMidOdds34, wackyWatchLateOdds1, wackyWatchLateOdds2, wackyWatchLateOdds34)
+    generatedCode = getItemShopOddsFourDX(miniMushroomEarlyOdds1, miniMushroomEarlyOdds2, miniMushroomEarlyOdds34, miniMushroomMidOdds1, miniMushroomMidOdds2, miniMushroomMidOdds34, miniMushroomLateOdds1, miniMushroomLateOdds2, miniMushroomLateOdds34, megaMushroomEarlyOdds1, megaMushroomEarlyOdds2, megaMushroomEarlyOdds34, megaMushroomMidOdds1, megaMushroomMidOdds2, megaMushroomMidOdds34, megaMushroomLateOdds1, megaMushroomLateOdds2, megaMushroomLateOdds34, superMiniMushroomEarlyOdds1, superMiniMushroomEarlyOdds2, superMiniMushroomEarlyOdds34, superMiniMushroomMidOdds1, superMiniMushroomMidOdds2, superMiniMushroomMidOdds34, superMiniMushroomLateOdds1, superMiniMushroomLateOdds2, superMiniMushroomLateOdds34, superMegaMushroomEarlyOdds1, superMegaMushroomEarlyOdds2, superMegaMushroomEarlyOdds34, superMegaMushroomMidOdds1, superMegaMushroomMidOdds2, superMegaMushroomMidOdds34, superMegaMushroomLateOdds1, superMegaMushroomLateOdds2, superMegaMushroomLateOdds34, miniMegaHammerEarlyOdds1, miniMegaHammerEarlyOdds2, miniMegaHammerEarlyOdds34, miniMegaHammerMidOdds1, miniMegaHammerMidOdds2, miniMegaHammerMidOdds34, miniMegaHammerLateOdds1, miniMegaHammerLateOdds2, miniMegaHammerLateOdds34, warpPipeEarlyOdds1, warpPipeEarlyOdds2, warpPipeEarlyOdds34, warpPipeMidOdds1, warpPipeMidOdds2, warpPipeMidOdds34, warpPipeLateOdds1, warpPipeLateOdds2, warpPipeLateOdds34, swapCardEarlyOdds1, swapCardEarlyOdds2, swapCardEarlyOdds34, swapCardMidOdds1, swapCardMidOdds2, swapCardMidOdds34, swapCardLateOdds1, swapCardLateOdds2, swapCardLateOdds34, sparkyStickerEarlyOdds1, sparkyStickerEarlyOdds2, sparkyStickerEarlyOdds34, sparkyStickerMidOdds1, sparkyStickerMidOdds2, sparkyStickerMidOdds34, sparkyStickerLateOdds1, sparkyStickerLateOdds2, sparkyStickerLateOdds34, gaddlightEarlyOdds1, gaddlightEarlyOdds2, gaddlightEarlyOdds34, gaddlightMidOdds1, gaddlightMidOdds2, gaddlightMidOdds34, gaddlightLateOdds1, gaddlightLateOdds2, gaddlightLateOdds34, chompCallEarlyOdds1, chompCallEarlyOdds2, chompCallEarlyOdds34, chompCallMidOdds1, chompCallMidOdds2, chompCallMidOdds34, chompCallLateOdds1, chompCallLateOdds2, chompCallLateOdds34, bowserSuitEarlyOdds1, bowserSuitEarlyOdds2, bowserSuitEarlyOdds34, bowserSuitMidOdds1, bowserSuitMidOdds2, bowserSuitMidOdds34, bowserSuitLateOdds1, bowserSuitLateOdds2, bowserSuitLateOdds34, crystalBallEarlyOdds1, crystalBallEarlyOdds2, crystalBallEarlyOdds34, crystalBallMidOdds1, crystalBallMidOdds2, crystalBallMidOdds34, crystalBallLateOdds1, crystalBallLateOdds2, crystalBallLateOdds34, magicLampEarlyOdds1, magicLampEarlyOdds2, magicLampEarlyOdds34, magicLampMidOdds1, magicLampMidOdds2, magicLampMidOdds34, magicLampLateOdds1, magicLampLateOdds2, magicLampLateOdds34, itemBagEarlyOdds1, itemBagEarlyOdds2, itemBagEarlyOdds34, itemBagMidOdds1, itemBagMidOdds2, itemBagMidOdds34, itemBagLateOdds1, itemBagLateOdds2, itemBagLateOdds34, mushroomEarlyOdds1, mushroomEarlyOdds2, mushroomEarlyOdds34, mushroomMidOdds1, mushroomMidOdds2, mushroomMidOdds34, mushroomLateOdds1, mushroomLateOdds2, mushroomLateOdds34, goldenMushroomEarlyOdds1, goldenMushroomEarlyOdds2, goldenMushroomEarlyOdds34, goldenMushroomMidOdds1, goldenMushroomMidOdds2, goldenMushroomMidOdds34, goldenMushroomLateOdds1, goldenMushroomLateOdds2, goldenMushroomLateOdds34, reverseMushroomEarlyOdds1, reverseMushroomEarlyOdds2, reverseMushroomEarlyOdds34, reverseMushroomMidOdds1, reverseMushroomMidOdds2, reverseMushroomMidOdds34, reverseMushroomLateOdds1, reverseMushroomLateOdds2, reverseMushroomLateOdds34, poisonMushroomEarlyOdds1, poisonMushroomEarlyOdds2, poisonMushroomEarlyOdds34, poisonMushroomMidOdds1, poisonMushroomMidOdds2, poisonMushroomMidOdds34, poisonMushroomLateOdds1, poisonMushroomLateOdds2, poisonMushroomLateOdds34, triplePoisonMushroomEarlyOdds1, triplePoisonMushroomEarlyOdds2, triplePoisonMushroomEarlyOdds34, triplePoisonMushroomMidOdds1, triplePoisonMushroomMidOdds2, triplePoisonMushroomMidOdds34, triplePoisonMushroomLateOdds1, triplePoisonMushroomLateOdds2, triplePoisonMushroomLateOdds34, celluarShopperEarlyOdds1, celluarShopperEarlyOdds2, celluarShopperEarlyOdds34, celluarShopperMidOdds1, celluarShopperMidOdds2, celluarShopperMidOdds34, celluarShopperLateOdds1, celluarShopperLateOdds2, celluarShopperLateOdds34, skeletonKeyEarlyOdds1, skeletonKeyEarlyOdds2, skeletonKeyEarlyOdds34, skeletonKeyMidOdds1, skeletonKeyMidOdds2, skeletonKeyMidOdds34, skeletonKeyLateOdds1, skeletonKeyLateOdds2, skeletonKeyLateOdds34, plunderChestEarlyOdds1, plunderChestEarlyOdds2, plunderChestEarlyOdds34, plunderChestMidOdds1, plunderChestMidOdds2, plunderChestMidOdds34, plunderChestLateOdds1, plunderChestLateOdds2, plunderChestLateOdds34, gaddbrushEarlyOdds1, gaddbrushEarlyOdds2, gaddbrushEarlyOdds34, gaddbrushMidOdds1, gaddbrushMidOdds2, gaddbrushMidOdds34, gaddbrushLateOdds1, gaddbrushLateOdds2, gaddbrushLateOdds34, warpBlockEarlyOdds1, warpBlockEarlyOdds2, warpBlockEarlyOdds34, warpBlockMidOdds1, warpBlockMidOdds2, warpBlockMidOdds34, warpBlockLateOdds1, warpBlockLateOdds2, warpBlockLateOdds34, flyGuyEarlyOdds1, flyGuyEarlyOdds2, flyGuyEarlyOdds34, flyGuyMidOdds1, flyGuyMidOdds2, flyGuyMidOdds34, flyGuyLateOdds1, flyGuyLateOdds2, flyGuyLateOdds34, plusBlockEarlyOdds1, plusBlockEarlyOdds2, plusBlockEarlyOdds34, plusBlockMidOdds1, plusBlockMidOdds2, plusBlockMidOdds34, plusBlockLateOdds1, plusBlockLateOdds2, plusBlockLateOdds34, minusBlockEarlyOdds1, minusBlockEarlyOdds2, minusBlockEarlyOdds34, minusBlockMidOdds1, minusBlockMidOdds2, minusBlockMidOdds34, minusBlockLateOdds1, minusBlockLateOdds2, minusBlockLateOdds34, speedBlockEarlyOdds1, speedBlockEarlyOdds2, speedBlockEarlyOdds34, speedBlockMidOdds1, speedBlockMidOdds2, speedBlockMidOdds34, speedBlockLateOdds1, speedBlockLateOdds2, speedBlockLateOdds34, slowBlockEarlyOdds1, slowBlockEarlyOdds2, slowBlockEarlyOdds34, slowBlockMidOdds1, slowBlockMidOdds2, slowBlockMidOdds34, slowBlockLateOdds1, slowBlockLateOdds2, slowBlockLateOdds34, bowserPhoneEarlyOdds1, bowserPhoneEarlyOdds2, bowserPhoneEarlyOdds34, bowserPhoneMidOdds1, bowserPhoneMidOdds2, bowserPhoneMidOdds34, bowserPhoneLateOdds1, bowserPhoneLateOdds2, bowserPhoneLateOdds34, doubleDipEarlyOdds1, doubleDipEarlyOdds2, doubleDipEarlyOdds34, doubleDipMidOdds1, doubleDipMidOdds2, doubleDipMidOdds34, doubleDipLateOdds1, doubleDipLateOdds2, doubleDipLateOdds34, hiddenBlockCardEarlyOdds1, hiddenBlockCardEarlyOdds2, hiddenBlockCardEarlyOdds34, hiddenBlockCardMidOdds1, hiddenBlockCardMidOdds2, hiddenBlockCardMidOdds34, hiddenBlockCardLateOdds1, hiddenBlockCardLateOdds2, hiddenBlockCardLateOdds34, barterBoxEarlyOdds1, barterBoxEarlyOdds2, barterBoxEarlyOdds34, barterBoxMidOdds1, barterBoxMidOdds2, barterBoxMidOdds34, barterBoxLateOdds1, barterBoxLateOdds2, barterBoxLateOdds34, superWarpPipeEarlyOdds1, superWarpPipeEarlyOdds2, superWarpPipeEarlyOdds34, superWarpPipeMidOdds1, superWarpPipeMidOdds2, superWarpPipeMidOdds34, superWarpPipeLateOdds1, superWarpPipeLateOdds2, superWarpPipeLateOdds34, chanceTimeCharmEarlyOdds1, chanceTimeCharmEarlyOdds2, chanceTimeCharmEarlyOdds34, chanceTimeCharmMidOdds1, chanceTimeCharmMidOdds2, chanceTimeCharmMidOdds34, chanceTimeCharmLateOdds1, chanceTimeCharmLateOdds2, chanceTimeCharmLateOdds34, wackyWatchEarlyOdds1, wackyWatchEarlyOdds2, wackyWatchEarlyOdds34, wackyWatchMidOdds1, wackyWatchMidOdds2, wackyWatchMidOdds34, wackyWatchLateOdds1, wackyWatchLateOdds2, wackyWatchLateOdds34, mysterySphereEarlyOdds1, mysterySphereEarlyOdds2, mysterySphereEarlyOdds34, mysterySphereMidOdds1, mysterySphereMidOdds2, mysterySphereMidOdds34, mysterySphereLateOdds1, mysterySphereLateOdds2, mysterySphereLateOdds34, duelingSwordsEarlyOdds1, duelingSwordsEarlyOdds2, duelingSwordsEarlyOdds34, duelingSwordsMidOdds1, duelingSwordsMidOdds2, duelingSwordsMidOdds34, duelingSwordsLateOdds1, duelingSwordsLateOdds2, duelingSwordsLateOdds34, doubleStarCardEarlyOdds1, doubleStarCardEarlyOdds2, doubleStarCardEarlyOdds34, doubleStarCardMidOdds1, doubleStarCardMidOdds2, doubleStarCardMidOdds34, doubleStarCardLateOdds1, doubleStarCardLateOdds2, doubleStarCardLateOdds34)
     generatedCode = generatedCode.strip()
     pyperclip.copy(generatedCode)
 

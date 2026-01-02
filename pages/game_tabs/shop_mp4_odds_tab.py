@@ -252,6 +252,9 @@ class ShopOddsTab(QWidget):
                 ("Super Warp Pipe", "assets/items/superWarpPipe.png"),
                 ("Chance Time Charm", "assets/items/chanceTimeCharm.png"),
                 ("Wacky Watch", "assets/items/wackyWatch.png"),
+                ("Mystery Sphere", "assets/items/mysterySphere.png"),
+                ("Dueling Swords", "assets/items/duelingSwords.png"),
+                ("Double Star Card", "assets/items/doubleStarCard.png"),
             ]
 
         # Create items using card-based layout
@@ -443,7 +446,8 @@ class ShopOddsTab(QWidget):
                 "skeleton_key", "plunder_chest", "gaddbrush", "warp_block",
                 "fly_guy", "plus_block", "minus_block", "speed_block",
                 "slow_block", "bowser_phone", "double_dip", "hidden_block_card",
-                "barter_box", "super_warp_pipe", "chance_time_charm", "wacky_watch"
+                "barter_box", "super_warp_pipe", "chance_time_charm", "wacky_watch",
+                "mystery_sphere", "dueling_swords", "double_star_card"
             ]
 
         # Define camelCase parameter name mapping
@@ -483,7 +487,10 @@ class ShopOddsTab(QWidget):
             "barter_box": "barterBox",
             "super_warp_pipe": "superWarpPipe",
             "chance_time_charm": "chanceTimeCharm",
-            "wacky_watch": "wackyWatch"
+            "wacky_watch": "wackyWatch",
+            "mystery_sphere": "mysterySphere",
+            "dueling_swords": "duelingSwords",
+            "double_star_card": "doubleStarCard"
         }
 
         stages = ["early", "mid", "late"]
