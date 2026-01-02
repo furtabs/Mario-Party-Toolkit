@@ -239,18 +239,7 @@ class MinigameTab(QWidget):
             ]
         elif self.game_id == "marioParty9":
             minigames_list = [
-                "Ruins Rumble", "Hazard Hold", "Line in the Sand", "Block and Roll", "Tackle Takedown",
-                "Weird Wheels", "Spike-n-Span", "Hole Hogs", "Pix Fix", "Mob Sleds", "Mecha March",
-                "Bowser Pop", "Double Pounder", "Zoom Room", "Cage Match", "Crossfire Caverns",
-                "Bumper Sparks", "Sand Trap", "Pair of Aces", "Pedal to the Paddle", "Urn It",
-                "Billistics", "Snow Go", "Skyjinks", "Player Conveyor", "Fungi Frenzy", "Jigsaw Jumble",
-                "Twist Ending", "Peak Precision", "Speeding Bullets", "Launch Break", "Polar Extreme",
-                "Logger Heads", "Smash Compactor", "Goomba Bowling", "Pianta Pool", "Bumper Bubbles",
-                "Buddy Bounce", "Pizza Me, Mario", "Chain Event", "Pit or Platter", "Skipping Class",
-                "Flinger Painting", "Goomba Spotting", "Thwomper Room", "Ballistic Beach",
-                "Plunder Ground", "Tumble Temple", "Tuber Tug", "Piranha Patch", "Upward Mobility",
-                "Manor of Escape", "Toad and Go Seek", "Goomba Village", "Growing Up", "Card Smarts",
-                "Bomb Barge", "Ring Leader", "Magma Mayhem"
+                "Ruins Rumble", "Hazard Hold", "Line in the Sand", "Block and Roll", "Tackle Takedown", "Weird Wheels", "Spike-n-Span", "Hole Hogs", "Pix Fix", "Mob Sleds", "Mecha March", "Bowser Pop", "Double Pounder", "Zoom Room", "Cage Match", "Crossfire Caverns", "Bumper Sparks", "Sand Trap", "Pair of Aces", "Pedal to the Paddle", "Urn It", "Billistics", "Snow Go", "Skyjinks", "Player Conveyor", "Fungi Frenzy", "Jigsaw Jumble", "Twist Ending", "Peak Precision", "Speeding Bullets", "Launch Break", "Polar Extreme", "Logger Heads", "Smash Compactor", "Goomba Bowling (Normal Version)", "Pianta Pool", "Bumper Bubbles", "Buddy Bounce", "Pizza Me, Mario", "Chain Event", "Pit or Platter", "Skipping Class", "Flinger Painting", "Goomba Spotting", "Thwomper Room", "Ballistic Beach", "Plunder Ground", "Tumble Temple", "Tuber Tug", "Piranha Patch", "Upward Mobility", "Manor of Escape", "Toad and Go Seek", "Goomba Village", "Growing Up", "Card Smarts", "Bomb Barge", "Ring Leader", "Magma Mayhem", "Don't Look", "Pinball Fall", "Pier Pressure", "10 to Win", "Mecha Choice", "Sock It to Lakitu", "Whomp Stomp", "Deck Dry Bones", "Cheep Cheep Shot", "Spike Strike", "Bowser Jr. Breakdown", "Diddy's Banana Blast", "Wiggler Bounce", "Bombard King Bob-omb", "King Boo's Puzzle Attack", "Blooper Barrage", "Chain Chomp Romp", "Bowser's Block Battle", "DK's Banana Bonus"
             ]
         elif self.game_id == "marioPartyDS":
             minigames_list = [
