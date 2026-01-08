@@ -18,7 +18,6 @@ MP1 - Blue Spaces Give {amountDec} Coins: {switchDec}
 81057D8E 0001
 81057D90 0010
 81057D92 8040
-0407FBE0 3BC0
 '''
 
 def getRedSpaceCodeOne(amount, switch, amountDec, switchDec):
@@ -125,3 +124,4 @@ D10F6E9A FFEC
 D10F6E12 FFEC
 810F6E12 {negAmount}
 '''
+
