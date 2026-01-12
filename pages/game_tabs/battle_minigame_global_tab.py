@@ -17,12 +17,12 @@ from qfluentwidgets import SubtitleLabel, BodyLabel, LineEdit, PushButton
 # Import resource manager for images
 from utils.resource_manager import ResourceManager
 
-# Import battle coins event function for MP4, MP5, MP6, and MP7
 try:
     from events.marioParty4_battle import battleCoins_mp4
     from events.marioParty5_battle import battleCoins_mp5
     from events.marioParty6_battle import battleCoins_mp6
     from events.marioParty7_battle import battleCoins_mp7
+    from events.marioParty8_battle import battleCoins_mp8
 except ImportError:
     pass
 
@@ -162,76 +162,42 @@ class BattleMinigameTab(QWidget):
     def generate_codes(self):
         """Generate codes for battle minigame bounties"""
         try:
-            if self.game_id == "marioParty5" and 'battleCoins_mp5' in globals():
-                # Get bounty values
-                bounties = []
-                for i in range(1, 6):
-                    entry = getattr(self, f"bounty_{i}_entry")
-                    bounties.append(entry.text())
+            # 1. Collect the bounty values from UI entries
+            bounties = []
+            for i in range(1, 6):
+                entry = getattr(self, f"bounty_{i}_entry")
+                bounties.append(entry.text())
 
-                class MockEntry:
-                    def __init__(self, text):
-                        self._text = text
-                    def get(self):
-                        return self._text
+            # 2. Create mock entry objects to match expected interface (.get() method)
+            class MockEntry:
+                def __init__(self, text):
+                    self._text = text
+                def get(self):
+                    return self._text
 
-                mock_bounties = [MockEntry(bounty) for bounty in bounties]
+            mock_bounties = [MockEntry(b) for b in bounties]
 
-                battleCoins_mp5(*mock_bounties)
-            elif self.game_id == "marioParty6" and 'battleCoins_mp6' in globals():
-                # Get bounty values
-                bounties = []
-                for i in range(1, 6):
-                    entry = getattr(self, f"bounty_{i}_entry")
-                    bounties.append(entry.text())
-
-                class MockEntry:
-                    def __init__(self, text):
-                        self._text = text
-                    def get(self):
-                        return self._text
-
-                mock_bounties = [MockEntry(bounty) for bounty in bounties]
-
-                battleCoins_mp6(*mock_bounties)
-            elif self.game_id == "marioParty7" and 'battleCoins_mp7' in globals():
-                # Get bounty values
-                bounties = []
-                for i in range(1, 6):
-                    entry = getattr(self, f"bounty_{i}_entry")
-                    bounties.append(entry.text())
-
-                class MockEntry:
-                    def __init__(self, text):
-                        self._text = text
-                    def get(self):
-                        return self._text
-
-                mock_bounties = [MockEntry(bounty) for bounty in bounties]
-
-                battleCoins_mp7(*mock_bounties)
-            elif 'battleCoins_mp4' in globals():
-                # Get bounty values
-                bounties = []
-                for i in range(1, 6):
-                    entry = getattr(self, f"bounty_{i}_entry")
-                    bounties.append(entry.text())
-
-                # Create mock entry objects to match expected interface
-                class MockEntry:
-                    def __init__(self, text):
-                        self._text = text
-                    def get(self):
-                        return self._text
-
-                mock_bounties = [MockEntry(bounty) for bounty in bounties]
-
+            # 3. Route to the correct generator based on game_id
+            if self.game_id == "marioParty4" and 'battleCoins_mp4' in globals():
                 battleCoins_mp4(*mock_bounties)
+                
+            elif self.game_id == "marioParty5" and 'battleCoins_mp5' in globals():
+                battleCoins_mp5(*mock_bounties)
+                
+            elif self.game_id == "marioParty6" and 'battleCoins_mp6' in globals():
+                battleCoins_mp6(*mock_bounties)
+                
+            elif self.game_id == "marioParty7" and 'battleCoins_mp7' in globals():
+                battleCoins_mp7(*mock_bounties)
+                
+            elif self.game_id == "marioParty8" and 'battleCoins_mp8' in globals():
+                battleCoins_mp8(*mock_bounties)
+                
             else:
-                self.show_error("Battle minigame modification not available")
+                self.show_error(f"Battle minigame modification not available for {self.game_id}")
 
         except Exception as e:
-            self.show_error(f"Error generating codes: {str(e)}")
+            self.show_error(f"Error generating codes: {str(e)}")        
 
     def show_error(self, message):
         """Show error message to user"""

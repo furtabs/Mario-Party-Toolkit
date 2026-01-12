@@ -6,11 +6,11 @@
 # ============================================
 
 from functions import *
-from codes.marioParty7 import *
+from codes.marioParty8 import *
 
 import pyperclip
 
-def battleCoins_mp7(p1, p2, p3, p4, p5):
+def battleCoins_mp8(p1, p2, p3, p4, p5):
     if not p1.get() and not p2.get() and not p3.get() and not p4.get() and not p5.get():
         createDialog("Error", "error", "Please fill out atleast one box.", None)
         return
@@ -28,7 +28,7 @@ def battleCoins_mp7(p1, p2, p3, p4, p5):
     p5String = p5.get() if p5.get() != "" else "50"
 
     # Generate codes for blue and red spaces
-    marioPartySeven = getBattleGame7(p1Handicap, p2Handicap, p3Handicap, p4Handicap, p5Handicap, p1String, p2String, p3String, p4String, p5String)
+    marioPartySeven = getBattleGame8(p1Handicap, p2Handicap, p3Handicap, p4Handicap, p5Handicap, p1String, p2String, p3String, p4String, p5String)
 
     # Replace placeholder in generated codes
     generatedCode = (marioPartySeven).strip()

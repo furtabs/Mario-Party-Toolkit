@@ -440,6 +440,11 @@ class MarioPartyPages:
         tab_widget.addTab(handicap_global_tab, "Star Handicaps")
         self.all_tabs.append(handicap_global_tab)
 
+        # Battle Minigame tab
+        battle_tab = BattleMinigameTab("marioParty8")
+        tab_widget.addTab(battle_tab, "Battle Minigame")
+        self.all_tabs.append(battle_tab)
+
     def create_mp9_tabs(self, tab_widget):
         self.apply_tab_style(tab_widget)
         """Create tabs for Mario Party 9"""
