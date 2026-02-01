@@ -397,11 +397,17 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         duelCapsuleSpaceOdds34, dkCapsuleSpaceOdds34, orbBagCapsuleSpaceOdds34
     ]
 
-    shopOdds12Weights = sum(int(weight) if weight else 0 for weight in shopOdds12)
-    shopOdds34Weights = sum(int(weight) if weight else 0 for weight in shopOdds34)
-    spaceOdds1Weights = sum(int(weight) if weight else 0 for weight in spaceOdds1)
-    spaceOdds2Weights = sum(int(weight) if weight else 0 for weight in spaceOdds2)
-    spaceOdds34Weights = sum(int(weight) if weight else 0 for weight in spaceOdds34)
+    def safe_int(val):
+        try:
+            return int(val) if val else 0
+        except (ValueError, TypeError):
+            return 0
+    
+    shopOdds12Weights = sum(safe_int(weight) for weight in shopOdds12)
+    shopOdds34Weights = sum(safe_int(weight) for weight in shopOdds34)
+    spaceOdds1Weights = sum(safe_int(weight) for weight in spaceOdds1)
+    spaceOdds2Weights = sum(safe_int(weight) for weight in spaceOdds2)
+    spaceOdds34Weights = sum(safe_int(weight) for weight in spaceOdds34)
 
     def calculateWeight(weight, total):
         # Convert weight to int, default to 0 if empty or None
