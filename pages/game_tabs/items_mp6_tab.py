@@ -585,7 +585,7 @@ class ItemsMP6Tab(QWidget):
                 ("Snack", "assets/items/snackCapsule.png"),
                 ("Boo-away", "assets/items/gaddLightCapsule.png"),
                 ("Duel", "assets/items/duelCapsule.png"),
-                ("Chance Time", "assets/items/chanceTimeCapsule.png"),
+                ("Chance Time", "assets/items/chanceCapsule.png"),
                 ("Bowser", "assets/items/bowserCapsule.png"),
                 ("Donkey Kong", "assets/items/dkCapsule.png"),
                 ("Pink Boo", "assets/items/pinkBooCapsule.png"),
