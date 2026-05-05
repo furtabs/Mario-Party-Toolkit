@@ -5,5 +5,5 @@
 # License: MIT
 # ============================================
 
-versionString = "5.4.0"
+versionString = "5.4.1"
 
