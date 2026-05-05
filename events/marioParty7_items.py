@@ -410,18 +410,16 @@ def itemsEvent_mp7(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     spaceOdds34Weights = sum(safe_int(weight) for weight in spaceOdds34)
 
     def calculateWeight(weight, total):
-        # Convert weight to int, default to 0 if empty or None
-        weight = int(weight) if weight else 0
-        # Check for total being zero to avoid division by zero
-        if total <= 0:
-            return 0  # Return 0 if total is zero or negative
-        if total < 100:
-            return weight  # Return the weight directly if total is less than 100
-        else:
+        try:
+            weight = int(weight) if weight else 0
+            if total < 100 and total > 0: # Added total > 0 to be safe
+                return weight
+            
             percentage = (weight / total) * 100
-            if 0 < percentage < 1:
-                return math.ceil(percentage)
-            return round(percentage)
+            return math.ceil(percentage) if 0 < percentage < 1 else round(percentage)
+        except ZeroDivisionError:
+            # This catches the division by zero and returns a safe default
+            return 0
 
     # Calculate weights for shop odds 12
     mushroomCapsuleShopOdds12 = calculateWeight(mushroomCapsuleShopOdds12, shopOdds12Weights)
