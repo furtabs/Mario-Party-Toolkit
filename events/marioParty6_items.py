@@ -12,7 +12,9 @@ import csv
 import math
 import pyperclip
 
-def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = "0", mushroomCapsuleSpaceOdds1 = "0", mushroomCapsuleSpaceOdds2 = "0", mushroomCapsuleSpaceOdds34 = "0", goldenMushroomCapsulePrice1 = "0", goldenMushroomCapsulePrice2 = "0", goldenMushroomCapsulePrice34 = "0", goldenMushroomCapsuleShopOdds12 = "0", goldenMushroomCapsuleShopOdds34 = "0", goldenMushroomCapsuleSpaceOdds1 = "0", goldenMushroomCapsuleSpaceOdds2 = "0", goldenMushroomCapsuleSpaceOdds34 = "0", slowMushroomCapsulePrice1 = "0", slowMushroomCapsulePrice2 = "0", slowMushroomCapsulePrice34 = "0", slowMushroomCapsuleShopOdds12 = "0", slowMushroomCapsuleShopOdds34 = "0", slowMushroomCapsuleSpaceOdds1 = "0", slowMushroomCapsuleSpaceOdds2 = "0", slowMushroomCapsuleSpaceOdds34 = "0", metalMushroomCapsulePrice1 = "0", metalMushroomCapsulePrice2 = "0", metalMushroomCapsulePrice34 = "0", metalMushroomCapsuleShopOdds12 = "0", metalMushroomCapsuleShopOdds34 = "0", metalMushroomCapsuleSpaceOdds1 = "0", metalMushroomCapsuleSpaceOdds2 = "0", metalMushroomCapsuleSpaceOdds34 = "0", flutterCapsulePrice1 = "0", flutterCapsulePrice2 = "0", flutterCapsulePrice34 = "0", flutterCapsuleShopOdds12 = "0", flutterCapsuleShopOdds34 = "0", flutterCapsuleSpaceOdds1 = "0", flutterCapsuleSpaceOdds2 = "0", flutterCapsuleSpaceOdds34 = "0", cannonCapsulePrice1 = "0", cannonCapsulePrice2 = "0", cannonCapsulePrice34 = "0", cannonCapsuleShopOdds12 = "0", cannonCapsuleShopOdds34 = "0", cannonCapsuleSpaceOdds1 = "0", cannonCapsuleSpaceOdds2 = "0", cannonCapsuleSpaceOdds34 = "0", snackCapsulePrice1 = "0", snackCapsulePrice2 = "0", snackCapsulePrice34 = "0", snackCapsuleShopOdds12 = "0", snackCapsuleShopOdds34 = "0", snackCapsuleSpaceOdds1 = "0", snackCapsuleSpaceOdds2 = "0", snackCapsuleSpaceOdds34 = "0", goombaCapsulePrice1 = "0", goombaCapsulePrice2 = "0", goombaCapsulePrice34 = "0", goombaCapsuleShopOdds12 = "0", goombaCapsuleShopOdds34 = "0", goombaCapsuleSpaceOdds1 = "0", goombaCapsuleSpaceOdds2 = "0", goombaCapsuleSpaceOdds34 = "0", hammerBroCapsulePrice1 = "0", hammerBroCapsulePrice2 = "0", hammerBroCapsulePrice34 = "0", hammerBroCapsuleShopOdds12 = "0", hammerBroCapsuleShopOdds34 = "0", hammerBroCapsuleSpaceOdds1 = "0", hammerBroCapsuleSpaceOdds2 = "0", hammerBroCapsuleSpaceOdds34 = "0", piranhaPlantCapsulePrice1 = "0", piranhaPlantCapsulePrice2 = "0", piranhaPlantCapsulePrice34 = "0", piranhaPlantCapsuleShopOdds12 = "0", piranhaPlantCapsuleShopOdds34 = "0", piranhaPlantCapsuleSpaceOdds1 = "0", piranhaPlantCapsuleSpaceOdds2 = "0", piranhaPlantCapsuleSpaceOdds34 = "0", kleptoCapsulePrice1 = "0", kleptoCapsulePrice2 = "0", kleptoCapsulePrice34 = "0", kleptoCapsuleShopOdds12 = "0", kleptoCapsuleShopOdds34 = "0", kleptoCapsuleSpaceOdds1 = "0", kleptoCapsuleSpaceOdds2 = "0", kleptoCapsuleSpaceOdds34 = "0", kamekCapsulePrice1 = "0", kamekCapsulePrice2 = "0", kamekCapsulePrice34 = "0", kamekCapsuleShopOdds12 = "0", kamekCapsuleShopOdds34 = "0", kamekCapsuleSpaceOdds1 = "0", kamekCapsuleSpaceOdds2 = "0", kamekCapsuleSpaceOdds34 = "0", toadyCapsulePrice1 = "0", toadyCapsulePrice2 = "0", toadyCapsulePrice34 = "0", toadyCapsuleShopOdds12 = "0", toadyCapsuleShopOdds34 = "0", toadyCapsuleSpaceOdds1 = "0", toadyCapsuleSpaceOdds2 = "0", toadyCapsuleSpaceOdds34 = "0", mrBlizzardCapsulePrice1 = "0", mrBlizzardCapsulePrice2 = "0", mrBlizzardCapsulePrice34 = "0", mrBlizzardCapsuleShopOdds12 = "0", mrBlizzardCapsuleShopOdds34 = "0", mrBlizzardCapsuleSpaceOdds1 = "0", mrBlizzardCapsuleSpaceOdds2 = "0", mrBlizzardCapsuleSpaceOdds34 = "0", banditCapsulePrice1 = "0", banditCapsulePrice2 = "0", banditCapsulePrice34 = "0", banditCapsuleShopOdds12 = "0", banditCapsuleShopOdds34 = "0", banditCapsuleSpaceOdds1 = "0", banditCapsuleSpaceOdds2 = "0", banditCapsuleSpaceOdds34 = "0", pinkBooCapsulePrice1 = "0", pinkBooCapsulePrice2 = "0", pinkBooCapsulePrice34 = "0", pinkBooCapsuleShopOdds12 = "0", pinkBooCapsuleShopOdds34 = "0", pinkBooCapsuleSpaceOdds1 = "0", pinkBooCapsuleSpaceOdds2 = "0", pinkBooCapsuleSpaceOdds34 = "0", spinyCapsulePrice1 = "0", spinyCapsulePrice2 = "0", spinyCapsulePrice34 = "0", spinyCapsuleShopOdds12 = "0", spinyCapsuleShopOdds34 = "0", spinyCapsuleSpaceOdds1 = "0", spinyCapsuleSpaceOdds2 = "0", spinyCapsuleSpaceOdds34 = "0", podobooCapsulePrice1 = "0", podobooCapsulePrice2 = "0", podobooCapsulePrice34 = "0", podobooCapsuleShopOdds12 = "0", podobooCapsuleShopOdds34 = "0", podobooCapsuleSpaceOdds1 = "0", podobooCapsuleSpaceOdds2 = "0", podobooCapsuleSpaceOdds34 = "0", tweesterCapsulePrice1 = "0", tweesterCapsulePrice2 = "0", tweesterCapsulePrice34 = "0", tweesterCapsuleShopOdds12 = "0", tweesterCapsuleShopOdds34 = "0", tweesterCapsuleSpaceOdds1 = "0", tweesterCapsuleSpaceOdds2 = "0", tweesterCapsuleSpaceOdds34 = "0", thwompCapsulePrice1 = "0", thwompCapsulePrice2 = "0", thwompCapsulePrice34 = "0", thwompCapsuleShopOdds12 = "0", thwompCapsuleShopOdds34 = "0", thwompCapsuleSpaceOdds1 = "0", thwompCapsuleSpaceOdds2 = "0", thwompCapsuleSpaceOdds34 = "0", warpCapsulePrice1 = "0", warpCapsulePrice2 = "0", warpCapsulePrice34 = "0", warpCapsuleShopOdds12 = "0", warpCapsuleShopOdds34 = "0", warpCapsuleSpaceOdds1 = "0", warpCapsuleSpaceOdds2 = "0", warpCapsuleSpaceOdds34 = "0", bombCapsulePrice1 = "0", bombCapsulePrice2 = "0", bombCapsulePrice34 = "0", bombCapsuleShopOdds12 = "0", bombCapsuleShopOdds34 = "0", bombCapsuleSpaceOdds1 = "0", bombCapsuleSpaceOdds2 = "0", bombCapsuleSpaceOdds34 = "0", fireballCapsulePrice1 = "0", fireballCapsulePrice2 = "0", fireballCapsulePrice34 = "0", fireballCapsuleShopOdds12 = "0", fireballCapsuleShopOdds34 = "0", fireballCapsuleSpaceOdds1 = "0", fireballCapsuleSpaceOdds2 = "0", fireballCapsuleSpaceOdds34 = "0", paraTroopaCapsulePrice1 = "0", paraTroopaCapsulePrice2 = "0", paraTroopaCapsulePrice34 = "0", paraTroopaCapsuleShopOdds12 = "0", paraTroopaCapsuleShopOdds34 = "0", paraTroopaCapsuleSpaceOdds1 = "0", paraTroopaCapsuleSpaceOdds2 = "0", paraTroopaCapsuleSpaceOdds34 = "0", eggCapsulePrice1 = "0", eggCapsulePrice2 = "0", eggCapsulePrice34 = "0", eggCapsuleShopOdds12 = "0", eggCapsuleShopOdds34 = "0", eggCapsuleSpaceOdds1 = "0", eggCapsuleSpaceOdds2 = "0", eggCapsuleSpaceOdds34 = "0", vacuumCapsulePrice1 = "0", vacuumCapsulePrice2 = "0", vacuumCapsulePrice34 = "0", vacuumCapsuleShopOdds12 = "0", vacuumCapsuleShopOdds34 = "0", vacuumCapsuleSpaceOdds1 = "0", vacuumCapsuleSpaceOdds2 = "0", vacuumCapsuleSpaceOdds34 = "0", magicCapsulePrice1 = "0", magicCapsulePrice2 = "0", magicCapsulePrice34 = "0", magicCapsuleShopOdds12 = "0", magicCapsuleShopOdds34 = "0", magicCapsuleSpaceOdds1 = "0", magicCapsuleSpaceOdds2 = "0", magicCapsuleSpaceOdds34 = "0", tripleCapsulePrice1 = "0", tripleCapsulePrice2 = "0", tripleCapsulePrice34 = "0", tripleCapsuleShopOdds12 = "0", tripleCapsuleShopOdds34 = "0", tripleCapsuleSpaceOdds1 = "0", tripleCapsuleSpaceOdds2 = "0", tripleCapsuleSpaceOdds34 = "0", koopaCapsulePrice1 = "0", koopaCapsulePrice2 = "0", koopaCapsulePrice34 = "0", koopaCapsuleShopOdds12 = "0", koopaCapsuleShopOdds34 = "0", koopaCapsuleSpaceOdds1 = "0", koopaCapsuleSpaceOdds2 = "0", koopaCapsuleSpaceOdds34 = "0", cursedMushroomPrice1 = "0", cursedMushroomPrice2 = "0", cursedMushroomPrice34 = "0", cursedMushroomShopOdds12 = "0", cursedMushroomShopOdds34 = "0", cursedMushroomSpaceOdds1 = "0", cursedMushroomSpaceOdds2 = "0", cursedMushroomSpaceOdds34 = "0", orbBagCapsulePrice1 = "0", orbBagCapsulePrice2 = "0", orbBagCapsulePrice34 = "0", orbBagCapsuleShopOdds12 = "0", orbBagCapsuleShopOdds34 = "0", orbBagCapsuleSpaceOdds1 = "0", orbBagCapsuleSpaceOdds2 = "0", orbBagCapsuleSpaceOdds34 = "0", mysteryCapsulePrice1 = "0", mysteryCapsulePrice2 = "0", mysteryCapsulePrice34 = "0", mysteryCapsuleShopOdds12 = "0", mysteryCapsuleShopOdds34 = "0", mysteryCapsuleSpaceOdds1 = "0", mysteryCapsuleSpaceOdds2 = "0", mysteryCapsuleSpaceOdds34 = "0", dkCapsulePrice1 = "0", dkCapsulePrice2 = "0", dkCapsulePrice34 = "0", dkCapsuleShopOdds12 = "0", dkCapsuleShopOdds34 = "0", dkCapsuleSpaceOdds1 = "0", dkCapsuleSpaceOdds2 = "0", dkCapsuleSpaceOdds34 = "0", duelCapsulePrice1 = "0", duelCapsulePrice2 = "0", duelCapsulePrice34 = "0", duelCapsuleShopOdds12 = "0", duelCapsuleShopOdds34 = "0", duelCapsuleSpaceOdds1 = "0", duelCapsuleSpaceOdds2 = "0", duelCapsuleSpaceOdds34 = "0", DxCapsuleDuelPrice1 = "0", DxCapsuleDuelPrice2 = "0", DxCapsuleDuelPrice34 = "0", DxCapsuleDuelShopOdds12 = "0", DxCapsuleDuelShopOdds34 = "0", DxCapsuleDuelSpaceOdds1 = "0", DxCapsuleDuelSpaceOdds2 = "0", DxCapsuleDuelSpaceOdds34 = "0", DxCapsuleChancePrice1 = "0", DxCapsuleChancePrice2 = "0", DxCapsuleChancePrice34 = "0", DxCapsuleChanceShopOdds12 = "0", DxCapsuleChanceShopOdds34 = "0", DxCapsuleChanceSpaceOdds1 = "0", DxCapsuleChanceSpaceOdds2 = "0", DxCapsuleChanceSpaceOdds34 = "0", DxCapsuleBowserPrice1 = "0", DxCapsuleBowserPrice2 = "0", DxCapsuleBowserPrice34 = "0", DxCapsuleBowserShopOdds12 = "0", DxCapsuleBowserShopOdds34 = "0", DxCapsuleBowserSpaceOdds1 = "0", DxCapsuleBowserSpaceOdds2 = "0", DxCapsuleBowserSpaceOdds34 = "0",DxCapsuleDonkeyKongPrice1 = "0", DxCapsuleDonkeyKongPrice2 = "0", DxCapsuleDonkeyKongPrice34 = "0", DxCapsuleDonkeyKongShopOdds12 = "0", DxCapsuleDonkeyKongShopOdds34 = "0", DxCapsuleDonkeyKongSpaceOdds1 = "0", DxCapsuleDonkeyKongSpaceOdds2 = "0", DxCapsuleDonkeyKongSpaceOdds34 = "0", DxCapsulePinkBooPrice1 = "0", DxCapsulePinkBooPrice2 = "0", DxCapsulePinkBooPrice34 = "0", DxCapsulePinkBooShopOdds12 = "0", DxCapsulePinkBooShopOdds34 = "0", DxCapsulePinkBooSpaceOdds1 = "0", DxCapsulePinkBooSpaceOdds2 = "0", DxCapsulePinkBooSpaceOdds34 = "0", DxCapsuleSolunaPrice1 = "0", DxCapsuleSolunaPrice2 = "0", DxCapsuleSolunaPrice34 = "0", DxCapsuleSolunaShopOdds12 = "0", DxCapsuleSolunaShopOdds34 = "0", DxCapsuleSolunaSpaceOdds1 = "0", DxCapsuleSolunaSpaceOdds2 = "0", DxCapsuleSolunaSpaceOdds34 = "0", DxCapsuleChainChompPrice1 = "0", DxCapsuleChainChompPrice2 = "0", DxCapsuleChainChompPrice34 = "0", DxCapsuleChainChompShopOdds12 = "0", DxCapsuleChainChompShopOdds34 = "0", DxCapsuleChainChompSpaceOdds1 = "0", DxCapsuleChainChompSpaceOdds2 = "0", DxCapsuleChainChompSpaceOdds34 = "0", DxCapsuleWackyWatchPrice1 = "0", DxCapsuleWackyWatchPrice2 = "0", DxCapsuleWackyWatchPrice34 = "0", DxCapsuleWackyWatchShopOdds12 = "0", DxCapsuleWackyWatchShopOdds34 = "0", DxCapsuleWackyWatchSpaceOdds1 = "0", DxCapsuleWackyWatchSpaceOdds2 = "0", DxCapsuleWackyWatchSpaceOdds34 = "0"):
+rounding_error_tracker = 0.0
+
+def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = "0", mushroomCapsuleSpaceOdds1 = "0", mushroomCapsuleSpaceOdds2 = "0", mushroomCapsuleSpaceOdds34 = "0", goldenMushroomCapsulePrice1 = "0", goldenMushroomCapsulePrice2 = "0", goldenMushroomCapsulePrice34 = "0", goldenMushroomCapsuleShopOdds12 = "0", goldenMushroomCapsuleShopOdds34 = "0", goldenMushroomCapsuleSpaceOdds1 = "0", goldenMushroomCapsuleSpaceOdds2 = "0", goldenMushroomCapsuleSpaceOdds34 = "0", slowMushroomCapsulePrice1 = "0", slowMushroomCapsulePrice2 = "0", slowMushroomCapsulePrice34 = "0", slowMushroomCapsuleShopOdds12 = "0", slowMushroomCapsuleShopOdds34 = "0", slowMushroomCapsuleSpaceOdds1 = "0", slowMushroomCapsuleSpaceOdds2 = "0", slowMushroomCapsuleSpaceOdds34 = "0", metalMushroomCapsulePrice1 = "0", metalMushroomCapsulePrice2 = "0", metalMushroomCapsulePrice34 = "0", metalMushroomCapsuleShopOdds12 = "0", metalMushroomCapsuleShopOdds34 = "0", metalMushroomCapsuleSpaceOdds1 = "0", metalMushroomCapsuleSpaceOdds2 = "0", metalMushroomCapsuleSpaceOdds34 = "0", flutterCapsulePrice1 = "0", flutterCapsulePrice2 = "0", flutterCapsulePrice34 = "0", flutterCapsuleShopOdds12 = "0", flutterCapsuleShopOdds34 = "0", flutterCapsuleSpaceOdds1 = "0", flutterCapsuleSpaceOdds2 = "0", flutterCapsuleSpaceOdds34 = "0", cannonCapsulePrice1 = "0", cannonCapsulePrice2 = "0", cannonCapsulePrice34 = "0", cannonCapsuleShopOdds12 = "0", cannonCapsuleShopOdds34 = "0", cannonCapsuleSpaceOdds1 = "0", cannonCapsuleSpaceOdds2 = "0", cannonCapsuleSpaceOdds34 = "0", snackCapsulePrice1 = "0", snackCapsulePrice2 = "0", snackCapsulePrice34 = "0", snackCapsuleShopOdds12 = "0", snackCapsuleShopOdds34 = "0", snackCapsuleSpaceOdds1 = "0", snackCapsuleSpaceOdds2 = "0", snackCapsuleSpaceOdds34 = "0", goombaCapsulePrice1 = "0", goombaCapsulePrice2 = "0", goombaCapsulePrice34 = "0", goombaCapsuleShopOdds12 = "0", goombaCapsuleShopOdds34 = "0", goombaCapsuleSpaceOdds1 = "0", goombaCapsuleSpaceOdds2 = "0", goombaCapsuleSpaceOdds34 = "0", hammerBroCapsulePrice1 = "0", hammerBroCapsulePrice2 = "0", hammerBroCapsulePrice34 = "0", hammerBroCapsuleShopOdds12 = "0", hammerBroCapsuleShopOdds34 = "0", hammerBroCapsuleSpaceOdds1 = "0", hammerBroCapsuleSpaceOdds2 = "0", hammerBroCapsuleSpaceOdds34 = "0", piranhaPlantCapsulePrice1 = "0", piranhaPlantCapsulePrice2 = "0", piranhaPlantCapsulePrice34 = "0", piranhaPlantCapsuleShopOdds12 = "0", piranhaPlantCapsuleShopOdds34 = "0", piranhaPlantCapsuleSpaceOdds1 = "0", piranhaPlantCapsuleSpaceOdds2 = "0", piranhaPlantCapsuleSpaceOdds34 = "0", kleptoCapsulePrice1 = "0", kleptoCapsulePrice2 = "0", kleptoCapsulePrice34 = "0", kleptoCapsuleShopOdds12 = "0", kleptoCapsuleShopOdds34 = "0", kleptoCapsuleSpaceOdds1 = "0", kleptoCapsuleSpaceOdds2 = "0", kleptoCapsuleSpaceOdds34 = "0", kamekCapsulePrice1 = "0", kamekCapsulePrice2 = "0", kamekCapsulePrice34 = "0", kamekCapsuleShopOdds12 = "0", kamekCapsuleShopOdds34 = "0", kamekCapsuleSpaceOdds1 = "0", kamekCapsuleSpaceOdds2 = "0", kamekCapsuleSpaceOdds34 = "0", toadyCapsulePrice1 = "0", toadyCapsulePrice2 = "0", toadyCapsulePrice34 = "0", toadyCapsuleShopOdds12 = "0", toadyCapsuleShopOdds34 = "0", toadyCapsuleSpaceOdds1 = "0", toadyCapsuleSpaceOdds2 = "0", toadyCapsuleSpaceOdds34 = "0", mrBlizzardCapsulePrice1 = "0", mrBlizzardCapsulePrice2 = "0", mrBlizzardCapsulePrice34 = "0", mrBlizzardCapsuleShopOdds12 = "0", mrBlizzardCapsuleShopOdds34 = "0", mrBlizzardCapsuleSpaceOdds1 = "0", mrBlizzardCapsuleSpaceOdds2 = "0", mrBlizzardCapsuleSpaceOdds34 = "0", banditCapsulePrice1 = "0", banditCapsulePrice2 = "0", banditCapsulePrice34 = "0", banditCapsuleShopOdds12 = "0", banditCapsuleShopOdds34 = "0", banditCapsuleSpaceOdds1 = "0", banditCapsuleSpaceOdds2 = "0", banditCapsuleSpaceOdds34 = "0", pinkBooCapsulePrice1 = "0", pinkBooCapsulePrice2 = "0", pinkBooCapsulePrice34 = "0", pinkBooCapsuleShopOdds12 = "0", pinkBooCapsuleShopOdds34 = "0", pinkBooCapsuleSpaceOdds1 = "0", pinkBooCapsuleSpaceOdds2 = "0", pinkBooCapsuleSpaceOdds34 = "0", spinyCapsulePrice1 = "0", spinyCapsulePrice2 = "0", spinyCapsulePrice34 = "0", spinyCapsuleShopOdds12 = "0", spinyCapsuleShopOdds34 = "0", spinyCapsuleSpaceOdds1 = "0", spinyCapsuleSpaceOdds2 = "0", spinyCapsuleSpaceOdds34 = "0", podobooCapsulePrice1 = "0", podobooCapsulePrice2 = "0", podobooCapsulePrice34 = "0", podobooCapsuleShopOdds12 = "0", podobooCapsuleShopOdds34 = "0", podobooCapsuleSpaceOdds1 = "0", podobooCapsuleSpaceOdds2 = "0", podobooCapsuleSpaceOdds34 = "0", tweesterCapsulePrice1 = "0", tweesterCapsulePrice2 = "0", tweesterCapsulePrice34 = "0", tweesterCapsuleShopOdds12 = "0", tweesterCapsuleShopOdds34 = "0", tweesterCapsuleSpaceOdds1 = "0", tweesterCapsuleSpaceOdds2 = "0", tweesterCapsuleSpaceOdds34 = "0", thwompCapsulePrice1 = "0", thwompCapsulePrice2 = "0", thwompCapsulePrice34 = "0", thwompCapsuleShopOdds12 = "0", thwompCapsuleShopOdds34 = "0", thwompCapsuleSpaceOdds1 = "0", thwompCapsuleSpaceOdds2 = "0", thwompCapsuleSpaceOdds34 = "0", warpCapsulePrice1 = "0", warpCapsulePrice2 = "0", warpCapsulePrice34 = "0", warpCapsuleShopOdds12 = "0", warpCapsuleShopOdds34 = "0", warpCapsuleSpaceOdds1 = "0", warpCapsuleSpaceOdds2 = "0", warpCapsuleSpaceOdds34 = "0", bombCapsulePrice1 = "0", bombCapsulePrice2 = "0", bombCapsulePrice34 = "0", bombCapsuleShopOdds12 = "0", bombCapsuleShopOdds34 = "0", bombCapsuleSpaceOdds1 = "0", bombCapsuleSpaceOdds2 = "0", bombCapsuleSpaceOdds34 = "0", fireballCapsulePrice1 = "0", fireballCapsulePrice2 = "0", fireballCapsulePrice34 = "0", fireballCapsuleShopOdds12 = "0", fireballCapsuleShopOdds34 = "0", fireballCapsuleSpaceOdds1 = "0", fireballCapsuleSpaceOdds2 = "0", fireballCapsuleSpaceOdds34 = "0", paraTroopaCapsulePrice1 = "0", paraTroopaCapsulePrice2 = "0", paraTroopaCapsulePrice34 = "0", paraTroopaCapsuleShopOdds12 = "0", paraTroopaCapsuleShopOdds34 = "0", paraTroopaCapsuleSpaceOdds1 = "0", paraTroopaCapsuleSpaceOdds2 = "0", paraTroopaCapsuleSpaceOdds34 = "0", eggCapsulePrice1 = "0", eggCapsulePrice2 = "0", eggCapsulePrice34 = "0", eggCapsuleShopOdds12 = "0", eggCapsuleShopOdds34 = "0", eggCapsuleSpaceOdds1 = "0", eggCapsuleSpaceOdds2 = "0", eggCapsuleSpaceOdds34 = "0", gaddLightCapsulePrice1 = "0", gaddLightCapsulePrice2 = "0", gaddLightCapsulePrice34 = "0", gaddLightCapsuleShopOdds12 = "0", gaddLightCapsuleShopOdds34 = "0", gaddLightCapsuleSpaceOdds1 = "0", gaddLightCapsuleSpaceOdds2 = "0", gaddLightCapsuleSpaceOdds34 = "0", magicCapsulePrice1 = "0", magicCapsulePrice2 = "0", magicCapsulePrice34 = "0", magicCapsuleShopOdds12 = "0", magicCapsuleShopOdds34 = "0", magicCapsuleSpaceOdds1 = "0", magicCapsuleSpaceOdds2 = "0", magicCapsuleSpaceOdds34 = "0", tripleCapsulePrice1 = "0", tripleCapsulePrice2 = "0", tripleCapsulePrice34 = "0", tripleCapsuleShopOdds12 = "0", tripleCapsuleShopOdds34 = "0", tripleCapsuleSpaceOdds1 = "0", tripleCapsuleSpaceOdds2 = "0", tripleCapsuleSpaceOdds34 = "0", koopaCapsulePrice1 = "0", koopaCapsulePrice2 = "0", koopaCapsulePrice34 = "0", koopaCapsuleShopOdds12 = "0", koopaCapsuleShopOdds34 = "0", koopaCapsuleSpaceOdds1 = "0", koopaCapsuleSpaceOdds2 = "0", koopaCapsuleSpaceOdds34 = "0", cursedMushroomPrice1 = "0", cursedMushroomPrice2 = "0", cursedMushroomPrice34 = "0", cursedMushroomShopOdds12 = "0", cursedMushroomShopOdds34 = "0", cursedMushroomSpaceOdds1 = "0", cursedMushroomSpaceOdds2 = "0", cursedMushroomSpaceOdds34 = "0", orbBagCapsulePrice1 = "0", orbBagCapsulePrice2 = "0", orbBagCapsulePrice34 = "0", orbBagCapsuleShopOdds12 = "0", orbBagCapsuleShopOdds34 = "0", orbBagCapsuleSpaceOdds1 = "0", orbBagCapsuleSpaceOdds2 = "0", orbBagCapsuleSpaceOdds34 = "0", mysteryCapsulePrice1 = "0", mysteryCapsulePrice2 = "0", mysteryCapsulePrice34 = "0", mysteryCapsuleShopOdds12 = "0", mysteryCapsuleShopOdds34 = "0", mysteryCapsuleSpaceOdds1 = "0", mysteryCapsuleSpaceOdds2 = "0", mysteryCapsuleSpaceOdds34 = "0", dkCapsulePrice1 = "0", dkCapsulePrice2 = "0", dkCapsulePrice34 = "0", dkCapsuleShopOdds12 = "0", dkCapsuleShopOdds34 = "0", dkCapsuleSpaceOdds1 = "0", dkCapsuleSpaceOdds2 = "0", dkCapsuleSpaceOdds34 = "0", duelCapsulePrice1 = "0", duelCapsulePrice2 = "0", duelCapsulePrice34 = "0", duelCapsuleShopOdds12 = "0", duelCapsuleShopOdds34 = "0", duelCapsuleSpaceOdds1 = "0", duelCapsuleSpaceOdds2 = "0", duelCapsuleSpaceOdds34 = "0", DxCapsuleDuelPrice1 = "0", DxCapsuleDuelPrice2 = "0", DxCapsuleDuelPrice34 = "0", DxCapsuleDuelShopOdds12 = "0", DxCapsuleDuelShopOdds34 = "0", DxCapsuleDuelSpaceOdds1 = "0", DxCapsuleDuelSpaceOdds2 = "0", DxCapsuleDuelSpaceOdds34 = "0", DxCapsuleChancePrice1 = "0", DxCapsuleChancePrice2 = "0", DxCapsuleChancePrice34 = "0", DxCapsuleChanceShopOdds12 = "0", DxCapsuleChanceShopOdds34 = "0", DxCapsuleChanceSpaceOdds1 = "0", DxCapsuleChanceSpaceOdds2 = "0", DxCapsuleChanceSpaceOdds34 = "0", DxCapsuleBowserPrice1 = "0", DxCapsuleBowserPrice2 = "0", DxCapsuleBowserPrice34 = "0", DxCapsuleBowserShopOdds12 = "0", DxCapsuleBowserShopOdds34 = "0", DxCapsuleBowserSpaceOdds1 = "0", DxCapsuleBowserSpaceOdds2 = "0", DxCapsuleBowserSpaceOdds34 = "0",DxCapsuleDonkeyKongPrice1 = "0", DxCapsuleDonkeyKongPrice2 = "0", DxCapsuleDonkeyKongPrice34 = "0", DxCapsuleDonkeyKongShopOdds12 = "0", DxCapsuleDonkeyKongShopOdds34 = "0", DxCapsuleDonkeyKongSpaceOdds1 = "0", DxCapsuleDonkeyKongSpaceOdds2 = "0", DxCapsuleDonkeyKongSpaceOdds34 = "0", DxCapsulePinkBooPrice1 = "0", DxCapsulePinkBooPrice2 = "0", DxCapsulePinkBooPrice34 = "0", DxCapsulePinkBooShopOdds12 = "0", DxCapsulePinkBooShopOdds34 = "0", DxCapsulePinkBooSpaceOdds1 = "0", DxCapsulePinkBooSpaceOdds2 = "0", DxCapsulePinkBooSpaceOdds34 = "0", DxCapsuleSolunaPrice1 = "0", DxCapsuleSolunaPrice2 = "0", DxCapsuleSolunaPrice34 = "0", DxCapsuleSolunaShopOdds12 = "0", DxCapsuleSolunaShopOdds34 = "0", DxCapsuleSolunaSpaceOdds1 = "0", DxCapsuleSolunaSpaceOdds2 = "0", DxCapsuleSolunaSpaceOdds34 = "0", DxCapsuleChainChompPrice1 = "0", DxCapsuleChainChompPrice2 = "0", DxCapsuleChainChompPrice34 = "0", DxCapsuleChainChompShopOdds12 = "0", DxCapsuleChainChompShopOdds34 = "0", DxCapsuleChainChompSpaceOdds1 = "0", DxCapsuleChainChompSpaceOdds2 = "0", DxCapsuleChainChompSpaceOdds34 = "0", DxCapsuleWackyWatchPrice1 = "0", DxCapsuleWackyWatchPrice2 = "0", DxCapsuleWackyWatchPrice34 = "0", DxCapsuleWackyWatchShopOdds12 = "0", DxCapsuleWackyWatchShopOdds34 = "0", DxCapsuleWackyWatchSpaceOdds1 = "0", DxCapsuleWackyWatchSpaceOdds2 = "0", DxCapsuleWackyWatchSpaceOdds34 = "0"):
     def get_capsule_value(capsule):
         try:
             # Handle string values from UI
@@ -246,14 +248,14 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     eggCapsuleSpaceOdds2 = get_capsule_value(eggCapsuleSpaceOdds2)
     eggCapsuleSpaceOdds34 = get_capsule_value(eggCapsuleSpaceOdds34)
 
-    vacuumCapsulePrice1 = get_capsule_value(vacuumCapsulePrice1)
-    vacuumCapsulePrice2 = get_capsule_value(vacuumCapsulePrice2)
-    vacuumCapsulePrice34 = get_capsule_value(vacuumCapsulePrice34)
-    vacuumCapsuleShopOdds12 = get_capsule_value(vacuumCapsuleShopOdds12)
-    vacuumCapsuleShopOdds34 = get_capsule_value(vacuumCapsuleShopOdds34)
-    vacuumCapsuleSpaceOdds1 = get_capsule_value(vacuumCapsuleSpaceOdds1)
-    vacuumCapsuleSpaceOdds2 = get_capsule_value(vacuumCapsuleSpaceOdds2)
-    vacuumCapsuleSpaceOdds34 = get_capsule_value(vacuumCapsuleSpaceOdds34)
+    gaddLightCapsulePrice1 = get_capsule_value(gaddLightCapsulePrice1)
+    gaddLightCapsulePrice2 = get_capsule_value(gaddLightCapsulePrice2)
+    gaddLightCapsulePrice34 = get_capsule_value(gaddLightCapsulePrice34)
+    gaddLightCapsuleShopOdds12 = get_capsule_value(gaddLightCapsuleShopOdds12)
+    gaddLightCapsuleShopOdds34 = get_capsule_value(gaddLightCapsuleShopOdds34)
+    gaddLightCapsuleSpaceOdds1 = get_capsule_value(gaddLightCapsuleSpaceOdds1)
+    gaddLightCapsuleSpaceOdds2 = get_capsule_value(gaddLightCapsuleSpaceOdds2)
+    gaddLightCapsuleSpaceOdds34 = get_capsule_value(gaddLightCapsuleSpaceOdds34)
 
     magicCapsulePrice1 = get_capsule_value(magicCapsulePrice1)
     magicCapsulePrice2 = get_capsule_value(magicCapsulePrice2)
@@ -409,7 +411,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         pinkBooCapsuleShopOdds12, spinyCapsuleShopOdds12, podobooCapsuleShopOdds12,
         tweesterCapsuleShopOdds12, thwompCapsuleShopOdds12, warpCapsuleShopOdds12,
         bombCapsuleShopOdds12, fireballCapsuleShopOdds12, paraTroopaCapsuleShopOdds12,
-        eggCapsuleShopOdds12, vacuumCapsuleShopOdds12, magicCapsuleShopOdds12,
+        eggCapsuleShopOdds12, gaddLightCapsuleShopOdds12, magicCapsuleShopOdds12,
         tripleCapsuleShopOdds12, koopaCapsuleShopOdds12, mysteryCapsuleShopOdds12,
         duelCapsuleShopOdds12, dkCapsuleShopOdds12, orbBagCapsuleShopOdds12,
         DxCapsuleDuelShopOdds12, DxCapsuleChanceShopOdds12, DxCapsuleBowserShopOdds12,
@@ -426,7 +428,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         pinkBooCapsuleShopOdds34, spinyCapsuleShopOdds34, podobooCapsuleShopOdds34,
         tweesterCapsuleShopOdds34, thwompCapsuleShopOdds34, warpCapsuleShopOdds34,
         bombCapsuleShopOdds34, fireballCapsuleShopOdds34, paraTroopaCapsuleShopOdds34,
-        eggCapsuleShopOdds34, vacuumCapsuleShopOdds34, magicCapsuleShopOdds34,
+        eggCapsuleShopOdds34, gaddLightCapsuleShopOdds34, magicCapsuleShopOdds34,
         tripleCapsuleShopOdds34, koopaCapsuleShopOdds34, mysteryCapsuleShopOdds34,
         duelCapsuleShopOdds34, dkCapsuleShopOdds34, orbBagCapsuleShopOdds34,
         DxCapsuleDuelShopOdds34, DxCapsuleChanceShopOdds34, DxCapsuleBowserShopOdds34,
@@ -443,7 +445,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         pinkBooCapsuleSpaceOdds1, spinyCapsuleSpaceOdds1, podobooCapsuleSpaceOdds1,
         tweesterCapsuleSpaceOdds1, thwompCapsuleSpaceOdds1, warpCapsuleSpaceOdds1,
         bombCapsuleSpaceOdds1, fireballCapsuleSpaceOdds1, paraTroopaCapsuleSpaceOdds1,
-        eggCapsuleSpaceOdds1, vacuumCapsuleSpaceOdds1, magicCapsuleSpaceOdds1,
+        eggCapsuleSpaceOdds1, gaddLightCapsuleSpaceOdds1, magicCapsuleSpaceOdds1,
         tripleCapsuleSpaceOdds1, koopaCapsuleSpaceOdds1, mysteryCapsuleSpaceOdds1,
         duelCapsuleSpaceOdds1, dkCapsuleSpaceOdds1, orbBagCapsuleSpaceOdds1,
         DxCapsuleDuelSpaceOdds1, DxCapsuleChanceSpaceOdds1, DxCapsuleBowserSpaceOdds1,
@@ -460,7 +462,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         pinkBooCapsuleSpaceOdds2, spinyCapsuleSpaceOdds2, podobooCapsuleSpaceOdds2,
         tweesterCapsuleSpaceOdds2, thwompCapsuleSpaceOdds2, warpCapsuleSpaceOdds2,
         bombCapsuleSpaceOdds2, fireballCapsuleSpaceOdds2, paraTroopaCapsuleSpaceOdds2,
-        eggCapsuleSpaceOdds2, vacuumCapsuleSpaceOdds2, magicCapsuleSpaceOdds2,
+        eggCapsuleSpaceOdds2, gaddLightCapsuleSpaceOdds2, magicCapsuleSpaceOdds2,
         tripleCapsuleSpaceOdds2, koopaCapsuleSpaceOdds2, mysteryCapsuleSpaceOdds2,
         duelCapsuleSpaceOdds2, dkCapsuleSpaceOdds2, orbBagCapsuleSpaceOdds2,
         DxCapsuleDuelSpaceOdds2, DxCapsuleChanceSpaceOdds2, DxCapsuleBowserSpaceOdds2,
@@ -477,7 +479,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         pinkBooCapsuleSpaceOdds34, spinyCapsuleSpaceOdds34, podobooCapsuleSpaceOdds34,
         tweesterCapsuleSpaceOdds34, thwompCapsuleSpaceOdds34, warpCapsuleSpaceOdds34,
         bombCapsuleSpaceOdds34, fireballCapsuleSpaceOdds34, paraTroopaCapsuleSpaceOdds34,
-        eggCapsuleSpaceOdds34, vacuumCapsuleSpaceOdds34, magicCapsuleSpaceOdds34,
+        eggCapsuleSpaceOdds34, gaddLightCapsuleSpaceOdds34, magicCapsuleSpaceOdds34,
         tripleCapsuleSpaceOdds34, koopaCapsuleSpaceOdds34, mysteryCapsuleSpaceOdds34,
         duelCapsuleSpaceOdds34, dkCapsuleSpaceOdds34, orbBagCapsuleSpaceOdds34,
         DxCapsuleDuelSpaceOdds34, DxCapsuleChanceSpaceOdds34, DxCapsuleBowserSpaceOdds34,
@@ -498,18 +500,30 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     spaceOdds34Weights = sum(safe_int(weight) for weight in spaceOdds34)
 
     def calculateWeight(weight, total):
+        global rounding_error_tracker
         try:
-            weight = int(weight) if weight else 0
-            if total < 100 and total > 0: # Added total > 0 to be safe
-                return weight
-            
-            percentage = (weight / total) * 100
-            return math.ceil(percentage) if 0 < percentage < 1 else round(percentage)
+            weight_val = int(weight) if weight else 0
+            if total == 0: 
+                return 0
+
+            # Calculate the precise percentage
+            precise_percentage = (weight_val / total) * 100
+
+            # Add the previous rounding error to the current calculation
+            current_val = precise_percentage + rounding_error_tracker
+
+            # Round to the nearest whole number
+            rounded_val = round(current_val)
+
+            # Update the tracker with the new leftover error
+            rounding_error_tracker = current_val - rounded_val
+
+            return rounded_val
         except ZeroDivisionError:
-            # This catches the division by zero and returns a safe default
             return 0
 
     # Calculate weights for shop odds 12
+    rounding_error_tracker = 0
     mushroomCapsuleShopOdds12 = calculateWeight(mushroomCapsuleShopOdds12, shopOdds12Weights)
     goldenMushroomCapsuleShopOdds12 = calculateWeight(goldenMushroomCapsuleShopOdds12, shopOdds12Weights)
     metalMushroomCapsuleShopOdds12 = calculateWeight(metalMushroomCapsuleShopOdds12, shopOdds12Weights)
@@ -535,7 +549,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     fireballCapsuleShopOdds12 = calculateWeight(fireballCapsuleShopOdds12, shopOdds12Weights)
     paraTroopaCapsuleShopOdds12 = calculateWeight(paraTroopaCapsuleShopOdds12, shopOdds12Weights)
     eggCapsuleShopOdds12 = calculateWeight(eggCapsuleShopOdds12, shopOdds12Weights)
-    vacuumCapsuleShopOdds12 = calculateWeight(vacuumCapsuleShopOdds12, shopOdds12Weights)
+    gaddLightCapsuleShopOdds12 = calculateWeight(gaddLightCapsuleShopOdds12, shopOdds12Weights)
     magicCapsuleShopOdds12 = calculateWeight(magicCapsuleShopOdds12, shopOdds12Weights)
     tripleCapsuleShopOdds12 = calculateWeight(tripleCapsuleShopOdds12, shopOdds12Weights)
     koopaCapsuleShopOdds12 = calculateWeight(koopaCapsuleShopOdds12, shopOdds12Weights)
@@ -553,6 +567,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     DxCapsuleWackyWatchShopOdds12 = calculateWeight(DxCapsuleWackyWatchShopOdds12, shopOdds12Weights)
 
     # Calculate weights for shop odds 34
+    rounding_error_tracker = 0
     mushroomCapsuleShopOdds34 = calculateWeight(mushroomCapsuleShopOdds34, shopOdds34Weights)
     goldenMushroomCapsuleShopOdds34 = calculateWeight(goldenMushroomCapsuleShopOdds34, shopOdds34Weights)
     metalMushroomCapsuleShopOdds34 = calculateWeight(metalMushroomCapsuleShopOdds34, shopOdds34Weights)
@@ -578,7 +593,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     fireballCapsuleShopOdds34 = calculateWeight(fireballCapsuleShopOdds34, shopOdds34Weights)
     paraTroopaCapsuleShopOdds34 = calculateWeight(paraTroopaCapsuleShopOdds34, shopOdds34Weights)
     eggCapsuleShopOdds34 = calculateWeight(eggCapsuleShopOdds34, shopOdds34Weights)
-    vacuumCapsuleShopOdds34 = calculateWeight(vacuumCapsuleShopOdds34, shopOdds34Weights)
+    gaddLightCapsuleShopOdds34 = calculateWeight(gaddLightCapsuleShopOdds34, shopOdds34Weights)
     magicCapsuleShopOdds34 = calculateWeight(magicCapsuleShopOdds34, shopOdds34Weights)
     tripleCapsuleShopOdds34 = calculateWeight(tripleCapsuleShopOdds34, shopOdds34Weights)
     koopaCapsuleShopOdds34 = calculateWeight(koopaCapsuleShopOdds34, shopOdds34Weights)
@@ -596,6 +611,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     DxCapsuleWackyWatchShopOdds34 = calculateWeight(DxCapsuleWackyWatchShopOdds34, shopOdds34Weights)
 
     # Calculate weights for space odds 1
+    rounding_error_tracker = 0
     mushroomCapsuleSpaceOdds1 = calculateWeight(mushroomCapsuleSpaceOdds1, spaceOdds1Weights)
     goldenMushroomCapsuleSpaceOdds1 = calculateWeight(goldenMushroomCapsuleSpaceOdds1, spaceOdds1Weights)
     metalMushroomCapsuleSpaceOdds1 = calculateWeight(metalMushroomCapsuleSpaceOdds1, spaceOdds1Weights)
@@ -621,7 +637,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     fireballCapsuleSpaceOdds1 = calculateWeight(fireballCapsuleSpaceOdds1, spaceOdds1Weights)
     paraTroopaCapsuleSpaceOdds1 = calculateWeight(paraTroopaCapsuleSpaceOdds1, spaceOdds1Weights)
     eggCapsuleSpaceOdds1 = calculateWeight(eggCapsuleSpaceOdds1, spaceOdds1Weights)
-    vacuumCapsuleSpaceOdds1 = calculateWeight(vacuumCapsuleSpaceOdds1, spaceOdds1Weights)
+    gaddLightCapsuleSpaceOdds1 = calculateWeight(gaddLightCapsuleSpaceOdds1, spaceOdds1Weights)
     magicCapsuleSpaceOdds1 = calculateWeight(magicCapsuleSpaceOdds1, spaceOdds1Weights)
     tripleCapsuleSpaceOdds1 = calculateWeight(tripleCapsuleSpaceOdds1, spaceOdds1Weights)
     koopaCapsuleSpaceOdds1 = calculateWeight(koopaCapsuleSpaceOdds1, spaceOdds1Weights)
@@ -639,6 +655,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     DxCapsuleWackyWatchSpaceOdds1 = calculateWeight(DxCapsuleWackyWatchSpaceOdds1, spaceOdds1Weights)
 
     # Calculate weights for space odds 2
+    rounding_error_tracker = 0
     mushroomCapsuleSpaceOdds2 = calculateWeight(mushroomCapsuleSpaceOdds2, spaceOdds2Weights)
     goldenMushroomCapsuleSpaceOdds2 = calculateWeight(goldenMushroomCapsuleSpaceOdds2, spaceOdds2Weights)
     metalMushroomCapsuleSpaceOdds2 = calculateWeight(metalMushroomCapsuleSpaceOdds2, spaceOdds2Weights)
@@ -664,7 +681,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     fireballCapsuleSpaceOdds2 = calculateWeight(fireballCapsuleSpaceOdds2, spaceOdds2Weights)
     paraTroopaCapsuleSpaceOdds2 = calculateWeight(paraTroopaCapsuleSpaceOdds2, spaceOdds2Weights)
     eggCapsuleSpaceOdds2 = calculateWeight(eggCapsuleSpaceOdds2, spaceOdds2Weights)
-    vacuumCapsuleSpaceOdds2 = calculateWeight(vacuumCapsuleSpaceOdds2, spaceOdds2Weights)
+    gaddLightCapsuleSpaceOdds2 = calculateWeight(gaddLightCapsuleSpaceOdds2, spaceOdds2Weights)
     magicCapsuleSpaceOdds2 = calculateWeight(magicCapsuleSpaceOdds2, spaceOdds2Weights)
     tripleCapsuleSpaceOdds2 = calculateWeight(tripleCapsuleSpaceOdds2, spaceOdds2Weights)
     koopaCapsuleSpaceOdds2 = calculateWeight(koopaCapsuleSpaceOdds2, spaceOdds2Weights)
@@ -682,6 +699,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     DxCapsuleWackyWatchSpaceOdds2 = calculateWeight(DxCapsuleWackyWatchSpaceOdds2, spaceOdds2Weights)
 
     # Calculate weights for space odds 34
+    rounding_error_tracker = 0
     mushroomCapsuleSpaceOdds34 = calculateWeight(mushroomCapsuleSpaceOdds34, spaceOdds34Weights)
     goldenMushroomCapsuleSpaceOdds34 = calculateWeight(goldenMushroomCapsuleSpaceOdds34, spaceOdds34Weights)
     metalMushroomCapsuleSpaceOdds34 = calculateWeight(metalMushroomCapsuleSpaceOdds34, spaceOdds34Weights)
@@ -707,7 +725,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     fireballCapsuleSpaceOdds34 = calculateWeight(fireballCapsuleSpaceOdds34, spaceOdds34Weights)
     paraTroopaCapsuleSpaceOdds34 = calculateWeight(paraTroopaCapsuleSpaceOdds34, spaceOdds34Weights)
     eggCapsuleSpaceOdds34 = calculateWeight(eggCapsuleSpaceOdds34, spaceOdds34Weights)
-    vacuumCapsuleSpaceOdds34 = calculateWeight(vacuumCapsuleSpaceOdds34, spaceOdds34Weights)
+    gaddLightCapsuleSpaceOdds34 = calculateWeight(gaddLightCapsuleSpaceOdds34, spaceOdds34Weights)
     magicCapsuleSpaceOdds34 = calculateWeight(magicCapsuleSpaceOdds34, spaceOdds34Weights)
     tripleCapsuleSpaceOdds34 = calculateWeight(tripleCapsuleSpaceOdds34, spaceOdds34Weights)
     koopaCapsuleSpaceOdds34 = calculateWeight(koopaCapsuleSpaceOdds34, spaceOdds34Weights)
@@ -734,7 +752,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         pinkBooCapsuleShopOdds12, spinyCapsuleShopOdds12, podobooCapsuleShopOdds12,
         tweesterCapsuleShopOdds12, thwompCapsuleShopOdds12, warpCapsuleShopOdds12,
         bombCapsuleShopOdds12, fireballCapsuleShopOdds12, paraTroopaCapsuleShopOdds12,
-        eggCapsuleShopOdds12, vacuumCapsuleShopOdds12, magicCapsuleShopOdds12,
+        eggCapsuleShopOdds12, gaddLightCapsuleShopOdds12, magicCapsuleShopOdds12,
         tripleCapsuleShopOdds12, koopaCapsuleShopOdds12, mysteryCapsuleShopOdds12,
         duelCapsuleShopOdds12, dkCapsuleShopOdds12, orbBagCapsuleShopOdds12,
         DxCapsuleDuelShopOdds12, DxCapsuleChanceShopOdds12, DxCapsuleBowserShopOdds12,
@@ -751,7 +769,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         pinkBooCapsuleShopOdds34, spinyCapsuleShopOdds34, podobooCapsuleShopOdds34,
         tweesterCapsuleShopOdds34, thwompCapsuleShopOdds34, warpCapsuleShopOdds34,
         bombCapsuleShopOdds34, fireballCapsuleShopOdds34, paraTroopaCapsuleShopOdds34,
-        eggCapsuleShopOdds34, vacuumCapsuleShopOdds34, magicCapsuleShopOdds34,
+        eggCapsuleShopOdds34, gaddLightCapsuleShopOdds34, magicCapsuleShopOdds34,
         tripleCapsuleShopOdds34, koopaCapsuleShopOdds34, mysteryCapsuleShopOdds34,
         duelCapsuleShopOdds34, dkCapsuleShopOdds34, orbBagCapsuleShopOdds34,
         DxCapsuleDuelShopOdds34, DxCapsuleChanceShopOdds34, DxCapsuleBowserShopOdds34,
@@ -768,7 +786,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         pinkBooCapsuleSpaceOdds1, spinyCapsuleSpaceOdds1, podobooCapsuleSpaceOdds1,
         tweesterCapsuleSpaceOdds1, thwompCapsuleSpaceOdds1, warpCapsuleSpaceOdds1,
         bombCapsuleSpaceOdds1, fireballCapsuleSpaceOdds1, paraTroopaCapsuleSpaceOdds1,
-        eggCapsuleSpaceOdds1, vacuumCapsuleSpaceOdds1, magicCapsuleSpaceOdds1,
+        eggCapsuleSpaceOdds1, gaddLightCapsuleSpaceOdds1, magicCapsuleSpaceOdds1,
         tripleCapsuleSpaceOdds1, koopaCapsuleSpaceOdds1, mysteryCapsuleSpaceOdds1,
         duelCapsuleSpaceOdds1, dkCapsuleSpaceOdds1, orbBagCapsuleSpaceOdds1,
         DxCapsuleDuelSpaceOdds1, DxCapsuleChanceSpaceOdds1, DxCapsuleBowserSpaceOdds1,
@@ -785,7 +803,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         pinkBooCapsuleSpaceOdds2, spinyCapsuleSpaceOdds2, podobooCapsuleSpaceOdds2,
         tweesterCapsuleSpaceOdds2, thwompCapsuleSpaceOdds2, warpCapsuleSpaceOdds2,
         bombCapsuleSpaceOdds2, fireballCapsuleSpaceOdds2, paraTroopaCapsuleSpaceOdds2,
-        eggCapsuleSpaceOdds2, vacuumCapsuleSpaceOdds2, magicCapsuleSpaceOdds2,
+        eggCapsuleSpaceOdds2, gaddLightCapsuleSpaceOdds2, magicCapsuleSpaceOdds2,
         tripleCapsuleSpaceOdds2, koopaCapsuleSpaceOdds2, mysteryCapsuleSpaceOdds2,
         duelCapsuleSpaceOdds2, dkCapsuleSpaceOdds2, orbBagCapsuleSpaceOdds2,
         DxCapsuleDuelSpaceOdds2, DxCapsuleChanceSpaceOdds2, DxCapsuleBowserSpaceOdds2,
@@ -802,7 +820,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
         pinkBooCapsuleSpaceOdds34, spinyCapsuleSpaceOdds34, podobooCapsuleSpaceOdds34,
         tweesterCapsuleSpaceOdds34, thwompCapsuleSpaceOdds34, warpCapsuleSpaceOdds34,
         bombCapsuleSpaceOdds34, fireballCapsuleSpaceOdds34, paraTroopaCapsuleSpaceOdds34,
-        eggCapsuleSpaceOdds34, vacuumCapsuleSpaceOdds34, magicCapsuleSpaceOdds34,
+        eggCapsuleSpaceOdds34, gaddLightCapsuleSpaceOdds34, magicCapsuleSpaceOdds34,
         tripleCapsuleSpaceOdds34, koopaCapsuleSpaceOdds34, mysteryCapsuleSpaceOdds34,
         duelCapsuleSpaceOdds34, dkCapsuleSpaceOdds34, orbBagCapsuleSpaceOdds34,
         DxCapsuleDuelSpaceOdds34, DxCapsuleChanceSpaceOdds34, DxCapsuleBowserSpaceOdds34,
@@ -906,8 +924,8 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     if shopOdds12Max == 'eggCapsuleShopOdds12':
         eggCapsuleShopOdds12 += (100 - eggCapsuleShopOdds12)
 
-    if shopOdds12Max == 'vacuumCapsuleShopOdds12':
-        vacuumCapsuleShopOdds12 += (100 - vacuumCapsuleShopOdds12)
+    if shopOdds12Max == 'gaddLightCapsuleShopOdds12':
+        gaddLightCapsuleShopOdds12 += (100 - gaddLightCapsuleShopOdds12)
 
     if shopOdds12Max == 'magicCapsuleShopOdds12':
         magicCapsuleShopOdds12 += (100 - magicCapsuleShopOdds12)
@@ -1029,8 +1047,8 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     if shopOdds34Max == 'eggCapsuleShopOdds34':
         eggCapsuleShopOdds34 += (100 - eggCapsuleShopOdds34)
 
-    if shopOdds34Max == 'vacuumCapsuleShopOdds34':
-        vacuumCapsuleShopOdds34 += (100 - vacuumCapsuleShopOdds34)
+    if shopOdds34Max == 'gaddLightCapsuleShopOdds34':
+        gaddLightCapsuleShopOdds34 += (100 - gaddLightCapsuleShopOdds34)
 
     if shopOdds34Max == 'magicCapsuleShopOdds34':
         magicCapsuleShopOdds34 += (100 - magicCapsuleShopOdds34)
@@ -1152,8 +1170,8 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     if spaceOdds1Max == 'eggCapsuleSpaceOdds1':
         eggCapsuleSpaceOdds1 += (100 - eggCapsuleSpaceOdds1)
 
-    if spaceOdds1Max == 'vacuumCapsuleSpaceOdds1':
-        vacuumCapsuleSpaceOdds1 += (100 - vacuumCapsuleSpaceOdds1)
+    if spaceOdds1Max == 'gaddLightCapsuleSpaceOdds1':
+        gaddLightCapsuleSpaceOdds1 += (100 - gaddLightCapsuleSpaceOdds1)
 
     if spaceOdds1Max == 'magicCapsuleSpaceOdds1':
         magicCapsuleSpaceOdds1 += (100 - magicCapsuleSpaceOdds1)
@@ -1275,8 +1293,8 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     if spaceOdds2Max == 'eggCapsuleSpaceOdds2':
         eggCapsuleSpaceOdds2 += (100 - eggCapsuleSpaceOdds2)
 
-    if spaceOdds2Max == 'vacuumCapsuleSpaceOdds2':
-        vacuumCapsuleSpaceOdds2 += (100 - vacuumCapsuleSpaceOdds2)
+    if spaceOdds2Max == 'gaddLightCapsuleSpaceOdds2':
+        gaddLightCapsuleSpaceOdds2 += (100 - gaddLightCapsuleSpaceOdds2)
 
     if spaceOdds2Max == 'magicCapsuleSpaceOdds2':
         magicCapsuleSpaceOdds2 += (100 - magicCapsuleSpaceOdds2)
@@ -1398,8 +1416,8 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     if spaceOdds34Max == 'eggCapsuleSpaceOdds34':
         eggCapsuleSpaceOdds34 += (100 - eggCapsuleSpaceOdds34)
 
-    if spaceOdds34Max == 'vacuumCapsuleSpaceOdds34':
-        vacuumCapsuleSpaceOdds34 += (100 - vacuumCapsuleSpaceOdds34)
+    if spaceOdds34Max == 'gaddLightCapsuleSpaceOdds34':
+        gaddLightCapsuleSpaceOdds34 += (100 - gaddLightCapsuleSpaceOdds34)
 
     if spaceOdds34Max == 'magicCapsuleSpaceOdds34':
         magicCapsuleSpaceOdds34 += (100 - magicCapsuleSpaceOdds34)
@@ -1596,11 +1614,11 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     eggCapsuleSpaceOdds2 = str(eggCapsuleSpaceOdds2)
     eggCapsuleSpaceOdds34 = str(eggCapsuleSpaceOdds34)
 
-    vacuumCapsuleShopOdds12 = str(vacuumCapsuleShopOdds12)
-    vacuumCapsuleShopOdds34 = str(vacuumCapsuleShopOdds34)
-    vacuumCapsuleSpaceOdds1 = str(vacuumCapsuleSpaceOdds1)
-    vacuumCapsuleSpaceOdds2 = str(vacuumCapsuleSpaceOdds2)
-    vacuumCapsuleSpaceOdds34 = str(vacuumCapsuleSpaceOdds34)
+    gaddLightCapsuleShopOdds12 = str(gaddLightCapsuleShopOdds12)
+    gaddLightCapsuleShopOdds34 = str(gaddLightCapsuleShopOdds34)
+    gaddLightCapsuleSpaceOdds1 = str(gaddLightCapsuleSpaceOdds1)
+    gaddLightCapsuleSpaceOdds2 = str(gaddLightCapsuleSpaceOdds2)
+    gaddLightCapsuleSpaceOdds34 = str(gaddLightCapsuleSpaceOdds34)
 
     magicCapsuleShopOdds12 = str(magicCapsuleShopOdds12)
     magicCapsuleShopOdds34 = str(magicCapsuleShopOdds34)
@@ -1932,14 +1950,14 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     eggCapsuleSpaceOdds2 = convert_to_hex_weight(eggCapsuleSpaceOdds2)
     eggCapsuleSpaceOdds34 = convert_to_hex_weight(eggCapsuleSpaceOdds34)
 
-    vacuumCapsulePrice1 = convert_to_hex_weight(vacuumCapsulePrice1)
-    vacuumCapsulePrice2 = convert_to_hex_weight(vacuumCapsulePrice2)
-    vacuumCapsulePrice34 = convert_to_hex_weight(vacuumCapsulePrice34)
-    vacuumCapsuleShopOdds12 = convert_to_hex_weight(vacuumCapsuleShopOdds12)
-    vacuumCapsuleShopOdds34 = convert_to_hex_weight(vacuumCapsuleShopOdds34)
-    vacuumCapsuleSpaceOdds1 = convert_to_hex_weight(vacuumCapsuleSpaceOdds1)
-    vacuumCapsuleSpaceOdds2 = convert_to_hex_weight(vacuumCapsuleSpaceOdds2)
-    vacuumCapsuleSpaceOdds34 = convert_to_hex_weight(vacuumCapsuleSpaceOdds34)
+    gaddLightCapsulePrice1 = convert_to_hex_weight(gaddLightCapsulePrice1)
+    gaddLightCapsulePrice2 = convert_to_hex_weight(gaddLightCapsulePrice2)
+    gaddLightCapsulePrice34 = convert_to_hex_weight(gaddLightCapsulePrice34)
+    gaddLightCapsuleShopOdds12 = convert_to_hex_weight(gaddLightCapsuleShopOdds12)
+    gaddLightCapsuleShopOdds34 = convert_to_hex_weight(gaddLightCapsuleShopOdds34)
+    gaddLightCapsuleSpaceOdds1 = convert_to_hex_weight(gaddLightCapsuleSpaceOdds1)
+    gaddLightCapsuleSpaceOdds2 = convert_to_hex_weight(gaddLightCapsuleSpaceOdds2)
+    gaddLightCapsuleSpaceOdds34 = convert_to_hex_weight(gaddLightCapsuleSpaceOdds34)
 
     magicCapsulePrice1 = convert_to_hex_weight(magicCapsulePrice1)
     magicCapsulePrice2 = convert_to_hex_weight(magicCapsulePrice2)
@@ -2302,15 +2320,15 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     snackShopOdds123 = eggCapsuleShopOdds12
     snackShopOdds4 = eggCapsuleShopOdds34
 
-    gaddLightPrice1 = vacuumCapsulePrice1
-    gaddLightPrice2 = vacuumCapsulePrice2
-    gaddLightPrice34 = vacuumCapsulePrice34
-    gaddLightSpaceOdds1 = vacuumCapsuleSpaceOdds1
-    gaddLightSpaceOdds2 = vacuumCapsuleSpaceOdds2
-    gaddLightSpaceOdds3 = vacuumCapsuleSpaceOdds34
-    gaddLightSpaceOdds4 = vacuumCapsuleSpaceOdds34
-    gaddLightShopOdds123 = vacuumCapsuleShopOdds12
-    gaddLightShopOdds4 = vacuumCapsuleShopOdds34
+    gaddLightPrice1 = gaddLightCapsulePrice1
+    gaddLightPrice2 = gaddLightCapsulePrice2
+    gaddLightPrice34 = gaddLightCapsulePrice34
+    gaddLightSpaceOdds1 = gaddLightCapsuleSpaceOdds1
+    gaddLightSpaceOdds2 = gaddLightCapsuleSpaceOdds2
+    gaddLightSpaceOdds3 = gaddLightCapsuleSpaceOdds34
+    gaddLightSpaceOdds4 = gaddLightCapsuleSpaceOdds34
+    gaddLightShopOdds123 = gaddLightCapsuleShopOdds12
+    gaddLightShopOdds4 = gaddLightCapsuleShopOdds34
 
     # Map DX-only capsule variable names to formatter argument names
     duelPrice1 = DxCapsuleDuelPrice1
@@ -2414,7 +2432,7 @@ def itemsEvent_mp6DX(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 
     print("Generated code copied to the clipboard.")
     createDialog("Operation Sucessful", "success", "Generated codes copied to clipboard!.", None)
 
-def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = "0", mushroomCapsuleSpaceOdds1 = "0", mushroomCapsuleSpaceOdds2 = "0", mushroomCapsuleSpaceOdds34 = "0", goldenMushroomCapsulePrice1 = "0", goldenMushroomCapsulePrice2 = "0", goldenMushroomCapsulePrice34 = "0", goldenMushroomCapsuleShopOdds12 = "0", goldenMushroomCapsuleShopOdds34 = "0", goldenMushroomCapsuleSpaceOdds1 = "0", goldenMushroomCapsuleSpaceOdds2 = "0", goldenMushroomCapsuleSpaceOdds34 = "0", slowMushroomCapsulePrice1 = "0", slowMushroomCapsulePrice2 = "0", slowMushroomCapsulePrice34 = "0", slowMushroomCapsuleShopOdds12 = "0", slowMushroomCapsuleShopOdds34 = "0", slowMushroomCapsuleSpaceOdds1 = "0", slowMushroomCapsuleSpaceOdds2 = "0", slowMushroomCapsuleSpaceOdds34 = "0", metalMushroomCapsulePrice1 = "0", metalMushroomCapsulePrice2 = "0", metalMushroomCapsulePrice34 = "0", metalMushroomCapsuleShopOdds12 = "0", metalMushroomCapsuleShopOdds34 = "0", metalMushroomCapsuleSpaceOdds1 = "0", metalMushroomCapsuleSpaceOdds2 = "0", metalMushroomCapsuleSpaceOdds34 = "0", flutterCapsulePrice1 = "0", flutterCapsulePrice2 = "0", flutterCapsulePrice34 = "0", flutterCapsuleShopOdds12 = "0", flutterCapsuleShopOdds34 = "0", flutterCapsuleSpaceOdds1 = "0", flutterCapsuleSpaceOdds2 = "0", flutterCapsuleSpaceOdds34 = "0", cannonCapsulePrice1 = "0", cannonCapsulePrice2 = "0", cannonCapsulePrice34 = "0", cannonCapsuleShopOdds12 = "0", cannonCapsuleShopOdds34 = "0", cannonCapsuleSpaceOdds1 = "0", cannonCapsuleSpaceOdds2 = "0", cannonCapsuleSpaceOdds34 = "0", snackCapsulePrice1 = "0", snackCapsulePrice2 = "0", snackCapsulePrice34 = "0", snackCapsuleShopOdds12 = "0", snackCapsuleShopOdds34 = "0", snackCapsuleSpaceOdds1 = "0", snackCapsuleSpaceOdds2 = "0", snackCapsuleSpaceOdds34 = "0", goombaCapsulePrice1 = "0", goombaCapsulePrice2 = "0", goombaCapsulePrice34 = "0", goombaCapsuleShopOdds12 = "0", goombaCapsuleShopOdds34 = "0", goombaCapsuleSpaceOdds1 = "0", goombaCapsuleSpaceOdds2 = "0", goombaCapsuleSpaceOdds34 = "0", hammerBroCapsulePrice1 = "0", hammerBroCapsulePrice2 = "0", hammerBroCapsulePrice34 = "0", hammerBroCapsuleShopOdds12 = "0", hammerBroCapsuleShopOdds34 = "0", hammerBroCapsuleSpaceOdds1 = "0", hammerBroCapsuleSpaceOdds2 = "0", hammerBroCapsuleSpaceOdds34 = "0", piranhaPlantCapsulePrice1 = "0", piranhaPlantCapsulePrice2 = "0", piranhaPlantCapsulePrice34 = "0", piranhaPlantCapsuleShopOdds12 = "0", piranhaPlantCapsuleShopOdds34 = "0", piranhaPlantCapsuleSpaceOdds1 = "0", piranhaPlantCapsuleSpaceOdds2 = "0", piranhaPlantCapsuleSpaceOdds34 = "0", kleptoCapsulePrice1 = "0", kleptoCapsulePrice2 = "0", kleptoCapsulePrice34 = "0", kleptoCapsuleShopOdds12 = "0", kleptoCapsuleShopOdds34 = "0", kleptoCapsuleSpaceOdds1 = "0", kleptoCapsuleSpaceOdds2 = "0", kleptoCapsuleSpaceOdds34 = "0", kamekCapsulePrice1 = "0", kamekCapsulePrice2 = "0", kamekCapsulePrice34 = "0", kamekCapsuleShopOdds12 = "0", kamekCapsuleShopOdds34 = "0", kamekCapsuleSpaceOdds1 = "0", kamekCapsuleSpaceOdds2 = "0", kamekCapsuleSpaceOdds34 = "0", toadyCapsulePrice1 = "0", toadyCapsulePrice2 = "0", toadyCapsulePrice34 = "0", toadyCapsuleShopOdds12 = "0", toadyCapsuleShopOdds34 = "0", toadyCapsuleSpaceOdds1 = "0", toadyCapsuleSpaceOdds2 = "0", toadyCapsuleSpaceOdds34 = "0", mrBlizzardCapsulePrice1 = "0", mrBlizzardCapsulePrice2 = "0", mrBlizzardCapsulePrice34 = "0", mrBlizzardCapsuleShopOdds12 = "0", mrBlizzardCapsuleShopOdds34 = "0", mrBlizzardCapsuleSpaceOdds1 = "0", mrBlizzardCapsuleSpaceOdds2 = "0", mrBlizzardCapsuleSpaceOdds34 = "0", banditCapsulePrice1 = "0", banditCapsulePrice2 = "0", banditCapsulePrice34 = "0", banditCapsuleShopOdds12 = "0", banditCapsuleShopOdds34 = "0", banditCapsuleSpaceOdds1 = "0", banditCapsuleSpaceOdds2 = "0", banditCapsuleSpaceOdds34 = "0", pinkBooCapsulePrice1 = "0", pinkBooCapsulePrice2 = "0", pinkBooCapsulePrice34 = "0", pinkBooCapsuleShopOdds12 = "0", pinkBooCapsuleShopOdds34 = "0", pinkBooCapsuleSpaceOdds1 = "0", pinkBooCapsuleSpaceOdds2 = "0", pinkBooCapsuleSpaceOdds34 = "0", spinyCapsulePrice1 = "0", spinyCapsulePrice2 = "0", spinyCapsulePrice34 = "0", spinyCapsuleShopOdds12 = "0", spinyCapsuleShopOdds34 = "0", spinyCapsuleSpaceOdds1 = "0", spinyCapsuleSpaceOdds2 = "0", spinyCapsuleSpaceOdds34 = "0", podobooCapsulePrice1 = "0", podobooCapsulePrice2 = "0", podobooCapsulePrice34 = "0", podobooCapsuleShopOdds12 = "0", podobooCapsuleShopOdds34 = "0", podobooCapsuleSpaceOdds1 = "0", podobooCapsuleSpaceOdds2 = "0", podobooCapsuleSpaceOdds34 = "0", tweesterCapsulePrice1 = "0", tweesterCapsulePrice2 = "0", tweesterCapsulePrice34 = "0", tweesterCapsuleShopOdds12 = "0", tweesterCapsuleShopOdds34 = "0", tweesterCapsuleSpaceOdds1 = "0", tweesterCapsuleSpaceOdds2 = "0", tweesterCapsuleSpaceOdds34 = "0", thwompCapsulePrice1 = "0", thwompCapsulePrice2 = "0", thwompCapsulePrice34 = "0", thwompCapsuleShopOdds12 = "0", thwompCapsuleShopOdds34 = "0", thwompCapsuleSpaceOdds1 = "0", thwompCapsuleSpaceOdds2 = "0", thwompCapsuleSpaceOdds34 = "0", warpCapsulePrice1 = "0", warpCapsulePrice2 = "0", warpCapsulePrice34 = "0", warpCapsuleShopOdds12 = "0", warpCapsuleShopOdds34 = "0", warpCapsuleSpaceOdds1 = "0", warpCapsuleSpaceOdds2 = "0", warpCapsuleSpaceOdds34 = "0", bombCapsulePrice1 = "0", bombCapsulePrice2 = "0", bombCapsulePrice34 = "0", bombCapsuleShopOdds12 = "0", bombCapsuleShopOdds34 = "0", bombCapsuleSpaceOdds1 = "0", bombCapsuleSpaceOdds2 = "0", bombCapsuleSpaceOdds34 = "0", fireballCapsulePrice1 = "0", fireballCapsulePrice2 = "0", fireballCapsulePrice34 = "0", fireballCapsuleShopOdds12 = "0", fireballCapsuleShopOdds34 = "0", fireballCapsuleSpaceOdds1 = "0", fireballCapsuleSpaceOdds2 = "0", fireballCapsuleSpaceOdds34 = "0", paraTroopaCapsulePrice1 = "0", paraTroopaCapsulePrice2 = "0", paraTroopaCapsulePrice34 = "0", paraTroopaCapsuleShopOdds12 = "0", paraTroopaCapsuleShopOdds34 = "0", paraTroopaCapsuleSpaceOdds1 = "0", paraTroopaCapsuleSpaceOdds2 = "0", paraTroopaCapsuleSpaceOdds34 = "0", eggCapsulePrice1 = "0", eggCapsulePrice2 = "0", eggCapsulePrice34 = "0", eggCapsuleShopOdds12 = "0", eggCapsuleShopOdds34 = "0", eggCapsuleSpaceOdds1 = "0", eggCapsuleSpaceOdds2 = "0", eggCapsuleSpaceOdds34 = "0", vacuumCapsulePrice1 = "0", vacuumCapsulePrice2 = "0", vacuumCapsulePrice34 = "0", vacuumCapsuleShopOdds12 = "0", vacuumCapsuleShopOdds34 = "0", vacuumCapsuleSpaceOdds1 = "0", vacuumCapsuleSpaceOdds2 = "0", vacuumCapsuleSpaceOdds34 = "0", magicCapsulePrice1 = "0", magicCapsulePrice2 = "0", magicCapsulePrice34 = "0", magicCapsuleShopOdds12 = "0", magicCapsuleShopOdds34 = "0", magicCapsuleSpaceOdds1 = "0", magicCapsuleSpaceOdds2 = "0", magicCapsuleSpaceOdds34 = "0", tripleCapsulePrice1 = "0", tripleCapsulePrice2 = "0", tripleCapsulePrice34 = "0", tripleCapsuleShopOdds12 = "0", tripleCapsuleShopOdds34 = "0", tripleCapsuleSpaceOdds1 = "0", tripleCapsuleSpaceOdds2 = "0", tripleCapsuleSpaceOdds34 = "0", koopaCapsulePrice1 = "0", koopaCapsulePrice2 = "0", koopaCapsulePrice34 = "0", koopaCapsuleShopOdds12 = "0", koopaCapsuleShopOdds34 = "0", koopaCapsuleSpaceOdds1 = "0", koopaCapsuleSpaceOdds2 = "0", koopaCapsuleSpaceOdds34 = "0", cursedMushroomPrice1 = "0", cursedMushroomPrice2 = "0", cursedMushroomPrice34 = "0", cursedMushroomShopOdds12 = "0", cursedMushroomShopOdds34 = "0", cursedMushroomSpaceOdds1 = "0", cursedMushroomSpaceOdds2 = "0", cursedMushroomSpaceOdds34 = "0", orbBagCapsulePrice1 = "0", orbBagCapsulePrice2 = "0", orbBagCapsulePrice34 = "0", orbBagCapsuleShopOdds12 = "0", orbBagCapsuleShopOdds34 = "0", orbBagCapsuleSpaceOdds1 = "0", orbBagCapsuleSpaceOdds2 = "0", orbBagCapsuleSpaceOdds34 = "0", mysteryCapsulePrice1 = "0", mysteryCapsulePrice2 = "0", mysteryCapsulePrice34 = "0", mysteryCapsuleShopOdds12 = "0", mysteryCapsuleShopOdds34 = "0", mysteryCapsuleSpaceOdds1 = "0", mysteryCapsuleSpaceOdds2 = "0", mysteryCapsuleSpaceOdds34 = "0", dkCapsulePrice1 = "0", dkCapsulePrice2 = "0", dkCapsulePrice34 = "0", dkCapsuleShopOdds12 = "0", dkCapsuleShopOdds34 = "0", dkCapsuleSpaceOdds1 = "0", dkCapsuleSpaceOdds2 = "0", dkCapsuleSpaceOdds34 = "0", duelCapsulePrice1 = "0", duelCapsulePrice2 = "0", duelCapsulePrice34 = "0", duelCapsuleShopOdds12 = "0", duelCapsuleShopOdds34 = "0", duelCapsuleSpaceOdds1 = "0", duelCapsuleSpaceOdds2 = "0", duelCapsuleSpaceOdds34 = "0"):
+def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = "0", mushroomCapsuleSpaceOdds1 = "0", mushroomCapsuleSpaceOdds2 = "0", mushroomCapsuleSpaceOdds34 = "0", goldenMushroomCapsulePrice1 = "0", goldenMushroomCapsulePrice2 = "0", goldenMushroomCapsulePrice34 = "0", goldenMushroomCapsuleShopOdds12 = "0", goldenMushroomCapsuleShopOdds34 = "0", goldenMushroomCapsuleSpaceOdds1 = "0", goldenMushroomCapsuleSpaceOdds2 = "0", goldenMushroomCapsuleSpaceOdds34 = "0", slowMushroomCapsulePrice1 = "0", slowMushroomCapsulePrice2 = "0", slowMushroomCapsulePrice34 = "0", slowMushroomCapsuleShopOdds12 = "0", slowMushroomCapsuleShopOdds34 = "0", slowMushroomCapsuleSpaceOdds1 = "0", slowMushroomCapsuleSpaceOdds2 = "0", slowMushroomCapsuleSpaceOdds34 = "0", metalMushroomCapsulePrice1 = "0", metalMushroomCapsulePrice2 = "0", metalMushroomCapsulePrice34 = "0", metalMushroomCapsuleShopOdds12 = "0", metalMushroomCapsuleShopOdds34 = "0", metalMushroomCapsuleSpaceOdds1 = "0", metalMushroomCapsuleSpaceOdds2 = "0", metalMushroomCapsuleSpaceOdds34 = "0", flutterCapsulePrice1 = "0", flutterCapsulePrice2 = "0", flutterCapsulePrice34 = "0", flutterCapsuleShopOdds12 = "0", flutterCapsuleShopOdds34 = "0", flutterCapsuleSpaceOdds1 = "0", flutterCapsuleSpaceOdds2 = "0", flutterCapsuleSpaceOdds34 = "0", cannonCapsulePrice1 = "0", cannonCapsulePrice2 = "0", cannonCapsulePrice34 = "0", cannonCapsuleShopOdds12 = "0", cannonCapsuleShopOdds34 = "0", cannonCapsuleSpaceOdds1 = "0", cannonCapsuleSpaceOdds2 = "0", cannonCapsuleSpaceOdds34 = "0", snackCapsulePrice1 = "0", snackCapsulePrice2 = "0", snackCapsulePrice34 = "0", snackCapsuleShopOdds12 = "0", snackCapsuleShopOdds34 = "0", snackCapsuleSpaceOdds1 = "0", snackCapsuleSpaceOdds2 = "0", snackCapsuleSpaceOdds34 = "0", goombaCapsulePrice1 = "0", goombaCapsulePrice2 = "0", goombaCapsulePrice34 = "0", goombaCapsuleShopOdds12 = "0", goombaCapsuleShopOdds34 = "0", goombaCapsuleSpaceOdds1 = "0", goombaCapsuleSpaceOdds2 = "0", goombaCapsuleSpaceOdds34 = "0", hammerBroCapsulePrice1 = "0", hammerBroCapsulePrice2 = "0", hammerBroCapsulePrice34 = "0", hammerBroCapsuleShopOdds12 = "0", hammerBroCapsuleShopOdds34 = "0", hammerBroCapsuleSpaceOdds1 = "0", hammerBroCapsuleSpaceOdds2 = "0", hammerBroCapsuleSpaceOdds34 = "0", piranhaPlantCapsulePrice1 = "0", piranhaPlantCapsulePrice2 = "0", piranhaPlantCapsulePrice34 = "0", piranhaPlantCapsuleShopOdds12 = "0", piranhaPlantCapsuleShopOdds34 = "0", piranhaPlantCapsuleSpaceOdds1 = "0", piranhaPlantCapsuleSpaceOdds2 = "0", piranhaPlantCapsuleSpaceOdds34 = "0", kleptoCapsulePrice1 = "0", kleptoCapsulePrice2 = "0", kleptoCapsulePrice34 = "0", kleptoCapsuleShopOdds12 = "0", kleptoCapsuleShopOdds34 = "0", kleptoCapsuleSpaceOdds1 = "0", kleptoCapsuleSpaceOdds2 = "0", kleptoCapsuleSpaceOdds34 = "0", kamekCapsulePrice1 = "0", kamekCapsulePrice2 = "0", kamekCapsulePrice34 = "0", kamekCapsuleShopOdds12 = "0", kamekCapsuleShopOdds34 = "0", kamekCapsuleSpaceOdds1 = "0", kamekCapsuleSpaceOdds2 = "0", kamekCapsuleSpaceOdds34 = "0", toadyCapsulePrice1 = "0", toadyCapsulePrice2 = "0", toadyCapsulePrice34 = "0", toadyCapsuleShopOdds12 = "0", toadyCapsuleShopOdds34 = "0", toadyCapsuleSpaceOdds1 = "0", toadyCapsuleSpaceOdds2 = "0", toadyCapsuleSpaceOdds34 = "0", mrBlizzardCapsulePrice1 = "0", mrBlizzardCapsulePrice2 = "0", mrBlizzardCapsulePrice34 = "0", mrBlizzardCapsuleShopOdds12 = "0", mrBlizzardCapsuleShopOdds34 = "0", mrBlizzardCapsuleSpaceOdds1 = "0", mrBlizzardCapsuleSpaceOdds2 = "0", mrBlizzardCapsuleSpaceOdds34 = "0", banditCapsulePrice1 = "0", banditCapsulePrice2 = "0", banditCapsulePrice34 = "0", banditCapsuleShopOdds12 = "0", banditCapsuleShopOdds34 = "0", banditCapsuleSpaceOdds1 = "0", banditCapsuleSpaceOdds2 = "0", banditCapsuleSpaceOdds34 = "0", pinkBooCapsulePrice1 = "0", pinkBooCapsulePrice2 = "0", pinkBooCapsulePrice34 = "0", pinkBooCapsuleShopOdds12 = "0", pinkBooCapsuleShopOdds34 = "0", pinkBooCapsuleSpaceOdds1 = "0", pinkBooCapsuleSpaceOdds2 = "0", pinkBooCapsuleSpaceOdds34 = "0", spinyCapsulePrice1 = "0", spinyCapsulePrice2 = "0", spinyCapsulePrice34 = "0", spinyCapsuleShopOdds12 = "0", spinyCapsuleShopOdds34 = "0", spinyCapsuleSpaceOdds1 = "0", spinyCapsuleSpaceOdds2 = "0", spinyCapsuleSpaceOdds34 = "0", podobooCapsulePrice1 = "0", podobooCapsulePrice2 = "0", podobooCapsulePrice34 = "0", podobooCapsuleShopOdds12 = "0", podobooCapsuleShopOdds34 = "0", podobooCapsuleSpaceOdds1 = "0", podobooCapsuleSpaceOdds2 = "0", podobooCapsuleSpaceOdds34 = "0", tweesterCapsulePrice1 = "0", tweesterCapsulePrice2 = "0", tweesterCapsulePrice34 = "0", tweesterCapsuleShopOdds12 = "0", tweesterCapsuleShopOdds34 = "0", tweesterCapsuleSpaceOdds1 = "0", tweesterCapsuleSpaceOdds2 = "0", tweesterCapsuleSpaceOdds34 = "0", thwompCapsulePrice1 = "0", thwompCapsulePrice2 = "0", thwompCapsulePrice34 = "0", thwompCapsuleShopOdds12 = "0", thwompCapsuleShopOdds34 = "0", thwompCapsuleSpaceOdds1 = "0", thwompCapsuleSpaceOdds2 = "0", thwompCapsuleSpaceOdds34 = "0", warpCapsulePrice1 = "0", warpCapsulePrice2 = "0", warpCapsulePrice34 = "0", warpCapsuleShopOdds12 = "0", warpCapsuleShopOdds34 = "0", warpCapsuleSpaceOdds1 = "0", warpCapsuleSpaceOdds2 = "0", warpCapsuleSpaceOdds34 = "0", bombCapsulePrice1 = "0", bombCapsulePrice2 = "0", bombCapsulePrice34 = "0", bombCapsuleShopOdds12 = "0", bombCapsuleShopOdds34 = "0", bombCapsuleSpaceOdds1 = "0", bombCapsuleSpaceOdds2 = "0", bombCapsuleSpaceOdds34 = "0", fireballCapsulePrice1 = "0", fireballCapsulePrice2 = "0", fireballCapsulePrice34 = "0", fireballCapsuleShopOdds12 = "0", fireballCapsuleShopOdds34 = "0", fireballCapsuleSpaceOdds1 = "0", fireballCapsuleSpaceOdds2 = "0", fireballCapsuleSpaceOdds34 = "0", paraTroopaCapsulePrice1 = "0", paraTroopaCapsulePrice2 = "0", paraTroopaCapsulePrice34 = "0", paraTroopaCapsuleShopOdds12 = "0", paraTroopaCapsuleShopOdds34 = "0", paraTroopaCapsuleSpaceOdds1 = "0", paraTroopaCapsuleSpaceOdds2 = "0", paraTroopaCapsuleSpaceOdds34 = "0", eggCapsulePrice1 = "0", eggCapsulePrice2 = "0", eggCapsulePrice34 = "0", eggCapsuleShopOdds12 = "0", eggCapsuleShopOdds34 = "0", eggCapsuleSpaceOdds1 = "0", eggCapsuleSpaceOdds2 = "0", eggCapsuleSpaceOdds34 = "0", gaddLightCapsulePrice1 = "0", gaddLightCapsulePrice2 = "0", gaddLightCapsulePrice34 = "0", gaddLightCapsuleShopOdds12 = "0", gaddLightCapsuleShopOdds34 = "0", gaddLightCapsuleSpaceOdds1 = "0", gaddLightCapsuleSpaceOdds2 = "0", gaddLightCapsuleSpaceOdds34 = "0", magicCapsulePrice1 = "0", magicCapsulePrice2 = "0", magicCapsulePrice34 = "0", magicCapsuleShopOdds12 = "0", magicCapsuleShopOdds34 = "0", magicCapsuleSpaceOdds1 = "0", magicCapsuleSpaceOdds2 = "0", magicCapsuleSpaceOdds34 = "0", tripleCapsulePrice1 = "0", tripleCapsulePrice2 = "0", tripleCapsulePrice34 = "0", tripleCapsuleShopOdds12 = "0", tripleCapsuleShopOdds34 = "0", tripleCapsuleSpaceOdds1 = "0", tripleCapsuleSpaceOdds2 = "0", tripleCapsuleSpaceOdds34 = "0", koopaCapsulePrice1 = "0", koopaCapsulePrice2 = "0", koopaCapsulePrice34 = "0", koopaCapsuleShopOdds12 = "0", koopaCapsuleShopOdds34 = "0", koopaCapsuleSpaceOdds1 = "0", koopaCapsuleSpaceOdds2 = "0", koopaCapsuleSpaceOdds34 = "0", cursedMushroomPrice1 = "0", cursedMushroomPrice2 = "0", cursedMushroomPrice34 = "0", cursedMushroomShopOdds12 = "0", cursedMushroomShopOdds34 = "0", cursedMushroomSpaceOdds1 = "0", cursedMushroomSpaceOdds2 = "0", cursedMushroomSpaceOdds34 = "0", orbBagCapsulePrice1 = "0", orbBagCapsulePrice2 = "0", orbBagCapsulePrice34 = "0", orbBagCapsuleShopOdds12 = "0", orbBagCapsuleShopOdds34 = "0", orbBagCapsuleSpaceOdds1 = "0", orbBagCapsuleSpaceOdds2 = "0", orbBagCapsuleSpaceOdds34 = "0", mysteryCapsulePrice1 = "0", mysteryCapsulePrice2 = "0", mysteryCapsulePrice34 = "0", mysteryCapsuleShopOdds12 = "0", mysteryCapsuleShopOdds34 = "0", mysteryCapsuleSpaceOdds1 = "0", mysteryCapsuleSpaceOdds2 = "0", mysteryCapsuleSpaceOdds34 = "0", dkCapsulePrice1 = "0", dkCapsulePrice2 = "0", dkCapsulePrice34 = "0", dkCapsuleShopOdds12 = "0", dkCapsuleShopOdds34 = "0", dkCapsuleSpaceOdds1 = "0", dkCapsuleSpaceOdds2 = "0", dkCapsuleSpaceOdds34 = "0", duelCapsulePrice1 = "0", duelCapsulePrice2 = "0", duelCapsulePrice34 = "0", duelCapsuleShopOdds12 = "0", duelCapsuleShopOdds34 = "0", duelCapsuleSpaceOdds1 = "0", duelCapsuleSpaceOdds2 = "0", duelCapsuleSpaceOdds34 = "0"):
     def get_capsule_value(capsule):
         try:
             # Handle string values from UI
@@ -2648,14 +2666,14 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     eggCapsuleSpaceOdds2 = get_capsule_value(eggCapsuleSpaceOdds2)
     eggCapsuleSpaceOdds34 = get_capsule_value(eggCapsuleSpaceOdds34)
 
-    vacuumCapsulePrice1 = get_capsule_value(vacuumCapsulePrice1)
-    vacuumCapsulePrice2 = get_capsule_value(vacuumCapsulePrice2)
-    vacuumCapsulePrice34 = get_capsule_value(vacuumCapsulePrice34)
-    vacuumCapsuleShopOdds12 = get_capsule_value(vacuumCapsuleShopOdds12)
-    vacuumCapsuleShopOdds34 = get_capsule_value(vacuumCapsuleShopOdds34)
-    vacuumCapsuleSpaceOdds1 = get_capsule_value(vacuumCapsuleSpaceOdds1)
-    vacuumCapsuleSpaceOdds2 = get_capsule_value(vacuumCapsuleSpaceOdds2)
-    vacuumCapsuleSpaceOdds34 = get_capsule_value(vacuumCapsuleSpaceOdds34)
+    gaddLightCapsulePrice1 = get_capsule_value(gaddLightCapsulePrice1)
+    gaddLightCapsulePrice2 = get_capsule_value(gaddLightCapsulePrice2)
+    gaddLightCapsulePrice34 = get_capsule_value(gaddLightCapsulePrice34)
+    gaddLightCapsuleShopOdds12 = get_capsule_value(gaddLightCapsuleShopOdds12)
+    gaddLightCapsuleShopOdds34 = get_capsule_value(gaddLightCapsuleShopOdds34)
+    gaddLightCapsuleSpaceOdds1 = get_capsule_value(gaddLightCapsuleSpaceOdds1)
+    gaddLightCapsuleSpaceOdds2 = get_capsule_value(gaddLightCapsuleSpaceOdds2)
+    gaddLightCapsuleSpaceOdds34 = get_capsule_value(gaddLightCapsuleSpaceOdds34)
 
     magicCapsulePrice1 = get_capsule_value(magicCapsulePrice1)
     magicCapsulePrice2 = get_capsule_value(magicCapsulePrice2)
@@ -2739,7 +2757,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         pinkBooCapsuleShopOdds12, spinyCapsuleShopOdds12, podobooCapsuleShopOdds12,
         tweesterCapsuleShopOdds12, thwompCapsuleShopOdds12, warpCapsuleShopOdds12,
         bombCapsuleShopOdds12, fireballCapsuleShopOdds12, paraTroopaCapsuleShopOdds12,
-        eggCapsuleShopOdds12, vacuumCapsuleShopOdds12, magicCapsuleShopOdds12,
+        eggCapsuleShopOdds12, gaddLightCapsuleShopOdds12, magicCapsuleShopOdds12,
         tripleCapsuleShopOdds12, koopaCapsuleShopOdds12, mysteryCapsuleShopOdds12,
         duelCapsuleShopOdds12, dkCapsuleShopOdds12, orbBagCapsuleShopOdds12
     ]
@@ -2753,7 +2771,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         pinkBooCapsuleShopOdds34, spinyCapsuleShopOdds34, podobooCapsuleShopOdds34,
         tweesterCapsuleShopOdds34, thwompCapsuleShopOdds34, warpCapsuleShopOdds34,
         bombCapsuleShopOdds34, fireballCapsuleShopOdds34, paraTroopaCapsuleShopOdds34,
-        eggCapsuleShopOdds34, vacuumCapsuleShopOdds34, magicCapsuleShopOdds34,
+        eggCapsuleShopOdds34, gaddLightCapsuleShopOdds34, magicCapsuleShopOdds34,
         tripleCapsuleShopOdds34, koopaCapsuleShopOdds34, mysteryCapsuleShopOdds34,
         duelCapsuleShopOdds34, dkCapsuleShopOdds34, orbBagCapsuleShopOdds34
     ]
@@ -2767,7 +2785,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         pinkBooCapsuleSpaceOdds1, spinyCapsuleSpaceOdds1, podobooCapsuleSpaceOdds1,
         tweesterCapsuleSpaceOdds1, thwompCapsuleSpaceOdds1, warpCapsuleSpaceOdds1,
         bombCapsuleSpaceOdds1, fireballCapsuleSpaceOdds1, paraTroopaCapsuleSpaceOdds1,
-        eggCapsuleSpaceOdds1, vacuumCapsuleSpaceOdds1, magicCapsuleSpaceOdds1,
+        eggCapsuleSpaceOdds1, gaddLightCapsuleSpaceOdds1, magicCapsuleSpaceOdds1,
         tripleCapsuleSpaceOdds1, koopaCapsuleSpaceOdds1, mysteryCapsuleSpaceOdds1,
         duelCapsuleSpaceOdds1, dkCapsuleSpaceOdds1, orbBagCapsuleSpaceOdds1
     ]
@@ -2781,7 +2799,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         pinkBooCapsuleSpaceOdds2, spinyCapsuleSpaceOdds2, podobooCapsuleSpaceOdds2,
         tweesterCapsuleSpaceOdds2, thwompCapsuleSpaceOdds2, warpCapsuleSpaceOdds2,
         bombCapsuleSpaceOdds2, fireballCapsuleSpaceOdds2, paraTroopaCapsuleSpaceOdds2,
-        eggCapsuleSpaceOdds2, vacuumCapsuleSpaceOdds2, magicCapsuleSpaceOdds2,
+        eggCapsuleSpaceOdds2, gaddLightCapsuleSpaceOdds2, magicCapsuleSpaceOdds2,
         tripleCapsuleSpaceOdds2, koopaCapsuleSpaceOdds2, mysteryCapsuleSpaceOdds2,
         duelCapsuleSpaceOdds2, dkCapsuleSpaceOdds2, orbBagCapsuleSpaceOdds2
     ]
@@ -2795,7 +2813,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         pinkBooCapsuleSpaceOdds34, spinyCapsuleSpaceOdds34, podobooCapsuleSpaceOdds34,
         tweesterCapsuleSpaceOdds34, thwompCapsuleSpaceOdds34, warpCapsuleSpaceOdds34,
         bombCapsuleSpaceOdds34, fireballCapsuleSpaceOdds34, paraTroopaCapsuleSpaceOdds34,
-        eggCapsuleSpaceOdds34, vacuumCapsuleSpaceOdds34, magicCapsuleSpaceOdds34,
+        eggCapsuleSpaceOdds34, gaddLightCapsuleSpaceOdds34, magicCapsuleSpaceOdds34,
         tripleCapsuleSpaceOdds34, koopaCapsuleSpaceOdds34, mysteryCapsuleSpaceOdds34,
         duelCapsuleSpaceOdds34, dkCapsuleSpaceOdds34, orbBagCapsuleSpaceOdds34
     ]
@@ -2813,20 +2831,30 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     spaceOdds34Weights = sum(safe_int(weight) for weight in spaceOdds34)
 
     def calculateWeight(weight, total):
-        # Convert weight to int, default to 0 if empty or None
-        weight = int(weight) if weight else 0
-        # Check for total being zero to avoid division by zero
-        if total <= 0:
-            return 0  # Return 0 if total is zero or negative
-        if total < 100:
-            return weight  # Return the weight directly if total is less than 100
-        else:
-            percentage = (weight / total) * 100
-            if 0 < percentage < 1:
-                return math.ceil(percentage)
-            return round(percentage)
+        global rounding_error_tracker
+        try:
+            weight_val = int(weight) if weight else 0
+            if total == 0: 
+                return 0
+
+            # Calculate the precise percentage
+            precise_percentage = (weight_val / total) * 100
+
+            # Add the previous rounding error to the current calculation
+            current_val = precise_percentage + rounding_error_tracker
+
+            # Round to the nearest whole number
+            rounded_val = round(current_val)
+
+            # Update the tracker with the new leftover error
+            rounding_error_tracker = current_val - rounded_val
+
+            return rounded_val
+        except ZeroDivisionError:
+            return 0
 
     # Calculate weights for shop odds 12
+    rounding_error_tracker = 0
     mushroomCapsuleShopOdds12 = calculateWeight(mushroomCapsuleShopOdds12, shopOdds12Weights)
     goldenMushroomCapsuleShopOdds12 = calculateWeight(goldenMushroomCapsuleShopOdds12, shopOdds12Weights)
     metalMushroomCapsuleShopOdds12 = calculateWeight(metalMushroomCapsuleShopOdds12, shopOdds12Weights)
@@ -2852,7 +2880,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     fireballCapsuleShopOdds12 = calculateWeight(fireballCapsuleShopOdds12, shopOdds12Weights)
     paraTroopaCapsuleShopOdds12 = calculateWeight(paraTroopaCapsuleShopOdds12, shopOdds12Weights)
     eggCapsuleShopOdds12 = calculateWeight(eggCapsuleShopOdds12, shopOdds12Weights)
-    vacuumCapsuleShopOdds12 = calculateWeight(vacuumCapsuleShopOdds12, shopOdds12Weights)
+    gaddLightCapsuleShopOdds12 = calculateWeight(gaddLightCapsuleShopOdds12, shopOdds12Weights)
     magicCapsuleShopOdds12 = calculateWeight(magicCapsuleShopOdds12, shopOdds12Weights)
     tripleCapsuleShopOdds12 = calculateWeight(tripleCapsuleShopOdds12, shopOdds12Weights)
     koopaCapsuleShopOdds12 = calculateWeight(koopaCapsuleShopOdds12, shopOdds12Weights)
@@ -2862,6 +2890,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     orbBagCapsuleShopOdds12 = calculateWeight(orbBagCapsuleShopOdds12, shopOdds12Weights)
 
     # Calculate weights for shop odds 34
+    rounding_error_tracker = 0
     mushroomCapsuleShopOdds34 = calculateWeight(mushroomCapsuleShopOdds34, shopOdds34Weights)
     goldenMushroomCapsuleShopOdds34 = calculateWeight(goldenMushroomCapsuleShopOdds34, shopOdds34Weights)
     metalMushroomCapsuleShopOdds34 = calculateWeight(metalMushroomCapsuleShopOdds34, shopOdds34Weights)
@@ -2887,7 +2916,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     fireballCapsuleShopOdds34 = calculateWeight(fireballCapsuleShopOdds34, shopOdds34Weights)
     paraTroopaCapsuleShopOdds34 = calculateWeight(paraTroopaCapsuleShopOdds34, shopOdds34Weights)
     eggCapsuleShopOdds34 = calculateWeight(eggCapsuleShopOdds34, shopOdds34Weights)
-    vacuumCapsuleShopOdds34 = calculateWeight(vacuumCapsuleShopOdds34, shopOdds34Weights)
+    gaddLightCapsuleShopOdds34 = calculateWeight(gaddLightCapsuleShopOdds34, shopOdds34Weights)
     magicCapsuleShopOdds34 = calculateWeight(magicCapsuleShopOdds34, shopOdds34Weights)
     tripleCapsuleShopOdds34 = calculateWeight(tripleCapsuleShopOdds34, shopOdds34Weights)
     koopaCapsuleShopOdds34 = calculateWeight(koopaCapsuleShopOdds34, shopOdds34Weights)
@@ -2897,6 +2926,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     orbBagCapsuleShopOdds34 = calculateWeight(orbBagCapsuleShopOdds34, shopOdds34Weights)
 
     # Calculate weights for space odds 1
+    rounding_error_tracker = 0
     mushroomCapsuleSpaceOdds1 = calculateWeight(mushroomCapsuleSpaceOdds1, spaceOdds1Weights)
     goldenMushroomCapsuleSpaceOdds1 = calculateWeight(goldenMushroomCapsuleSpaceOdds1, spaceOdds1Weights)
     metalMushroomCapsuleSpaceOdds1 = calculateWeight(metalMushroomCapsuleSpaceOdds1, spaceOdds1Weights)
@@ -2922,7 +2952,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     fireballCapsuleSpaceOdds1 = calculateWeight(fireballCapsuleSpaceOdds1, spaceOdds1Weights)
     paraTroopaCapsuleSpaceOdds1 = calculateWeight(paraTroopaCapsuleSpaceOdds1, spaceOdds1Weights)
     eggCapsuleSpaceOdds1 = calculateWeight(eggCapsuleSpaceOdds1, spaceOdds1Weights)
-    vacuumCapsuleSpaceOdds1 = calculateWeight(vacuumCapsuleSpaceOdds1, spaceOdds1Weights)
+    gaddLightCapsuleSpaceOdds1 = calculateWeight(gaddLightCapsuleSpaceOdds1, spaceOdds1Weights)
     magicCapsuleSpaceOdds1 = calculateWeight(magicCapsuleSpaceOdds1, spaceOdds1Weights)
     tripleCapsuleSpaceOdds1 = calculateWeight(tripleCapsuleSpaceOdds1, spaceOdds1Weights)
     koopaCapsuleSpaceOdds1 = calculateWeight(koopaCapsuleSpaceOdds1, spaceOdds1Weights)
@@ -2932,6 +2962,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     orbBagCapsuleSpaceOdds1 = calculateWeight(orbBagCapsuleSpaceOdds1, spaceOdds1Weights)
 
     # Calculate weights for space odds 2
+    rounding_error_tracker = 0
     mushroomCapsuleSpaceOdds2 = calculateWeight(mushroomCapsuleSpaceOdds2, spaceOdds2Weights)
     goldenMushroomCapsuleSpaceOdds2 = calculateWeight(goldenMushroomCapsuleSpaceOdds2, spaceOdds2Weights)
     metalMushroomCapsuleSpaceOdds2 = calculateWeight(metalMushroomCapsuleSpaceOdds2, spaceOdds2Weights)
@@ -2957,7 +2988,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     fireballCapsuleSpaceOdds2 = calculateWeight(fireballCapsuleSpaceOdds2, spaceOdds2Weights)
     paraTroopaCapsuleSpaceOdds2 = calculateWeight(paraTroopaCapsuleSpaceOdds2, spaceOdds2Weights)
     eggCapsuleSpaceOdds2 = calculateWeight(eggCapsuleSpaceOdds2, spaceOdds2Weights)
-    vacuumCapsuleSpaceOdds2 = calculateWeight(vacuumCapsuleSpaceOdds2, spaceOdds2Weights)
+    gaddLightCapsuleSpaceOdds2 = calculateWeight(gaddLightCapsuleSpaceOdds2, spaceOdds2Weights)
     magicCapsuleSpaceOdds2 = calculateWeight(magicCapsuleSpaceOdds2, spaceOdds2Weights)
     tripleCapsuleSpaceOdds2 = calculateWeight(tripleCapsuleSpaceOdds2, spaceOdds2Weights)
     koopaCapsuleSpaceOdds2 = calculateWeight(koopaCapsuleSpaceOdds2, spaceOdds2Weights)
@@ -2967,6 +2998,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     orbBagCapsuleSpaceOdds2 = calculateWeight(orbBagCapsuleSpaceOdds2, spaceOdds2Weights)
 
     # Calculate weights for space odds 34
+    rounding_error_tracker = 0
     mushroomCapsuleSpaceOdds34 = calculateWeight(mushroomCapsuleSpaceOdds34, spaceOdds34Weights)
     goldenMushroomCapsuleSpaceOdds34 = calculateWeight(goldenMushroomCapsuleSpaceOdds34, spaceOdds34Weights)
     metalMushroomCapsuleSpaceOdds34 = calculateWeight(metalMushroomCapsuleSpaceOdds34, spaceOdds34Weights)
@@ -2992,7 +3024,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     fireballCapsuleSpaceOdds34 = calculateWeight(fireballCapsuleSpaceOdds34, spaceOdds34Weights)
     paraTroopaCapsuleSpaceOdds34 = calculateWeight(paraTroopaCapsuleSpaceOdds34, spaceOdds34Weights)
     eggCapsuleSpaceOdds34 = calculateWeight(eggCapsuleSpaceOdds34, spaceOdds34Weights)
-    vacuumCapsuleSpaceOdds34 = calculateWeight(vacuumCapsuleSpaceOdds34, spaceOdds34Weights)
+    gaddLightCapsuleSpaceOdds34 = calculateWeight(gaddLightCapsuleSpaceOdds34, spaceOdds34Weights)
     magicCapsuleSpaceOdds34 = calculateWeight(magicCapsuleSpaceOdds34, spaceOdds34Weights)
     tripleCapsuleSpaceOdds34 = calculateWeight(tripleCapsuleSpaceOdds34, spaceOdds34Weights)
     koopaCapsuleSpaceOdds34 = calculateWeight(koopaCapsuleSpaceOdds34, spaceOdds34Weights)
@@ -3000,7 +3032,6 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     duelCapsuleSpaceOdds34 = calculateWeight(duelCapsuleSpaceOdds34, spaceOdds34Weights)
     dkCapsuleSpaceOdds34 = calculateWeight(dkCapsuleSpaceOdds34, spaceOdds34Weights)
     orbBagCapsuleSpaceOdds34 = calculateWeight(orbBagCapsuleSpaceOdds34, spaceOdds34Weights)
-
 
     # Redefine Weights lists
     shopOdds12 = [
@@ -3012,7 +3043,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         pinkBooCapsuleShopOdds12, spinyCapsuleShopOdds12, podobooCapsuleShopOdds12,
         tweesterCapsuleShopOdds12, thwompCapsuleShopOdds12, warpCapsuleShopOdds12,
         bombCapsuleShopOdds12, fireballCapsuleShopOdds12, paraTroopaCapsuleShopOdds12,
-        eggCapsuleShopOdds12, vacuumCapsuleShopOdds12, magicCapsuleShopOdds12,
+        eggCapsuleShopOdds12, gaddLightCapsuleShopOdds12, magicCapsuleShopOdds12,
         tripleCapsuleShopOdds12, koopaCapsuleShopOdds12, mysteryCapsuleShopOdds12,
         duelCapsuleShopOdds12, dkCapsuleShopOdds12, orbBagCapsuleShopOdds12
     ]
@@ -3026,7 +3057,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         pinkBooCapsuleShopOdds34, spinyCapsuleShopOdds34, podobooCapsuleShopOdds34,
         tweesterCapsuleShopOdds34, thwompCapsuleShopOdds34, warpCapsuleShopOdds34,
         bombCapsuleShopOdds34, fireballCapsuleShopOdds34, paraTroopaCapsuleShopOdds34,
-        eggCapsuleShopOdds34, vacuumCapsuleShopOdds34, magicCapsuleShopOdds34,
+        eggCapsuleShopOdds34, gaddLightCapsuleShopOdds34, magicCapsuleShopOdds34,
         tripleCapsuleShopOdds34, koopaCapsuleShopOdds34, mysteryCapsuleShopOdds34,
         duelCapsuleShopOdds34, dkCapsuleShopOdds34, orbBagCapsuleShopOdds34
     ]
@@ -3040,7 +3071,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         pinkBooCapsuleSpaceOdds1, spinyCapsuleSpaceOdds1, podobooCapsuleSpaceOdds1,
         tweesterCapsuleSpaceOdds1, thwompCapsuleSpaceOdds1, warpCapsuleSpaceOdds1,
         bombCapsuleSpaceOdds1, fireballCapsuleSpaceOdds1, paraTroopaCapsuleSpaceOdds1,
-        eggCapsuleSpaceOdds1, vacuumCapsuleSpaceOdds1, magicCapsuleSpaceOdds1,
+        eggCapsuleSpaceOdds1, gaddLightCapsuleSpaceOdds1, magicCapsuleSpaceOdds1,
         tripleCapsuleSpaceOdds1, koopaCapsuleSpaceOdds1, mysteryCapsuleSpaceOdds1,
         duelCapsuleSpaceOdds1, dkCapsuleSpaceOdds1, orbBagCapsuleSpaceOdds1
     ]
@@ -3054,7 +3085,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         pinkBooCapsuleSpaceOdds2, spinyCapsuleSpaceOdds2, podobooCapsuleSpaceOdds2,
         tweesterCapsuleSpaceOdds2, thwompCapsuleSpaceOdds2, warpCapsuleSpaceOdds2,
         bombCapsuleSpaceOdds2, fireballCapsuleSpaceOdds2, paraTroopaCapsuleSpaceOdds2,
-        eggCapsuleSpaceOdds2, vacuumCapsuleSpaceOdds2, magicCapsuleSpaceOdds2,
+        eggCapsuleSpaceOdds2, gaddLightCapsuleSpaceOdds2, magicCapsuleSpaceOdds2,
         tripleCapsuleSpaceOdds2, koopaCapsuleSpaceOdds2, mysteryCapsuleSpaceOdds2,
         duelCapsuleSpaceOdds2, dkCapsuleSpaceOdds2, orbBagCapsuleSpaceOdds2
     ]
@@ -3068,7 +3099,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
         pinkBooCapsuleSpaceOdds34, spinyCapsuleSpaceOdds34, podobooCapsuleSpaceOdds34,
         tweesterCapsuleSpaceOdds34, thwompCapsuleSpaceOdds34, warpCapsuleSpaceOdds34,
         bombCapsuleSpaceOdds34, fireballCapsuleSpaceOdds34, paraTroopaCapsuleSpaceOdds34,
-        eggCapsuleSpaceOdds34, vacuumCapsuleSpaceOdds34, magicCapsuleSpaceOdds34,
+        eggCapsuleSpaceOdds34, gaddLightCapsuleSpaceOdds34, magicCapsuleSpaceOdds34,
         tripleCapsuleSpaceOdds34, koopaCapsuleSpaceOdds34, mysteryCapsuleSpaceOdds34,
         duelCapsuleSpaceOdds34, dkCapsuleSpaceOdds34, orbBagCapsuleSpaceOdds34
     ]
@@ -3077,7 +3108,7 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     shopOdds34Weights = sum(weight for weight in shopOdds34)
     spaceOdds1Weights = sum(weight for weight in spaceOdds1)
     spaceOdds2Weights = sum(weight for weight in spaceOdds2)
-    spaceOdds34Weights = sum(weight for weight in shopOdds34)
+    spaceOdds34Weights = sum(weight for weight in spaceOdds34)
 
     if spaceOdds1Weights < 101:
         spaceOdds1Max = max(zip(spaceOdds1, spaceOdds1), key=lambda tuple: tuple[1])[0]
@@ -3169,8 +3200,8 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     if shopOdds12Max == 'eggCapsuleShopOdds12':
         eggCapsuleShopOdds12 += (100 - eggCapsuleShopOdds12)
 
-    if shopOdds12Max == 'vacuumCapsuleShopOdds12':
-        vacuumCapsuleShopOdds12 += (100 - vacuumCapsuleShopOdds12)
+    if shopOdds12Max == 'gaddLightCapsuleShopOdds12':
+        gaddLightCapsuleShopOdds12 += (100 - gaddLightCapsuleShopOdds12)
 
     if shopOdds12Max == 'magicCapsuleShopOdds12':
         magicCapsuleShopOdds12 += (100 - magicCapsuleShopOdds12)
@@ -3268,8 +3299,8 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     if shopOdds34Max == 'eggCapsuleShopOdds34':
         eggCapsuleShopOdds34 += (100 - eggCapsuleShopOdds34)
 
-    if shopOdds34Max == 'vacuumCapsuleShopOdds34':
-        vacuumCapsuleShopOdds34 += (100 - vacuumCapsuleShopOdds34)
+    if shopOdds34Max == 'gaddLightCapsuleShopOdds34':
+        gaddLightCapsuleShopOdds34 += (100 - gaddLightCapsuleShopOdds34)
 
     if shopOdds34Max == 'magicCapsuleShopOdds34':
         magicCapsuleShopOdds34 += (100 - magicCapsuleShopOdds34)
@@ -3367,8 +3398,8 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     if spaceOdds1Max == 'eggCapsuleSpaceOdds1':
         eggCapsuleSpaceOdds1 += (100 - eggCapsuleSpaceOdds1)
 
-    if spaceOdds1Max == 'vacuumCapsuleSpaceOdds1':
-        vacuumCapsuleSpaceOdds1 += (100 - vacuumCapsuleSpaceOdds1)
+    if spaceOdds1Max == 'gaddLightCapsuleSpaceOdds1':
+        gaddLightCapsuleSpaceOdds1 += (100 - gaddLightCapsuleSpaceOdds1)
 
     if spaceOdds1Max == 'magicCapsuleSpaceOdds1':
         magicCapsuleSpaceOdds1 += (100 - magicCapsuleSpaceOdds1)
@@ -3466,8 +3497,8 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     if spaceOdds2Max == 'eggCapsuleSpaceOdds2':
         eggCapsuleSpaceOdds2 += (100 - eggCapsuleSpaceOdds2)
 
-    if spaceOdds2Max == 'vacuumCapsuleSpaceOdds2':
-        vacuumCapsuleSpaceOdds2 += (100 - vacuumCapsuleSpaceOdds2)
+    if spaceOdds2Max == 'gaddLightCapsuleSpaceOdds2':
+        gaddLightCapsuleSpaceOdds2 += (100 - gaddLightCapsuleSpaceOdds2)
 
     if spaceOdds2Max == 'magicCapsuleSpaceOdds2':
         magicCapsuleSpaceOdds2 += (100 - magicCapsuleSpaceOdds2)
@@ -3565,8 +3596,8 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     if spaceOdds34Max == 'eggCapsuleSpaceOdds34':
         eggCapsuleSpaceOdds34 += (100 - eggCapsuleSpaceOdds34)
 
-    if spaceOdds34Max == 'vacuumCapsuleSpaceOdds34':
-        vacuumCapsuleSpaceOdds34 += (100 - vacuumCapsuleSpaceOdds34)
+    if spaceOdds34Max == 'gaddLightCapsuleSpaceOdds34':
+        gaddLightCapsuleSpaceOdds34 += (100 - gaddLightCapsuleSpaceOdds34)
 
     if spaceOdds34Max == 'magicCapsuleSpaceOdds34':
         magicCapsuleSpaceOdds34 += (100 - magicCapsuleSpaceOdds34)
@@ -3739,11 +3770,11 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     eggCapsuleSpaceOdds2 = str(eggCapsuleSpaceOdds2)
     eggCapsuleSpaceOdds34 = str(eggCapsuleSpaceOdds34)
 
-    vacuumCapsuleShopOdds12 = str(vacuumCapsuleShopOdds12)
-    vacuumCapsuleShopOdds34 = str(vacuumCapsuleShopOdds34)
-    vacuumCapsuleSpaceOdds1 = str(vacuumCapsuleSpaceOdds1)
-    vacuumCapsuleSpaceOdds2 = str(vacuumCapsuleSpaceOdds2)
-    vacuumCapsuleSpaceOdds34 = str(vacuumCapsuleSpaceOdds34)
+    gaddLightCapsuleShopOdds12 = str(gaddLightCapsuleShopOdds12)
+    gaddLightCapsuleShopOdds34 = str(gaddLightCapsuleShopOdds34)
+    gaddLightCapsuleSpaceOdds1 = str(gaddLightCapsuleSpaceOdds1)
+    gaddLightCapsuleSpaceOdds2 = str(gaddLightCapsuleSpaceOdds2)
+    gaddLightCapsuleSpaceOdds34 = str(gaddLightCapsuleSpaceOdds34)
 
     magicCapsuleShopOdds12 = str(magicCapsuleShopOdds12)
     magicCapsuleShopOdds34 = str(magicCapsuleShopOdds34)
@@ -4027,14 +4058,14 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     eggCapsuleSpaceOdds2 = convert_to_hex_weight(eggCapsuleSpaceOdds2)
     eggCapsuleSpaceOdds34 = convert_to_hex_weight(eggCapsuleSpaceOdds34)
 
-    vacuumCapsulePrice1 = convert_to_hex_weight(vacuumCapsulePrice1)
-    vacuumCapsulePrice2 = convert_to_hex_weight(vacuumCapsulePrice2)
-    vacuumCapsulePrice34 = convert_to_hex_weight(vacuumCapsulePrice34)
-    vacuumCapsuleShopOdds12 = convert_to_hex_weight(vacuumCapsuleShopOdds12)
-    vacuumCapsuleShopOdds34 = convert_to_hex_weight(vacuumCapsuleShopOdds34)
-    vacuumCapsuleSpaceOdds1 = convert_to_hex_weight(vacuumCapsuleSpaceOdds1)
-    vacuumCapsuleSpaceOdds2 = convert_to_hex_weight(vacuumCapsuleSpaceOdds2)
-    vacuumCapsuleSpaceOdds34 = convert_to_hex_weight(vacuumCapsuleSpaceOdds34)
+    gaddLightCapsulePrice1 = convert_to_hex_weight(gaddLightCapsulePrice1)
+    gaddLightCapsulePrice2 = convert_to_hex_weight(gaddLightCapsulePrice2)
+    gaddLightCapsulePrice34 = convert_to_hex_weight(gaddLightCapsulePrice34)
+    gaddLightCapsuleShopOdds12 = convert_to_hex_weight(gaddLightCapsuleShopOdds12)
+    gaddLightCapsuleShopOdds34 = convert_to_hex_weight(gaddLightCapsuleShopOdds34)
+    gaddLightCapsuleSpaceOdds1 = convert_to_hex_weight(gaddLightCapsuleSpaceOdds1)
+    gaddLightCapsuleSpaceOdds2 = convert_to_hex_weight(gaddLightCapsuleSpaceOdds2)
+    gaddLightCapsuleSpaceOdds34 = convert_to_hex_weight(gaddLightCapsuleSpaceOdds34)
 
     magicCapsulePrice1 = convert_to_hex_weight(magicCapsulePrice1)
     magicCapsulePrice2 = convert_to_hex_weight(magicCapsulePrice2)
@@ -4326,15 +4357,15 @@ def itemsEvent_mp6(mushroomCapsuleShopOdds12 = "0", mushroomCapsuleShopOdds34 = 
     snackShopOdds123 = eggCapsuleShopOdds12
     snackShopOdds4 = eggCapsuleShopOdds34
 
-    gaddLightPrice1 = vacuumCapsulePrice1
-    gaddLightPrice2 = vacuumCapsulePrice2
-    gaddLightPrice34 = vacuumCapsulePrice34
-    gaddLightSpaceOdds1 = vacuumCapsuleSpaceOdds1
-    gaddLightSpaceOdds2 = vacuumCapsuleSpaceOdds2
-    gaddLightSpaceOdds3 = vacuumCapsuleSpaceOdds34
-    gaddLightSpaceOdds4 = vacuumCapsuleSpaceOdds34
-    gaddLightShopOdds123 = vacuumCapsuleShopOdds12
-    gaddLightShopOdds4 = vacuumCapsuleShopOdds34
+    gaddLightPrice1 = gaddLightCapsulePrice1
+    gaddLightPrice2 = gaddLightCapsulePrice2
+    gaddLightPrice34 = gaddLightCapsulePrice34
+    gaddLightSpaceOdds1 = gaddLightCapsuleSpaceOdds1
+    gaddLightSpaceOdds2 = gaddLightCapsuleSpaceOdds2
+    gaddLightSpaceOdds3 = gaddLightCapsuleSpaceOdds34
+    gaddLightSpaceOdds4 = gaddLightCapsuleSpaceOdds34
+    gaddLightShopOdds123 = gaddLightCapsuleShopOdds12
+    gaddLightShopOdds4 = gaddLightCapsuleShopOdds34
 
     generatedCode = getOrbModsSix(mushroomSpaceOdds1, mushroomSpaceOdds2, mushroomSpaceOdds3, mushroomSpaceOdds4, mushroomShopOdds123, mushroomShopOdds4, goldenMushroomPrice1, goldenMushroomPrice2, goldenMushroomPrice34, goldenMushroomSpaceOdds1, goldenMushroomSpaceOdds2, goldenMushroomSpaceOdds3, goldenMushroomSpaceOdds4, goldenMushroomShopOdds123, goldenMushroomShopOdds4, slowMushroomPrice1, slowMushroomPrice2, slowMushroomPrice34, slowMushroomSpaceOdds1, slowMushroomSpaceOdds2, slowMushroomSpaceOdds3, slowMushroomSpaceOdds4, slowMushroomShopOdds123, slowMushroomShopOdds4, metalMushroomPrice1, metalMushroomPrice2, metalMushroomPrice34, metalMushroomSpaceOdds1, metalMushroomSpaceOdds2, metalMushroomSpaceOdds3, metalMushroomSpaceOdds4, metalMushroomShopOdds123, metalMushroomShopOdds4, bulletBillPrice1, bulletBillPrice2, bulletBillPrice34, bulletBillSpaceOdds1, bulletBillSpaceOdds2, bulletBillSpaceOdds3, bulletBillSpaceOdds4, bulletBillShopOdds123, bulletBillShopOdds4, flutterPrice1, flutterPrice2, flutterPrice34, flutterSpaceOdds1, flutterSpaceOdds2, flutterSpaceOdds3, flutterSpaceOdds4, flutterShopOdds123, flutterShopOdds4, cursedMushroomPrice1, cursedMushroomPrice2, cursedMushroomPrice34, cursedMushroomSpaceOdds1, cursedMushroomSpaceOdds2, cursedMushroomSpaceOdds3, cursedMushroomSpaceOdds4, cursedMushroomShopOdds123, cursedMushroomShopOdds4, spinyPrice1, spinyPrice2, spinyPrice34, spinySpaceOdds1, spinySpaceOdds2, spinySpaceOdds3, spinySpaceOdds4, spinyShopOdds123, spinyShopOdds4, goombaCapsulePrice1, goombaCapsulePrice2, goombaCapsulePrice34, goombaCapsuleSpaceOdds1, goombaCapsuleSpaceOdds2, goombaCapsuleSpaceOdds3, goombaCapsuleSpaceOdds4, goombaCapsuleShopOdds123, goombaCapsuleShopOdds4, plantPrice1, plantPrice2, plantPrice34, plantSpaceOdds1, plantSpaceOdds2, plantSpaceOdds3, plantSpaceOdds4, plantShopOdds123, plantShopOdds4, kleptoCapsulePrice1, kleptoCapsulePrice2, kleptoCapsulePrice34, kleptoCapsuleSpaceOdds1, kleptoCapsuleSpaceOdds2, kleptoCapsuleSpaceOdds3, kleptoCapsuleSpaceOdds4, kleptoCapsuleShopOdds123, kleptoCapsuleShopOdds4, toadyPrice1, toadyPrice2, toadyPrice34, toadySpaceOdds1, toadySpaceOdds2, toadySpaceOdds3, toadySpaceOdds4, toadyShopOdds123, toadyShopOdds4, kamekPrice1, kamekPrice2, kamekPrice34, kamekSpaceOdds1, kamekSpaceOdds2, kamekSpaceOdds3, kamekSpaceOdds4, kamekShopOdds123, kamekShopOdds4, blizzardPrice1, blizzardPrice2, blizzardPrice34, blizzardSpaceOdds1, blizzardSpaceOdds2, blizzardSpaceOdds3, blizzardSpaceOdds4, blizzardShopOdds123, blizzardShopOdds4, podobooCapsulePrice1, podobooCapsulePrice2, podobooCapsulePrice34, podobooCapsuleSpaceOdds1, podobooCapsuleSpaceOdds2, podobooCapsuleSpaceOdds3, podobooCapsuleSpaceOdds4, podobooCapsuleShopOdds123, podobooCapsuleShopOdds4, zapPrice1, zapPrice2, zapPrice34, zapSpaceOdds1, zapSpaceOdds2, zapSpaceOdds3, zapSpaceOdds4, zapShopOdds123, zapShopOdds4, tweesterPrice1, tweesterPrice2, tweesterPrice34, tweesterSpaceOdds1, tweesterSpaceOdds2, tweesterSpaceOdds3, tweesterSpaceOdds4, tweesterShopOdds123, tweesterShopOdds4, thwompPrice1, thwompPrice2, thwompPrice34, thwompSpaceOdds1, thwompSpaceOdds2, thwompSpaceOdds3, thwompSpaceOdds4, thwompShopOdds123, thwompShopOdds4, warpPipePrice1, warpPipePrice2, warpPipePrice34, warpPipeSpaceOdds1, warpPipeSpaceOdds2, warpPipeSpaceOdds3, warpPipeSpaceOdds4, warpPipeShopOdds123, warpPipeShopOdds4, bombPrice1, bombPrice2, bombPrice34, bombSpaceOdds1, bombSpaceOdds2, bombSpaceOdds3, bombSpaceOdds4, bombShopOdds123, bombShopOdds4, paraTroopaCapsulePrice1, paraTroopaCapsulePrice2, paraTroopaCapsulePrice34, paraTroopaCapsuleSpaceOdds1, paraTroopaCapsuleSpaceOdds2, paraTroopaCapsuleSpaceOdds3, paraTroopaCapsuleSpaceOdds4, paraTroopaCapsuleShopOdds123, paraTroopaCapsuleShopOdds4, snackPrice1, snackPrice2, snackPrice34, snackSpaceOdds1, snackSpaceOdds2, snackSpaceOdds3, snackSpaceOdds4, snackShopOdds123, snackShopOdds4, gaddLightPrice1, gaddLightPrice2, gaddLightPrice34, gaddLightSpaceOdds1, gaddLightSpaceOdds2, gaddLightSpaceOdds3, gaddLightSpaceOdds4, gaddLightShopOdds123, gaddLightShopOdds4)
     generatedCode = generatedCode.strip()
